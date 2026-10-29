@@ -1,0 +1,14 @@
+2026-10-28T16:41:15.4165685+09:00 DO-D0 gear=Drive speed=0 actual=Drive/0 png=917154B
+10-28 16:41:13.191   865   865 I T14     : 89887502 05 SPEED callback value=0.0 status=0 timestamp=89887501251296
+10-28 16:41:13.293   865   865 I T14     : 89887604 05 SPEED callback value=0.0 status=0 timestamp=89887602240796
+10-28 16:41:13.493   865   865 I T14     : 89887804 05 SPEED callback value=0.0 status=0 timestamp=89887802732696
+10-28 16:41:13.691   865   865 I T14     : 89888003 05 SPEED callback value=0.0 status=0 timestamp=89888001489496
+10-28 16:41:13.890   865   865 I T14     : 89888201 05 SPEED callback value=0.0 status=0 timestamp=89888200899196
+10-28 16:41:14.090   865   865 I T14     : 89888402 05 SPEED callback value=0.0 status=0 timestamp=89888400790296
+2026-10-28T16:41:19.5077616+09:00 DO-D30 gear=Drive speed=30 actual=Drive/29 png=956095B
+10-28 16:41:17.390   865   865 I T14     : 89891702 05 SPEED callback value=8.055555 status=0 timestamp=89891700789796
+10-28 16:41:17.590   865   865 I T14     : 89891902 05 SPEED callback value=8.055555 status=0 timestamp=89891901088696
+10-28 16:41:17.691   865   865 I T14     : 89892002 05 SPEED callback value=8.055555 status=0 timestamp=89892001388096
+10-28 16:41:17.890   865   865 I T14     : 89892201 05 SPEED callback value=8.055555 status=0 timestamp=89892200587596
+10-28 16:41:18.091   865   865 I T14     : 89892402 05 SPEED callback value=8.055555 status=0 timestamp=89892401353996
+10-28 16:41:18.291   865   865 I T14     : 89892603 05 SPEED callback value=8.055555 status=0 timestamp=89892600386996

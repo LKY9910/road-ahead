@@ -1,0 +1,12 @@
+{
+  "requestedAtKst": "2026-10-28T16:18:55.596444+09:00",
+  "url": "https://apihub.kma.go.kr/api/typ04/url/road_file_down.php?roadNum=045&tm=202610280710&authKey=***",
+  "httpStatus": 503,
+  "headers": {
+    "Date": "Wed, 28 Oct 2026 07:19:25 GMT",
+    "Content-Type": "text/html"
+  },
+  "downloadBytes": 190,
+  "body": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+  "durationMs": 264.59
+}

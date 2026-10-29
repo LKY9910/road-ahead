@@ -1,0 +1,12 @@
+{
+  "requestedAtKst": "2026-10-28T16:04:23.906317+09:00",
+  "url": "https://apis.data.go.kr/B551982/rti/tl_drct_info?stdgCd=1100000000&pageNo=1&numOfRows=3&type=xml&serviceKey=***",
+  "httpStatus": 200,
+  "headers": {
+    "Date": "Wed, 28 Oct 2026 07:04:53 GMT",
+    "Content-Type": "application/xml",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate"
+  },
+  "body": "<ApiResponse><header><resultCode>K3</resultCode><resultMsg>NODATA_ERROR</resultMsg></header><body><totalCount>0</totalCount><pageNo>0</pageNo><numOfRows>0</numOfRows></body></ApiResponse>",
+  "durationMs": 90.9
+}

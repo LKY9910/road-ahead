@@ -1,0 +1,15 @@
+저장된 HTTP 응답 비교
+PASS seat.positions
+PASS seat.moves
+PASS seat.occupied
+PASS seat.actuator.active_count
+PASS gear.Park
+PASS hvac.power_on
+PASS hvac.auto_on
+PASS hvac.ac_on
+PASS hvac.dual_on
+PASS hvac.recirc_on
+PASS hvac.fan_speed
+PASS hvac.driver
+PASS hvac.passenger
+PASS hvac.row2

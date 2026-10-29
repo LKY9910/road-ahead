@@ -1,0 +1,15 @@
+2026-10-28 첫 motion 실행 중 /vehicle/state 응답 도구 출력에서 발췌.
+이 순간 HTTP 응답 전체는 파일로 저장하지 않았으므로, 아래는 관찰 발췌이며 원본 응답 파일이나 스크린샷이 아니다.
+
+seat.positions.slide = {driver: 100, passenger: 100, rear_left: 0, rear_right: 0}
+seat.positions.recline = {driver: 100, passenger: 20, rear_left: 0, rear_right: 0}
+seat.moves.slide = {driver: 0, passenger: 0, rear_left: 0, rear_right: 0}
+seat.moves.recline = {driver: 0, passenger: 1, rear_left: 0, rear_right: 0}
+seat.actuator = {tick_ms: 100, step_pct: 5, active_count: 1}
+seat.web_active = true
+gear.actual.value = Park
+gear.bridge_ready = true
+
+같은 시각 SDK 로그는 callbacks.txt의 15:29:31~15:30:06 참조.
+SDK getCurrentSeatForeAftPosition/getCurrentSeatBackrestAnglePosition은 0, 위치 구독도 초기 0 외 변화 없음.
+Console actuator 설정 tick_ms/step_pct는 설정값이고 SDK 이동 속도 실측값이 아니다.

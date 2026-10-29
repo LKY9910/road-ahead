@@ -1,0 +1,169 @@
+2026-10-28T17:18:44.050485 navigation-attributes request=1
+10-28 17:12:46.948 28828 28828 I T14     : 91749899 09 AUDIO count=0 mode=0 musicActive=false
+10-28 17:12:49.372 28828 28828 I T14     : 91752323 09 AUDIO count=0 mode=0 musicActive=false
+10-28 17:12:51.766 28828 28828 I T14     : 91754718 08 TTS initialize success latencyMs=17
+10-28 17:12:51.770 28828 28828 I T14     : 91754721 08 TTS speak mode=ON_DEVICE locale=ko-KR text=앞 신호 빨간불이에요. 속도를 줄이세요.
+10-28 17:12:51.775 28828 28859 I T14     : 91754726 08 TTS onReady
+10-28 17:12:51.776 28828 28859 I T14     : 91754727 08 TTS onStart latencyMs=6
+10-28 17:12:51.801 28828 28828 I T14     : 91754752 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:12:51.803 28828 28828 I T14     : 91754754 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:631 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:12:51.818 28828 28828 I T14     : 91754769 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:12:51.819 28828 28828 I T14     : 91754770 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:631 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:12:51.821 28828 28828 I T14     : 91754773 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:12:51.822 28828 28828 I T14     : 91754774 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:631 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:12:51.869 28828 28859 I T14     : 91754820 08 TTS RMS=4973.701720178552
+10-28 17:12:51.891 28828 28859 I T14     : 91754842 08 TTS RMS=6542.639424111595
+10-28 17:12:51.910 28828 28859 I T14     : 91754861 08 TTS RMS=3506.792988526809
+10-28 17:12:51.954 28828 28859 I T14     : 91754905 08 TTS RMS=5174.766074302586
+10-28 17:12:51.972 28828 28859 I T14     : 91754924 08 TTS RMS=4720.028364510883
+10-28 17:12:54.670 28828 28859 I T14     : 91757621 08 TTS onDone elapsedMs=2900
+10-28 17:12:54.674 28828 28828 I T14     : 91757625 09 AUDIO count=0 mode=0 musicActive=true
+10-28 17:12:54.685 28828 28828 I T14     : 91757636 09 AUDIO count=0 mode=0 musicActive=true
+10-28 17:13:01.751 28828 28828 I T14     : 91764703 08 TTS initialize success latencyMs=12
+10-28 17:13:01.753 28828 28828 I T14     : 91764704 08 TTS speak mode=ON_DEVICE locale=ko-KR text=앞 신호 빨간불이에요. 속도를 줄이세요.
+10-28 17:13:01.756 28828 28859 I T14     : 91764708 08 TTS onReady
+10-28 17:13:01.759 28828 28859 I T14     : 91764710 08 TTS onStart latencyMs=6
+10-28 17:13:01.788 28828 28828 I T14     : 91764739 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:13:01.790 28828 28828 I T14     : 91764741 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:639 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:01.791 28828 28828 I T14     : 91764743 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:13:01.792 28828 28828 I T14     : 91764743 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:639 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:01.794 28828 28828 I T14     : 91764745 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:13:01.794 28828 28828 I T14     : 91764745 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:639 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:01.829 28828 28854 I T14     : 91764780 08 TTS RMS=4973.701720178552
+10-28 17:13:01.852 28828 28859 I T14     : 91764803 08 TTS RMS=6542.639424111595
+10-28 17:13:01.870 28828 28859 I T14     : 91764821 08 TTS RMS=3506.792988526809
+10-28 17:13:01.910 28828 28859 I T14     : 91764861 08 TTS RMS=5174.766074302586
+10-28 17:13:01.928 28828 28859 I T14     : 91764879 08 TTS RMS=4720.028364510883
+10-28 17:13:04.628 28828 28854 I T14     : 91767579 08 TTS onDone elapsedMs=2875
+10-28 17:13:04.650 28828 28828 I T14     : 91767601 09 AUDIO count=0 mode=0 musicActive=true
+10-28 17:13:04.655 28828 28828 I T14     : 91767606 09 AUDIO count=0 mode=0 musicActive=true
+10-28 17:13:11.768 28828 28828 I T14     : 91774719 08 TTS initialize success latencyMs=20
+10-28 17:13:11.769 28828 28828 I T14     : 91774721 08 TTS speak mode=ON_DEVICE locale=ko-KR text=앞 신호 빨간불이에요. 속도를 줄이세요.
+10-28 17:13:11.773 28828 28859 I T14     : 91774724 08 TTS onReady
+10-28 17:13:11.774 28828 28859 I T14     : 91774725 08 TTS onStart latencyMs=4
+10-28 17:13:11.803 28828 28828 I T14     : 91774755 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:13:11.805 28828 28828 I T14     : 91774756 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:647 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:11.807 28828 28828 I T14     : 91774758 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:13:11.808 28828 28828 I T14     : 91774759 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:647 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:11.819 28828 28828 I T14     : 91774770 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:13:11.820 28828 28828 I T14     : 91774772 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:647 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:11.858 28828 28853 I T14     : 91774809 08 TTS RMS=4973.701720178552
+10-28 17:13:11.879 28828 28853 I T14     : 91774831 08 TTS RMS=6542.639424111595
+10-28 17:13:11.897 28828 28853 I T14     : 91774848 08 TTS RMS=3506.792988526809
+10-28 17:13:11.938 28828 28859 I T14     : 91774889 08 TTS RMS=5174.766074302586
+10-28 17:13:11.954 28828 28859 I T14     : 91774905 08 TTS RMS=4720.028364510883
+10-28 17:13:14.672 28828 28853 I T14     : 91777623 08 TTS onDone elapsedMs=2902
+10-28 17:13:14.677 28828 28828 I T14     : 91777628 09 AUDIO count=0 mode=0 musicActive=true
+10-28 17:13:14.678 28828 28828 I T14     : 91777630 09 AUDIO count=0 mode=0 musicActive=true
+10-28 17:13:21.750 28828 28828 I T14     : 91784701 08 TTS initialize success latencyMs=7
+10-28 17:13:21.752 28828 28828 I T14     : 91784703 08 TTS speak mode=ON_DEVICE locale=ko-KR text=앞 신호 빨간불이에요. 속도를 줄이세요.
+10-28 17:13:21.755 28828 28853 I T14     : 91784707 08 TTS onReady
+10-28 17:13:21.757 28828 28853 I T14     : 91784708 08 TTS onStart latencyMs=5
+10-28 17:13:21.783 28828 28828 I T14     : 91784734 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:13:21.785 28828 28828 I T14     : 91784736 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:655 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:21.786 28828 28828 I T14     : 91784737 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:13:21.787 28828 28828 I T14     : 91784738 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:655 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:21.800 28828 28828 I T14     : 91784751 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:13:21.802 28828 28828 I T14     : 91784753 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:655 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:21.833 28828 28853 I T14     : 91784784 08 TTS RMS=4973.701720178552
+10-28 17:13:21.853 28828 28853 I T14     : 91784804 08 TTS RMS=6542.639424111595
+10-28 17:13:21.874 28828 28853 I T14     : 91784825 08 TTS RMS=3506.792988526809
+10-28 17:13:21.922 28828 28853 I T14     : 91784873 08 TTS RMS=5174.766074302586
+10-28 17:13:21.942 28828 28853 I T14     : 91784893 08 TTS RMS=4720.028364510883
+10-28 17:13:24.643 28828 28859 I T14     : 91787595 08 TTS onDone elapsedMs=2892
+10-28 17:13:24.646 28828 28828 I T14     : 91787597 09 AUDIO count=0 mode=0 musicActive=true
+10-28 17:13:24.649 28828 28828 I T14     : 91787600 09 AUDIO count=0 mode=0 musicActive=true
+10-28 17:13:31.751 28828 28828 I T14     : 91794702 08 TTS initialize success latencyMs=8
+10-28 17:13:31.755 28828 28828 I T14     : 91794706 08 TTS speak mode=ON_DEVICE locale=ko-KR text=앞 신호 빨간불이에요. 속도를 줄이세요.
+10-28 17:13:31.758 28828 28853 I T14     : 91794710 08 TTS onReady
+10-28 17:13:31.760 28828 28853 I T14     : 91794711 08 TTS onStart latencyMs=5
+10-28 17:13:31.792 28828 28828 I T14     : 91794743 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:13:31.794 28828 28828 I T14     : 91794745 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:663 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:31.802 28828 28828 I T14     : 91794753 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:13:31.803 28828 28828 I T14     : 91794754 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:663 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:31.820 28828 28828 I T14     : 91794771 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:13:31.822 28828 28828 I T14     : 91794773 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:663 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:31.875 28828 28853 I T14     : 91794826 08 TTS RMS=4973.701720178552
+10-28 17:13:31.899 28828 28853 I T14     : 91794850 08 TTS RMS=6542.639424111595
+10-28 17:13:31.919 28828 28853 I T14     : 91794871 08 TTS RMS=3506.792988526809
+10-28 17:13:31.969 28828 28853 I T14     : 91794920 08 TTS RMS=5174.766074302586
+10-28 17:13:31.998 28828 28859 I T14     : 91794949 08 TTS RMS=4720.028364510883
+10-28 17:13:34.691 28828 28859 I T14     : 91797642 08 TTS onDone elapsedMs=2936
+10-28 17:13:34.696 28828 28828 I T14     : 91797647 09 AUDIO count=0 mode=0 musicActive=true
+10-28 17:13:34.702 28828 28828 I T14     : 91797654 09 AUDIO count=0 mode=0 musicActive=true
+10-28 17:13:41.749 28828 28828 I T14     : 91804700 08 TTS initialize success latencyMs=17
+10-28 17:13:41.751 28828 28828 I T14     : 91804702 08 TTS speak mode=ON_DEVICE locale=ko-KR text=앞 신호 빨간불이에요. 속도를 줄이세요.
+10-28 17:13:41.754 28828 28853 I T14     : 91804705 08 TTS onReady
+10-28 17:13:41.755 28828 28853 I T14     : 91804706 08 TTS onStart latencyMs=4
+10-28 17:13:41.768 28828 28828 I T14     : 91804719 09 AUDIO count=1 mode=0 musicActive=false
+10-28 17:13:41.769 28828 28828 I T14     : 91804720 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:671 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:41.786 28828 28828 I T14     : 91804737 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:13:41.788 28828 28828 I T14     : 91804739 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:671 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:41.790 28828 28828 I T14     : 91804741 09 AUDIO count=1 mode=0 musicActive=true
+10-28 17:13:41.791 28828 28828 I T14     : 91804742 09 AUDIO usage=1 content=1 config=AudioPlaybackConfiguration piid:671 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:13:41.824 28828 28853 I T14     : 91804776 08 TTS RMS=4973.701720178552
+10-28 17:13:41.842 28828 28853 I T14     : 91804793 08 TTS RMS=6542.639424111595
+10-28 17:13:41.862 28828 28853 I T14     : 91804813 08 TTS RMS=3506.792988526809
+10-28 17:13:41.904 28828 28853 I T14     : 91804855 08 TTS RMS=5174.766074302586
+10-28 17:13:41.921 28828 28853 I T14     : 91804872 08 TTS RMS=4720.028364510883
+10-28 17:13:44.644 28828 28859 I T14     : 91807595 08 TTS onDone elapsedMs=2893
+10-28 17:13:44.649 28828 28828 I T14     : 91807600 09 AUDIO count=0 mode=0 musicActive=true
+10-28 17:13:44.652 28828 28828 I T14     : 91807603 09 AUDIO count=0 mode=0 musicActive=true
+10-28 17:18:35.708 28858 28858 I T14     : 92098659 09 AUDIO count=0 mode=0 musicActive=false musicVolume=15/15 fixed=true carVolumePermission=-1
+10-28 17:18:38.157 28858 28858 I T14     : 92101108 09 AUDIO count=0 mode=0 musicActive=false musicVolume=15/15 fixed=true carVolumePermission=-1
+10-28 17:19:14.342 28858 28858 I T14     : 92137293 08 TTS initialize success latencyMs=19
+10-28 17:19:14.347 28858 28858 I T14     : 92137298 08 TTS speak mode=ON_DEVICE locale=ko-KR usage=12 text=앞 신호 빨간불이에요. 속도를 줄이세요.
+10-28 17:19:14.357 28858 28875 I T14     : 92137308 08 TTS onReady
+10-28 17:19:14.359 28858 28875 I T14     : 92137310 08 TTS onStart latencyMs=12
+10-28 17:19:14.391 28858 28858 I T14     : 92137342 09 AUDIO count=1 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1
+10-28 17:19:14.393 28858 28858 I T14     : 92137344 09 AUDIO usage=12 content=1 config=AudioPlaybackConfiguration piid:743 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_ASSISTANCE_NAVIGATION_GUIDANCE content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:19:14.397 28858 28858 I T14     : 92137348 09 AUDIO count=1 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1
+10-28 17:19:14.398 28858 28858 I T14     : 92137349 09 AUDIO usage=12 content=1 config=AudioPlaybackConfiguration piid:743 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_ASSISTANCE_NAVIGATION_GUIDANCE content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:19:14.410 28858 28858 I T14     : 92137361 09 AUDIO count=1 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1
+10-28 17:19:14.413 28858 28858 I T14     : 92137364 09 AUDIO usage=12 content=1 config=AudioPlaybackConfiguration piid:743 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_ASSISTANCE_NAVIGATION_GUIDANCE content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:19:14.457 28858 28875 I T14     : 92137408 08 TTS RMS=4973.701720178552
+10-28 17:19:14.483 28858 28875 I T14     : 92137434 08 TTS RMS=6542.639424111595
+10-28 17:19:14.508 28858 28880 I T14     : 92137459 08 TTS RMS=3506.792988526809
+10-28 17:19:14.557 28858 28880 I T14     : 92137508 08 TTS RMS=5174.766074302586
+10-28 17:19:14.574 28858 28875 I T14     : 92137525 08 TTS RMS=4720.028364510883
+10-28 17:19:17.256 28858 28875 I T14     : 92140208 08 TTS onDone elapsedMs=2909
+10-28 17:19:17.268 28858 28858 I T14     : 92140219 09 AUDIO count=0 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1
+10-28 17:19:17.273 28858 28858 I T14     : 92140224 09 AUDIO count=0 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1
+2026-10-28T17:18:54.424667 navigation-attributes request=2
+10-28 17:19:24.648 28858 28858 I T14     : 92147599 08 TTS initialize success latencyMs=9
+10-28 17:19:24.651 28858 28858 I T14     : 92147602 08 TTS speak mode=ON_DEVICE locale=ko-KR usage=12 text=앞 신호 빨간불이에요. 속도를 줄이세요.
+10-28 17:19:24.656 28858 28875 I T14     : 92147607 08 TTS onReady
+10-28 17:19:24.657 28858 28875 I T14     : 92147608 08 TTS onStart latencyMs=6
+10-28 17:19:24.685 28858 28858 I T14     : 92147636 09 AUDIO count=1 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1
+10-28 17:19:24.687 28858 28858 I T14     : 92147638 09 AUDIO usage=12 content=1 config=AudioPlaybackConfiguration piid:751 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_ASSISTANCE_NAVIGATION_GUIDANCE content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:19:24.690 28858 28858 I T14     : 92147641 09 AUDIO count=1 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1
+10-28 17:19:24.691 28858 28858 I T14     : 92147642 09 AUDIO usage=12 content=1 config=AudioPlaybackConfiguration piid:751 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_ASSISTANCE_NAVIGATION_GUIDANCE content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:19:24.720 28858 28858 I T14     : 92147671 09 AUDIO count=1 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1
+10-28 17:19:24.721 28858 28858 I T14     : 92147673 09 AUDIO usage=12 content=1 config=AudioPlaybackConfiguration piid:751 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_ASSISTANCE_NAVIGATION_GUIDANCE content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:19:24.748 28858 28880 I T14     : 92147699 08 TTS RMS=4973.701720178552
+10-28 17:19:24.768 28858 28880 I T14     : 92147719 08 TTS RMS=6542.639424111595
+10-28 17:19:24.786 28858 28880 I T14     : 92147737 08 TTS RMS=3506.792988526809
+10-28 17:19:24.827 28858 28875 I T14     : 92147778 08 TTS RMS=5174.766074302586
+10-28 17:19:24.842 28858 28875 I T14     : 92147793 08 TTS RMS=4720.028364510883
+10-28 17:19:27.568 28858 28880 I T14     : 92150519 08 TTS onDone elapsedMs=2917
+10-28 17:19:27.586 28858 28858 I T14     : 92150537 09 AUDIO count=0 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1
+10-28 17:19:27.590 28858 28858 I T14     : 92150542 09 AUDIO count=0 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1
+2026-10-28T17:19:04.303148 navigation-attributes request=3
+10-28 17:19:34.522 28858 28858 I T14     : 92157473 08 TTS initialize success latencyMs=13
+10-28 17:19:34.525 28858 28858 I T14     : 92157476 08 TTS speak mode=ON_DEVICE locale=ko-KR usage=12 text=앞 신호 빨간불이에요. 속도를 줄이세요.
+10-28 17:19:34.530 28858 28880 I T14     : 92157481 08 TTS onReady
+10-28 17:19:34.532 28858 28880 I T14     : 92157483 08 TTS onStart latencyMs=7
+10-28 17:19:34.572 28858 28858 I T14     : 92157523 09 AUDIO count=1 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1
+10-28 17:19:34.573 28858 28858 I T14     : 92157525 09 AUDIO usage=12 content=1 config=AudioPlaybackConfiguration piid:759 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_ASSISTANCE_NAVIGATION_GUIDANCE content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:19:34.577 28858 28858 I T14     : 92157528 09 AUDIO count=1 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1
+10-28 17:19:34.578 28858 28858 I T14     : 92157529 09 AUDIO usage=12 content=1 config=AudioPlaybackConfiguration piid:759 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_ASSISTANCE_NAVIGATION_GUIDANCE content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:19:34.584 28858 28858 I T14     : 92157535 09 AUDIO count=1 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1
+10-28 17:19:34.585 28858 28858 I T14     : 92157537 09 AUDIO usage=12 content=1 config=AudioPlaybackConfiguration piid:759 deviceId:0 type:unknown u/pid:-1/-1 state:started attr:AudioAttributes: usage=USAGE_ASSISTANCE_NAVIGATION_GUIDANCE content=CONTENT_TYPE_SPEECH flags=0x800 tags= bundle=null sessionId:0 mutedState:none  FormatInfo{isSpatialized=false, channelMask=0x0, sampleRate=0}
+10-28 17:19:34.625 28858 28880 I T14     : 92157576 08 TTS RMS=4973.701720178552
+10-28 17:19:34.650 28858 28880 I T14     : 92157601 08 TTS RMS=6542.639424111595
+10-28 17:19:34.668 28858 28875 I T14     : 92157619 08 TTS RMS=3506.792988526809
+10-28 17:19:34.709 28858 28970 I T14     : 92157660 08 TTS RMS=5174.766074302586
+10-28 17:19:34.725 28858 28970 I T14     : 92157676 08 TTS RMS=4720.028364510883
+10-28 17:19:37.428 28858  9745 I T14     : 92160380 08 TTS onDone elapsedMs=2903
+10-28 17:19:37.430 28858 28858 I T14     : 92160381 09 AUDIO count=0 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1
+10-28 17:19:37.454 28858 28858 I T14     : 92160405 09 AUDIO count=0 mode=0 musicActive=true musicVolume=15/15 fixed=true carVolumePermission=-1

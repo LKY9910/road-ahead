@@ -1,0 +1,9 @@
+T-14 clock check; Korean console headings omitted, numeric output preserved.
+Command: w32tm /stripchart /computer:time.windows.com /samples:3 /dataonly
+16:12:54, +29.8841229s
+16:12:56, ����: 0x800705B4
+16:12:59, +29.8796355s
+2026-10-28T16:12:59.7606317+09:00
+Wed Oct 28 07:12:58 UTC 2026
+Offset sign: positive means PC is behind NTP. Two successes: +29.8841229s / +29.8796355s; one timeout 0x800705B4.
+No PC clock synchronization command was run.

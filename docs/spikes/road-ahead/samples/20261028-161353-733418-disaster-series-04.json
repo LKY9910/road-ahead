@@ -1,0 +1,12 @@
+{
+  "requestedAtKst": "2026-10-28T16:13:53.733418+09:00",
+  "url": "https://openapi.its.go.kr:9443/disasterInfo?category=D&eventType=all&startDate=20261028&endDate=20261028&getType=json&apiKey=***",
+  "httpStatus": 200,
+  "headers": {
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Date": "Wed, 28 Oct 2026 07:14:23 GMT"
+  },
+  "body": "{\"header\":{\"resultCode\":0,\"resultMsg\":\"SUCCESS\"},\"body\":{\"totalCount\":1,\"items\":[{\"eventId\":\"FRF0000796\",\"category\":\"D\",\"eventType\":\"D07\",\"eventDetailType\":\"4\",\"status\":\"2\",\"startDate\":\"20261028135500\",\"endDate\":\"202610281500\",\"locationInfoType\":\"1\",\"locationInfo\":\"128.212762 38.08374\",\"locationGeometry\":\"\",\"socName\":\"강원특별자치도 인제군 인제읍 덕산리 263-7 대\",\"socExtent\":\"0\",\"linkId\":\"\",\"roadName\":\"\",\"roadNo\":\"\",\"roadDrcType\":\"\",\"lanesBlockType\":\"\",\"lanesBlocked\":\"\",\"message\":\"[위험경보] 산불에 따른 인근 도로 주의 요망\"}]}}",
+  "durationMs": 98.58
+}

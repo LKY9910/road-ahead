@@ -1,0 +1,13 @@
+Compiled from "CarAudioManager.java"
+public final class android.car.media.CarAudioManager {
+  public static final int AUDIO_FEATURE_AUDIO_MIRRORING;
+  public static final int AUDIO_FEATURE_DYNAMIC_ROUTING;
+  public static final int AUDIO_FEATURE_MIN_MAX_ACTIVATION_VOLUME;
+  public static final int AUDIO_FEATURE_OEM_AUDIO_SERVICE;
+  public static final int AUDIO_FEATURE_VOLUME_GROUP_EVENTS;
+  public static final int AUDIO_FEATURE_VOLUME_GROUP_MUTING;
+  android.car.media.CarAudioManager();
+  public boolean isAudioFeatureEnabled(int);
+  public void registerCarVolumeCallback(android.car.media.CarAudioManager$CarVolumeCallback);
+  public void unregisterCarVolumeCallback(android.car.media.CarAudioManager$CarVolumeCallback);
+}

@@ -1,0 +1,3 @@
+﻿10-27 16:13:51.461  2555  2555 D [GAA]   : AmbRecognitionService onCreate
+10-27 16:13:51.471  2555  2555 D [GAA]   : AmbRecognitionService onStartListening recognizerIntent Intent { act=android.speech.action.RECOGNIZE_SPEECH (has extras) }
+10-27 16:14:21.430  2555  2555 D [GAA]   : AmbRecognitionService onCancel

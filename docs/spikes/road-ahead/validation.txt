@@ -1,0 +1,12 @@
+T-14 validation
+PASS assembleDebug; debug APK installed
+PASS probe_api self-test: 5 assertions
+PASS analyze_samples self-test: 4 assertions
+PASS API summary: 146 requests (128 signal, 9 ITS, 9 weather)
+PASS local Markdown links
+PASS PLEOS_SDK sections 1-11 unchanged
+PASS restoration: 26 assertions
+PASS git diff --cached --check
+PASS git diff --cached --binary credential scan: 201 staged files
+PASS prior staged blob credential scan; no secret value emitted
+No push performed.

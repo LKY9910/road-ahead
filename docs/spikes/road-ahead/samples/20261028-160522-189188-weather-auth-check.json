@@ -1,0 +1,11 @@
+{
+  "requestedAtKst": "2026-10-28T16:05:22.189188+09:00",
+  "url": "https://apihub.kma.go.kr/api/typ04/url/road_file_down.php?roadNum=045&authKey=***",
+  "httpStatus": 401,
+  "headers": {
+    "Date": "Wed, 28 Oct 2026 07:05:52 GMT",
+    "Content-Type": "application/json"
+  },
+  "body": "{\n  \"result\" : {\n    \"status\" : 401,\n    \"message\" : \"유효한 인증키가 아닙니다.\"\n  }\n}",
+  "durationMs": 194.73
+}

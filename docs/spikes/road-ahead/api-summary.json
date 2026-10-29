@@ -1,0 +1,544 @@
+{
+  "endpoints": {
+    "/B551982/rti/crsrd_map_info": {
+      "requests": 2,
+      "httpStatuses": {
+        "200": 2
+      },
+      "applicationSuccesses": 2,
+      "successMedianMs": 107.42,
+      "successMaxMs": 117.28
+    },
+    "/B551982/rti/tl_drct_info": {
+      "requests": 126,
+      "httpStatuses": {
+        "200": 126
+      },
+      "applicationSuccesses": 118,
+      "successMedianMs": 149.67,
+      "successMaxMs": 323.3
+    },
+    "/disasterInfo": {
+      "requests": 7,
+      "httpStatuses": {
+        "200": 7
+      },
+      "applicationSuccesses": 7,
+      "successMedianMs": 109.74,
+      "successMaxMs": 137.0
+    },
+    "/api/typ04/url/road_file_down.php": {
+      "requests": 8,
+      "httpStatuses": {
+        "401": 1,
+        "502": 1,
+        "200": 3,
+        "503": 3
+      },
+      "applicationSuccesses": 3,
+      "successMedianMs": 265.51,
+      "successMaxMs": 328.25
+    },
+    "/eventInfo": {
+      "requests": 2,
+      "httpStatuses": {
+        "401": 1,
+        "200": 1
+      },
+      "applicationSuccesses": 1,
+      "successMedianMs": 1607.23,
+      "successMaxMs": 1607.23
+    },
+    "/api/typ01/url/road_stn_obs.php": {
+      "requests": 1,
+      "httpStatuses": {
+        "403": 1
+      },
+      "applicationSuccesses": 0,
+      "successMedianMs": null,
+      "successMaxMs": null
+    }
+  },
+  "signal": {
+    "1": {
+      "map": {
+        "stdgCd": "3100000000",
+        "lclgvNm": "울산광역시",
+        "crsrdId": "1",
+        "crsrdNm": "오지벌사거리",
+        "mapCtptIntLat": "35.5122390000",
+        "mapCtptIntLot": "129.4307520000",
+        "laneWdth": "",
+        "lmtSpdTypeNm": "",
+        "lmtSpd": "",
+        "crsrdEngNm": "",
+        "regId": "3100000000",
+        "regDt": "2026-04-02 09:29:20",
+        "totDt": "20260402092920"
+      },
+      "observations": 116,
+      "countdownScale": {
+        "ntStsgRmndCs": {
+          "validDecreases": 110,
+          "medianUnitsPerSecond": 1000.0,
+          "range": [
+            1000.0,
+            1000.0
+          ]
+        },
+        "etStsgRmndCs": {
+          "validDecreases": 108,
+          "medianUnitsPerSecond": 1000.0,
+          "range": [
+            1000.0,
+            1000.0
+          ]
+        },
+        "ntLtsgRmndCs": {
+          "validDecreases": 0,
+          "medianUnitsPerSecond": null,
+          "range": null
+        }
+      },
+      "transitions": {
+        "ntStsgSttsNm": [
+          {
+            "producerTime": "20261028162434",
+            "state": "stop-And-Remain",
+            "remainingRaw": "63000",
+            "sample": "20261028-162404-647028-signal-cycle-000.json"
+          },
+          {
+            "producerTime": "20261028162538",
+            "state": "protected-Movement-Allowed",
+            "remainingRaw": "82000",
+            "sample": "20261028-162509-058101-signal-cycle-030.json"
+          },
+          {
+            "producerTime": "20261028162700",
+            "state": "protected-clearance",
+            "remainingRaw": "4000",
+            "sample": "20261028-162631-043236-signal-cycle-068.json"
+          },
+          {
+            "producerTime": "20261028162704",
+            "state": "stop-And-Remain",
+            "remainingRaw": "73000",
+            "sample": "20261028-162635-431495-signal-cycle-070.json"
+          }
+        ],
+        "etStsgSttsNm": [
+          {
+            "producerTime": "20261028162434",
+            "state": "stop-And-Remain",
+            "remainingRaw": "4000",
+            "sample": "20261028-162404-647028-signal-cycle-000.json"
+          },
+          {
+            "producerTime": "20261028162438",
+            "state": "protected-Movement-Allowed",
+            "remainingRaw": "23000",
+            "sample": "20261028-162408-933046-signal-cycle-002.json"
+          },
+          {
+            "producerTime": "20261028162502",
+            "state": "protected-clearance",
+            "remainingRaw": "3000",
+            "sample": "20261028-162432-610988-signal-cycle-013.json"
+          },
+          {
+            "producerTime": "20261028162506",
+            "state": "stop-And-Remain",
+            "remainingRaw": "132000",
+            "sample": "20261028-162437-002010-signal-cycle-015.json"
+          },
+          {
+            "producerTime": "20261028162719",
+            "state": "protected-Movement-Allowed",
+            "remainingRaw": "22000",
+            "sample": "20261028-162650-373674-signal-cycle-077.json"
+          },
+          {
+            "producerTime": "20261028162741",
+            "state": "protected-clearance",
+            "remainingRaw": "4000",
+            "sample": "20261028-162711-817673-signal-cycle-087.json"
+          },
+          {
+            "producerTime": "20261028162745",
+            "state": "stop-And-Remain",
+            "remainingRaw": "133000",
+            "sample": "20261028-162716-125514-signal-cycle-089.json"
+          }
+        ]
+      },
+      "httpDateMinusProducerRangeSeconds": [
+        0.0,
+        1.0
+      ]
+    },
+    "10": {
+      "map": {
+        "stdgCd": "3100000000",
+        "lclgvNm": "울산광역시",
+        "crsrdId": "10",
+        "crsrdNm": "목화예식장",
+        "mapCtptIntLat": "35.5382010000",
+        "mapCtptIntLot": "129.3314370000",
+        "laneWdth": "",
+        "lmtSpdTypeNm": "",
+        "lmtSpd": "",
+        "crsrdEngNm": "",
+        "regId": "3100000000",
+        "regDt": "2026-04-02 09:29:20",
+        "totDt": "20260402092920"
+      },
+      "observations": 116,
+      "countdownScale": {
+        "ntStsgRmndCs": {
+          "validDecreases": 89,
+          "medianUnitsPerSecond": 1000.0,
+          "range": [
+            500.0,
+            2000.0
+          ]
+        },
+        "etStsgRmndCs": {
+          "validDecreases": 91,
+          "medianUnitsPerSecond": 1000.0,
+          "range": [
+            500.0,
+            228000.0
+          ]
+        },
+        "ntLtsgRmndCs": {
+          "validDecreases": 89,
+          "medianUnitsPerSecond": 1000.0,
+          "range": [
+            500.0,
+            2000.0
+          ]
+        }
+      },
+      "transitions": {
+        "ntStsgSttsNm": [
+          {
+            "producerTime": "20261028162434",
+            "state": "protected-Movement-Allowed",
+            "remainingRaw": "255000",
+            "sample": "20261028-162404-647028-signal-cycle-000.json"
+          },
+          {
+            "producerTime": "20261028162458",
+            "state": "protected-clearance",
+            "remainingRaw": "255000",
+            "sample": "20261028-162428-295558-signal-cycle-011.json"
+          },
+          {
+            "producerTime": "20261028162500",
+            "state": "stop-And-Remain",
+            "remainingRaw": "145000",
+            "sample": "20261028-162430-438598-signal-cycle-012.json"
+          },
+          {
+            "producerTime": "20261028162726",
+            "state": "protected-Movement-Allowed",
+            "remainingRaw": "30000",
+            "sample": "20261028-162656-784159-signal-cycle-080.json"
+          },
+          {
+            "producerTime": "20261028162756",
+            "state": "protected-clearance",
+            "remainingRaw": "4000",
+            "sample": "20261028-162726-906752-signal-cycle-094.json"
+          },
+          {
+            "producerTime": "20261028162801",
+            "state": "stop-And-Remain",
+            "remainingRaw": "144000",
+            "sample": "20261028-162731-274589-signal-cycle-096.json"
+          }
+        ],
+        "etStsgSttsNm": [
+          {
+            "producerTime": "20261028162434",
+            "state": "stop-And-Remain",
+            "remainingRaw": "255000",
+            "sample": "20261028-162404-647028-signal-cycle-000.json"
+          },
+          {
+            "producerTime": "20261028162527",
+            "state": "protected-Movement-Allowed",
+            "remainingRaw": "81000",
+            "sample": "20261028-162458-306484-signal-cycle-025.json"
+          },
+          {
+            "producerTime": "20261028162650",
+            "state": "protected-clearance",
+            "remainingRaw": "2000",
+            "sample": "20261028-162620-259970-signal-cycle-063.json"
+          },
+          {
+            "producerTime": "20261028162654",
+            "state": "stop-And-Remain",
+            "remainingRaw": "93000",
+            "sample": "20261028-162624-555484-signal-cycle-065.json"
+          }
+        ]
+      },
+      "httpDateMinusProducerRangeSeconds": [
+        0.0,
+        1.0
+      ]
+    },
+    "100": {
+      "map": {
+        "stdgCd": "3100000000",
+        "lclgvNm": "울산광역시",
+        "crsrdId": "100",
+        "crsrdNm": "울산대학교",
+        "mapCtptIntLat": "35.5432930000",
+        "mapCtptIntLot": "129.2598940000",
+        "laneWdth": "",
+        "lmtSpdTypeNm": "",
+        "lmtSpd": "",
+        "crsrdEngNm": "",
+        "regId": "3100000000",
+        "regDt": "2026-04-02 09:29:20",
+        "totDt": "20260402092920"
+      },
+      "observations": 116,
+      "countdownScale": {
+        "ntStsgRmndCs": {
+          "validDecreases": 110,
+          "medianUnitsPerSecond": 1000.0,
+          "range": [
+            1000.0,
+            1000.0
+          ]
+        },
+        "etStsgRmndCs": {
+          "validDecreases": 0,
+          "medianUnitsPerSecond": null,
+          "range": null
+        },
+        "ntLtsgRmndCs": {
+          "validDecreases": 111,
+          "medianUnitsPerSecond": 1000.0,
+          "range": [
+            1000.0,
+            1000.0
+          ]
+        }
+      },
+      "transitions": {
+        "ntStsgSttsNm": [
+          {
+            "producerTime": "20261028162434",
+            "state": "stop-And-Remain",
+            "remainingRaw": "4000",
+            "sample": "20261028-162404-647028-signal-cycle-000.json"
+          },
+          {
+            "producerTime": "20261028162438",
+            "state": "protected-Movement-Allowed",
+            "remainingRaw": "113000",
+            "sample": "20261028-162408-933046-signal-cycle-002.json"
+          },
+          {
+            "producerTime": "20261028162632",
+            "state": "protected-clearance",
+            "remainingRaw": "3000",
+            "sample": "20261028-162602-974626-signal-cycle-055.json"
+          },
+          {
+            "producerTime": "20261028162636",
+            "state": "stop-And-Remain",
+            "remainingRaw": "62000",
+            "sample": "20261028-162607-273533-signal-cycle-057.json"
+          },
+          {
+            "producerTime": "20261028162739",
+            "state": "protected-Movement-Allowed",
+            "remainingRaw": "112000",
+            "sample": "20261028-162709-646544-signal-cycle-086.json"
+          }
+        ],
+        "etStsgSttsNm": [
+          {
+            "producerTime": "20261028162434",
+            "state": "",
+            "remainingRaw": "",
+            "sample": "20261028-162404-647028-signal-cycle-000.json"
+          }
+        ]
+      },
+      "httpDateMinusProducerRangeSeconds": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "weather": [
+    {
+      "sample": "20261028-161757-743967-weather-045-explicit.json",
+      "file": "RWS/PRODUCT/FOG/202610/28/R045_LINK_FOG_202610280705.csv",
+      "rows": 572,
+      "levels": {
+        "0": 568,
+        "2": 4
+      },
+      "warningExamples": [
+        {
+          "LINK_ID": "3580008302",
+          "F_NODE": "3580024800",
+          "T_NODE": "3580002000",
+          "F_LON": "128.238118",
+          "F_LAT": "36.362518",
+          "T_LON": "128.220901",
+          "T_LAT": "36.312729",
+          "FOG": "2"
+        },
+        {
+          "LINK_ID": "3580008402",
+          "F_NODE": "3580002000",
+          "T_NODE": "3580024800",
+          "F_LON": "128.221281",
+          "F_LAT": "36.312809",
+          "T_LON": "128.238256",
+          "T_LAT": "36.36246",
+          "FOG": "2"
+        },
+        {
+          "LINK_ID": "3900037901",
+          "F_NODE": "3900013800",
+          "T_NODE": "3900013801",
+          "F_LON": "128.503547",
+          "F_LAT": "35.331398",
+          "T_LON": "128.496189",
+          "T_LAT": "35.373",
+          "FOG": "2"
+        },
+        {
+          "LINK_ID": "3900766500",
+          "F_NODE": "3900307300",
+          "T_NODE": "3900013800",
+          "F_LON": "128.49339",
+          "F_LAT": "35.387838",
+          "T_LON": "128.503456",
+          "T_LAT": "35.331328",
+          "FOG": "2"
+        }
+      ]
+    },
+    {
+      "sample": "20261028-161757-743967-weather-045-explicit.json",
+      "file": "RWS/PRODUCT/FOG/202610/28/R045_1KM_FOG_202610280705.csv",
+      "rows": 1494,
+      "levels": {
+        "0": 1480,
+        "2": 14
+      },
+      "warningExamples": [
+        {
+          "LINK_ID": "3580008302",
+          "S_NUM": "3",
+          "F_LON": "128.23262",
+          "F_LAT": "36.353054",
+          "T_LON": "128.226517",
+          "T_LAT": "36.344654",
+          "FOG": "2",
+          "FLAG": "0",
+          "X_GRID": "376",
+          "Y_GRID": "364"
+        },
+        {
+          "LINK_ID": "3580008302",
+          "S_NUM": "4",
+          "F_LON": "128.226517",
+          "F_LAT": "36.344654",
+          "T_LON": "128.226044",
+          "T_LAT": "36.344002",
+          "FOG": "2",
+          "FLAG": "0",
+          "X_GRID": "375",
+          "Y_GRID": "364"
+        },
+        {
+          "LINK_ID": "3580008302",
+          "S_NUM": "5",
+          "F_LON": "128.226044",
+          "F_LAT": "36.344002",
+          "T_LON": "128.221527",
+          "T_LAT": "36.334908",
+          "FOG": "2",
+          "FLAG": "0",
+          "X_GRID": "375",
+          "Y_GRID": "363"
+        },
+        {
+          "LINK_ID": "3580008302",
+          "S_NUM": "6",
+          "F_LON": "128.221527",
+          "F_LAT": "36.334908",
+          "T_LON": "128.221329",
+          "T_LAT": "36.32571",
+          "FOG": "2",
+          "FLAG": "0",
+          "X_GRID": "375",
+          "Y_GRID": "362"
+        }
+      ]
+    },
+    {
+      "sample": "20261028-162328-535952-weather-045-0710-after-backoff.json",
+      "file": "RWS/PRODUCT/FOG/202610/28/R045_LINK_FOG_202610280710.csv",
+      "rows": 572,
+      "levels": {
+        "0": 572
+      },
+      "warningExamples": []
+    },
+    {
+      "sample": "20261028-162328-535952-weather-045-0710-after-backoff.json",
+      "file": "RWS/PRODUCT/FOG/202610/28/R045_1KM_FOG_202610280710.csv",
+      "rows": 1494,
+      "levels": {
+        "0": 1494
+      },
+      "warningExamples": []
+    },
+    {
+      "sample": "20261028-163700-910136-weather-045-0730.json",
+      "file": "RWS/PRODUCT/FOG/202610/28/R045_LINK_FOG_202610280730.csv",
+      "rows": 572,
+      "levels": {
+        "0": 572
+      },
+      "warningExamples": []
+    },
+    {
+      "sample": "20261028-163700-910136-weather-045-0730.json",
+      "file": "RWS/PRODUCT/FOG/202610/28/R045_1KM_FOG_202610280730.csv",
+      "rows": 1494,
+      "levels": {
+        "0": 1494
+      },
+      "warningExamples": []
+    }
+  ],
+  "disasterSeries": {
+    "samples": 6,
+    "spanSeconds": 150.55,
+    "distinctBodies": 1
+  },
+  "eventSnapshot": {
+    "sample": "20261028-163053-621566-its-event-seoul-authorized.json",
+    "count": 182,
+    "types": {
+      "공사": 153,
+      "기타돌발": 23,
+      "교통사고": 6
+    }
+  }
+}

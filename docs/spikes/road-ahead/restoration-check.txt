@@ -1,0 +1,30 @@
+PASS gear = 'Park'
+PASS speed_kph = 0
+PASS accelerator_pct = 0
+PASS brake_pct = 0
+PASS wiper.front.mode = 'Off'
+PASS wiper.front.washer = False
+PASS wiper.rear.mode = 'Off'
+PASS wiper.rear.washer = False
+PASS hvac.power_on = False
+PASS hvac.auto_on = False
+PASS hvac.ac_on = True
+PASS hvac.dual_on = False
+PASS hvac.recirc_on = False
+PASS hvac.front_defroster_on = False
+PASS hvac.rear_defroster_on = False
+PASS hvac.fan_speed = 3
+PASS hvac.driver.temp_c = 22.0
+PASS hvac.driver.seat_temp = 0
+PASS hvac.driver.fan_direction = 1
+PASS hvac.passenger.temp_c = 22.0
+PASS hvac.passenger.seat_temp = 0
+PASS hvac.passenger.fan_direction = 1
+PASS browser.active = False
+PASS timezone = 'Asia/Seoul'
+PASS test_app_stopped = False
+PASS last_saved_route_is_safe_guiding = True
+26 assertions passed
+GPS default restored; route cancelled again at shutdown.
+TTS trial attributes restored to MEDIA and engine released after each of three completed requests.
+AudioManager volume unchanged at 15/15; no PC volume change commands sent.

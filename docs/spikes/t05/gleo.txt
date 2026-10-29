@@ -1,0 +1,47 @@
+명령: adb -s emulator-5556 logcat -d
+Schema·응답 수신·표준 인식 서비스·ASSIST 세션 관련 행 발췌.
+10-27 15:47:59.771  2555  2987 I [GAA]   : [Schema] Loaded schema.json from com.ontheway:
+10-27 15:47:59.772  2555  2987 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 23, 4
+10-27 15:50:30.321  2555 28981 I [GAA]   : [Schema] Loaded schema.json from com.ontheway:
+10-27 15:50:30.321  2555 28981 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 23, 4
+10-27 15:50:30.449  2555 28981 I [GAA]   : [Schema] Loaded schema.json from com.ontheway:
+10-27 15:50:30.449  2555 28981 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 23, 4
+10-27 15:50:30.540  2555 28981 I [GAA]   : [Schema] Loaded schema.json from com.ontheway:
+10-27 15:50:30.540  2555 28981 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 23, 4
+10-27 15:50:30.928  2555 28980 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 23, 5
+10-27 15:50:34.327  2555 28981 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 22, 5
+10-27 15:50:35.179  2555 28981 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 22, 5
+10-27 15:50:49.837  2555 28981 I [GAA]   : [Schema] Loaded schema.json from com.ontheway:
+10-27 15:50:49.837  2555 28981 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 23, 5
+10-27 16:01:43.118  2555  8363 I [GAA]   : [Schema] Loaded schema.json from com.ontheway:
+10-27 16:01:43.118  2555  8363 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 23, 5
+10-27 16:01:43.191  2555 13546 I [GAA]   : [Schema] Loaded schema.json from com.ontheway:
+10-27 16:01:43.191  2555 13546 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 23, 5
+10-27 16:01:43.298  2555 13546 I [GAA]   : [Schema] Loaded schema.json from com.ontheway:
+10-27 16:01:43.298  2555 13546 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 23, 5
+10-27 16:01:43.687  2555  5852 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 23, 5
+10-27 16:01:44.370  2555  2555 D [GAA]   : processAppActionResponse data: Bundle[{response={"functionName":"SEARCH_PLACE","status":"success","message":"2km 앞 GS25가 있어요. 들를까요?"}, packageName=com.ontheway}] , status: Sleeping
+10-27 16:01:44.371  2555  2555 E [GAA]   : processAppActionResponse Reject AppActionResponse. [Bundle[{response={"functionName":"SEARCH_PLACE","status":"success","message":"2km 앞 GS25가 있어요. 들를까요?"}, packageName=com.ontheway}]]
+10-27 16:01:44.380  2555  2555 D [GAA]   : processAppActionResponse data: Bundle[{response={"functionName":"SEARCH_PLACE","status":"fail","message":"Invalid SEARCH_PLACE arguments."}, packageName=com.ontheway}] , status: Sleeping
+10-27 16:01:44.380  2555  2555 E [GAA]   : processAppActionResponse Reject AppActionResponse. [Bundle[{response={"functionName":"SEARCH_PLACE","status":"fail","message":"Invalid SEARCH_PLACE arguments."}, packageName=com.ontheway}]]
+10-27 16:01:44.387  2555  2555 D [GAA]   : processAppActionResponse data: Bundle[{response={"functionName":"SEARCH_PLACE","status":"fail","message":"Invalid SEARCH_PLACE arguments."}, packageName=com.ontheway}] , status: Sleeping
+10-27 16:01:44.387  2555  2555 E [GAA]   : processAppActionResponse Reject AppActionResponse. [Bundle[{response={"functionName":"SEARCH_PLACE","status":"fail","message":"Invalid SEARCH_PLACE arguments."}, packageName=com.ontheway}]]
+10-27 16:01:44.396  2555  2555 D [GAA]   : processAppActionResponse data: Bundle[{response={"functionName":"SEARCH_PLACE","status":"fail","message":"Invalid SEARCH_PLACE arguments."}, packageName=com.ontheway}] , status: Sleeping
+10-27 16:01:44.396  2555  2555 E [GAA]   : processAppActionResponse Reject AppActionResponse. [Bundle[{response={"functionName":"SEARCH_PLACE","status":"fail","message":"Invalid SEARCH_PLACE arguments."}, packageName=com.ontheway}]]
+10-27 16:01:46.168  2555  5852 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 22, 5
+10-27 16:01:46.679  2555  5852 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 22, 5
+10-27 16:02:06.947  2555 17983 W VoiceInteractionSession: Failure retrieving AssistStructure
+10-27 16:02:06.947  2555 17983 W VoiceInteractionSession: android.os.BadParcelableException: Got token 76006e, expected token 11111111
+10-27 16:02:06.949  2555 17987 W VoiceInteractionSession: Failure retrieving AssistStructure
+10-27 16:02:06.949  2555 17987 W VoiceInteractionSession: android.os.BadParcelableException: Got token 76006e, expected token 11111111
+10-27 16:02:06.954  2555  2555 D [GAA]   : AmbVoiceInteractionSession onCreate
+10-27 16:02:06.955  2555  2555 D [GAA]   : AmbVoiceInteractionSession onPrepareShow
+10-27 16:02:06.956  2555  2555 D [GAA]   : AmbVoiceInteractionSession onShow 3
+10-27 16:02:09.149  2555  2555 D [GAA]   : ListeningPanelDisplayed Event true
+10-27 16:03:54.160  2555  8353 I [GAA]   : [Schema] Loaded schema.json from com.ontheway:
+10-27 16:03:54.161  2555  8353 W [GAA]   : [Schema] onUpdateContextAppCapabilitySchema 23, 5
+10-27 16:12:07.611  2555  2555 D [GAA]   : processAppActionResponse data: Bundle[{response={"functionName":"SEARCH_PLACE","status":"success","message":"2km 앞 GS25가 있어요. 들를까요?"}, packageName=com.ontheway}] , status: Sleeping
+10-27 16:12:07.612  2555  2555 E [GAA]   : processAppActionResponse Reject AppActionResponse. [Bundle[{response={"functionName":"SEARCH_PLACE","status":"success","message":"2km 앞 GS25가 있어요. 들를까요?"}, packageName=com.ontheway}]]
+10-27 16:13:51.461  2555  2555 D [GAA]   : AmbRecognitionService onCreate
+10-27 16:13:51.471  2555  2555 D [GAA]   : AmbRecognitionService onStartListening recognizerIntent Intent { act=android.speech.action.RECOGNIZE_SPEECH (has extras) }
+10-27 16:14:21.430  2555  2555 D [GAA]   : AmbRecognitionService onCancel

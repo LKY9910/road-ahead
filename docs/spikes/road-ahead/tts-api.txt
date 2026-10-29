@@ -1,0 +1,23 @@
+Compiled from "SourceFile"
+public final class ai.pleos.playground.tts.TextToSpeech {
+  public static final ai.pleos.playground.tts.TextToSpeech$Companion Companion;
+  public ai.pleos.playground.tts.TextToSpeech(android.content.Context, ai.pleos.playground.tts.constant.Mode);
+  public ai.pleos.playground.tts.TextToSpeech(android.content.Context, ai.pleos.playground.tts.constant.Mode, int, kotlin.jvm.internal.DefaultConstructorMarker);
+  public static void speak$default(ai.pleos.playground.tts.TextToSpeech, java.lang.String, boolean, int, java.lang.Object);
+  static {};
+  public final void initialize();
+  public final void initialize(ai.pleos.playground.tts.listener.OnInitializeListener);
+  public final void release();
+  public final void addEventListener(ai.pleos.playground.tts.listener.EventListener);
+  public final void removeEventListener(ai.pleos.playground.tts.listener.EventListener);
+  public final void setAudioAttributes(android.media.AudioAttributes);
+  public final void registerApp(java.lang.String, java.lang.String, ai.pleos.playground.tts.listener.OnServerConnectionListener);
+  public final void registerApp(java.lang.String, java.lang.String, java.lang.String, kotlin.jvm.functions.Function0<kotlin.Unit>, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit>);
+  public final void registerApp(java.lang.String, kotlin.jvm.functions.Function0<kotlin.Unit>, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit>);
+  public final void speak(java.lang.String, boolean);
+  public final void stop();
+  public final void setLocale(java.util.Locale);
+  public final void setSpeakerType(java.lang.String);
+  public final void setAudioZoneId(int);
+  public final ai.pleos.playground.tts.api.AmbientAi getAmbientAi();
+}

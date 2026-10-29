@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">앞길 안내</string>
+    <string name="disclaimer">신호와 도로 위험 정보는 공공 데이터를 바탕으로 한 참고용 정보예요. 실제 신호와 도로 상황을 먼저 확인하세요.</string>
+</resources>

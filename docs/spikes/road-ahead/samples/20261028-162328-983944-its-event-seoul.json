@@ -1,0 +1,13 @@
+{
+  "requestedAtKst": "2026-10-28T16:23:28.983944+09:00",
+  "url": "https://openapi.its.go.kr:9443/eventInfo?type=all&eventType=all&minX=126.7&maxX=127.3&minY=37.3&maxY=37.8&getType=json&apiKey=***",
+  "httpStatus": 401,
+  "headers": {
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Date": "Wed, 28 Oct 2026 07:23:58 GMT"
+  },
+  "downloadBytes": 298,
+  "body": "{\"header\":{\"resultCode\":4009,\"resultMsg\":\"요청한 API는 인증키 신청 항목에 포함되어 있지 않습니다. 마이페이지 > 인증키 발급현황 > 인증키 상세정보 > 서비스 이용에서 호출 항목을 확인하거나 추가한 후 다시 이용해 주세요.\"},\"body\":\"\"}",
+  "durationMs": 118.51
+}

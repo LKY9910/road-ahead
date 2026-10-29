@@ -1,0 +1,53 @@
+2026-10-27 환경·권한·서비스 조회 발췌 (실제 AVD의 가상 위치만 사용)
+
+명령: adb -s emulator-5556 shell getprop ro.build.version.sdk
+34
+
+
+명령: adb -s emulator-5556 shell getprop persist.sys.timezone
+Asia/Seoul
+
+
+명령: adb -s emulator-5556 shell am get-current-user
+10
+
+
+명령: adb -s emulator-5556 shell settings get secure voice_interaction_service
+ai.umos.ambientai/.service.AiAssistantService
+
+
+명령: adb -s emulator-5556 shell pm query-services --brief --user 10 -a android.intent.action.TTS_SERVICE
+1 services found:
+  Service #0:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=false
+    ai.pleos.playground.caas/.service.speech.SpeechService
+
+
+명령: adb -s emulator-5556 shell pm query-services --brief --user 10 -a android.speech.RecognitionService
+1 services found:
+  Service #0:
+    priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+    ai.umos.ambientai/.service.AmbRecognitionService
+
+ai.pleos.playground.service.vehicle: versionName=2.3.22
+ai.pleos.playground.service.navi: versionName=3.0.4
+ai.umos.maps.android.navigation.app: versionName=3.3.2-rc5-hotfix.3
+ai.umos.ambientai: versionName=4.2.0.15
+ai.pleos.gleoai.model.provider: versionName=4.1.21-coral-aosp
+
+com.ontheway 선언·부여된 권한:
+      pleos.car.permission.CAR_DRIVE
+      pleos.car.permission.CAR_ENERGY
+      pleos.car.permission.CAR_SAFETY
+      pleos.car.permission.NAVI_ROUTE
+      pleos.car.permission.NAVI_ROUTE_SEARCH
+      pleos.car.permission.NAVI_CUSTOM_MAP
+      android.permission.RECORD_AUDIO
+      pleos.car.permission.NAVI_ROUTE_SEARCH: granted=true
+      pleos.car.permission.NAVI_CUSTOM_MAP: granted=true
+      pleos.car.permission.NAVI_ROUTE: granted=true
+      pleos.car.permission.CAR_ENERGY: granted=true
+      pleos.car.permission.CAR_SAFETY: granted=true
+      pleos.car.permission.CAR_DRIVE: granted=true
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]

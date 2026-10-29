@@ -1,0 +1,12 @@
+{
+  "requestedAtKst": "2026-10-28T16:25:30.283474+09:00",
+  "url": "https://apihub.kma.go.kr/api/typ01/url/road_stn_obs.php?mode=2&var=11&tm1=202610281620&help=1&disp=1&authKey=***",
+  "httpStatus": 403,
+  "headers": {
+    "Date": "Wed, 28 Oct 2026 07:26:00 GMT",
+    "Content-Type": "application/json"
+  },
+  "downloadBytes": 149,
+  "body": "{\n  \"result\" : {\n    \"status\" : 403,\n    \"message\" : \"활용신청이 필요한 API 입니다. 활용신청 후 다시 시도해 주십시오.\"\n  }\n}",
+  "durationMs": 335.57
+}

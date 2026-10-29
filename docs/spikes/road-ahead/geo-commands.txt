@@ -1,0 +1,23 @@
+emu geo fix 129.430552 35.512239 20 10 20
+OK
+
+
+shell am start -n com.roadahead.spike/.MainActivity --es op query
+Starting: Intent { cmp=com.roadahead.spike/.MainActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+
+emu geo fix 129.430652 35.512239 20 10 20
+OK
+
+
+emu geo fix 129.430752 35.512239 20 10 0
+OK
+
+
+shell am start -n com.roadahead.spike/.MainActivity --es op query
+Starting: Intent { cmp=com.roadahead.spike/.MainActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+
+shell am start -n com.roadahead.spike/.MainActivity --es op query
+Starting: Intent { cmp=com.roadahead.spike/.MainActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.

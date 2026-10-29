@@ -1,0 +1,120 @@
+명령: adb -s emulator-5556 logcat -d -s T05:I "*:S"
+2026-10-27 Asia/Seoul. 같은 항목의 같은 값 반복은 생략한 발췌. 서로 다른 APK 실행 포함.
+10-27 15:48:00.146 17506 17506 I T05     : 14 멀티 윈도우 = inMultiWindowMode=true
+10-27 15:48:00.146 17506 17506 I T05     : 15 Gleo = schema.json 포함, Gleo의 실제 호출 대기
+10-27 15:48:00.175 17506 17506 I T05     : 01 주차 브레이크 = 미지원: Brake 2.3.2는 페달만 제공 (정차 판정에 사용 금지)
+10-27 15:48:00.176 17506 17506 I T05     : 03 capability = SDK에 RangeRemaining capability API 없음
+10-27 15:48:00.176 17506 17506 I T05     : 04 충전 중 여부 = 미지원: 충전 스위치는 실제 충전 중 상태가 아님; 구독 API 없음
+10-27 15:48:00.967 17506 17506 I T05     : 12 STT available = true
+10-27 15:48:00.970 17506 17506 I T05     : 13 TTS 초기화 = -1
+10-27 15:48:00.973 17506 17506 I T05     : 11 CarUxRestrictions = requiresDO=false, active=0
+10-27 15:48:00.999 17506 17506 I T05     : 10 Navi 연결 = connected: SDK 3.0.5
+10-27 15:48:01.000 17506 17506 I T05     : 06~09 정보 조회 = 요청 전송 (콜백과 구분)
+10-27 15:48:01.045 17506 17532 I T05     : 06 목적지 = DestinationInfo(latitude=0.0, longitude=0.0, displayLatitude=null, displayLongitude=null, name=, address=, remainDistance=0, remainTime=0, tollFare=0, poiId=, poiSubId=null, poiProvider=)
+10-27 15:48:01.045 17506 17532 I T05     : 06 잔여 거리·시간 = 0m / 0s
+10-27 15:48:01.045 17506 17532 I T05     : 09 경유 후 시간 차이 = 경유 요청 전
+10-27 15:48:01.066 17506 17532 I T05     : 06 TBT = []
+10-27 15:48:01.073 17506 17532 I T05     : 07 최근 목적지 = []
+10-27 15:48:01.078 17506 17532 I T05     : 08 현재 위치 = CurrentLocationInfo(latitude=37.4127212, longitude=127.094681, heading=0.0, address=수정구 시흥동, routeId=, currentRouteIndex=0)
+10-27 15:48:01.087 17506 17532 I T05     : 06 경로 상태 = RouteStateInfo(termsAgreement=true, naviMode=SAFE_GUIDING, isRouting=false, routeOption=RECOMMENDED, remainDestinationChargingInt=0, remainWaypointChargingInt=[0, 0], trafficStatus=TrafficStatus(summary=TrafficCongestionSummary(totalCongestionDist=0.0, totalCongestionTime=60, totalCongestionAvrSpeed=0.0), congestionItemList=[], trafficEventList=[]))
+10-27 15:48:01.095 17506 17532 I T05     : 07 즐겨찾기 = [BookmarkInfo(latitude=0.0, longitude=0.0, displayLatitude=null, displayLongitude=null, name=, poiId=, poiSubId=null, address=, category=HOME, poiProvider=), BookmarkInfo(latitude=0.0, longitude=0.0, displayLatitude=null, displayLongitude=null, name=, poiId=, poiSubId=null, address=, category=OFFICE, poiProvider=)]
+10-27 15:48:01.104 17506 17533 I T05     : 09 경유지 목록 = []
+10-27 15:48:01.141 17506 17531 I T05     : 01 기어 콜백 = GEAR_PARK
+10-27 15:48:01.146 17506 17531 I T05     : 01 기어 현재값 = GEAR_PARK
+10-27 15:48:01.150 17506 17533 I T05     : 05 capability = 오류 ai.pleos.playground.vehicle.callback.exception.a: ERROR_NOT_SUPPORTED_PROPERTY
+10-27 15:48:01.151 17506 17531 I T05     : 01 페달 capability = READ
+10-27 15:48:01.151 17506 17532 I T05     : 04 충전 스위치 capability = READ_WRITE
+10-27 15:48:01.152 17506 17805 I T05     : 02 SOC capability = READ
+10-27 15:48:01.157 17506 17805 I T05     : 03 주행 가능 거리 콜백 = 0.0
+10-27 15:48:01.161 17506 17531 I T05     : 01 페달 현재값 = false
+10-27 15:48:01.161 17506 17805 I T05     : 03 주행 가능 거리 = 0.0
+10-27 15:48:01.161 17506 17805 I T05     : 04 충전 스위치 현재값 = false
+10-27 15:48:01.162 17506 17805 I T05     : 02 SOC 현재값 = 100
+10-27 15:48:01.166 17506 17805 I T05     : 02 SOC 콜백 = 100
+10-27 15:48:01.177 17506 17805 I T05     : 01 페달 콜백 = false
+10-27 15:49:23.438 17506 17818 I T05     : 02 SOC 콜백 = 60
+10-27 15:49:53.693 17506 17805 I T05     : 03 주행 가능 거리 콜백 = 150000.0
+10-27 15:50:31.587 14983 14983 I T05     : 15 Gleo 수신 = action=SEARCH_PLACE, ACTION_PARAM={"category":"CONVENIENCE","near":"ROUTE_AHEAD"}
+10-27 15:50:31.588 14983 14983 I T05     : 15 Gleo 인자 = {"category":"CONVENIENCE","near":"ROUTE_AHEAD"}
+10-27 15:50:31.590 14983 14983 I T05     : 15 Gleo 응답 전송 = {"functionName":"SEARCH_PLACE","status":"success","message":"2km 앞 GS25가 있어요. 들를까요?"}
+10-27 15:50:31.597 14983 14983 I T05     : 15 Gleo 수신 = action=SEARCH_PLACE, ACTION_PARAM={"category":"UNKNOWN","near":"DESTINATION"}
+10-27 15:50:31.597 14983 14983 I T05     : 15 Gleo 응답 전송 = {"functionName":"SEARCH_PLACE","status":"fail","message":"Invalid SEARCH_PLACE arguments."}
+10-27 15:50:31.597 14983 14983 I T05     : 15 Gleo 인자 오류 = Invalid category
+10-27 15:50:31.602 14983 14983 I T05     : 15 Gleo 수신 = action=SEARCH_PLACE, ACTION_PARAM={}
+10-27 15:50:31.610 14983 14983 I T05     : 15 Gleo 수신 = action=SEARCH_PLACE, ACTION_PARAM=invalid json
+10-27 15:50:31.610 14983 14983 I T05     : 15 Gleo 인자 오류 = Value invalid of type java.lang.String cannot be converted to JSONObject
+10-27 15:50:51.160 18275 18275 I T05     : 13 TTS ko-KR = -2
+10-27 15:50:51.160 18275 18275 I T05     : 13 TTS 엔진 = []
+10-27 15:50:51.414 18275 18564 I T05     : 03 주행 가능 거리 = 150000.0
+10-27 15:50:51.430 18275 18309 I T05     : 02 SOC 현재값 = 60
+10-27 15:51:42.604 18275 18275 I T05     : 06 requestRoute = 요청 전송 (성공 콜백 대기)
+10-27 15:51:42.726 18275 18275 I T05     : 13 speak 반환 = -1
+10-27 15:51:48.697 18275 18596 I T05     : 06 TBT = [TBTInfo(type=TURN_ARRIVE, distance=50.0, description=도착)]
+10-27 15:51:48.717 18275 18596 I T05     : 06 경로 시작 = RouteStartInfo(duration=60, distance=50, tollFare=0, name=42dot, remainDestinationChargingValue=77391)
+10-27 15:51:48.725 18275 18309 I T05     : 06 내비 상태 = ROUTE_DRIVE
+10-27 15:51:48.726 18275 18309 I T05     : 06 경로 상태 = RouteStateInfo(termsAgreement=true, naviMode=ROUTE_GUIDING, isRouting=false, routeOption=RECOMMENDED, remainDestinationChargingInt=77391, remainWaypointChargingInt=[0, 0], trafficStatus=TrafficStatus(summary=TrafficCongestionSummary(totalCongestionDist=0.0, totalCongestionTime=60, totalCongestionAvrSpeed=0.0), congestionItemList=[], trafficEventList=[]))
+10-27 15:51:49.717 18275 18309 I T05     : 06 주행 정보 = DrivingInfo(destination=DrivingState(name=42dot, duration=60, distance=50, remainDestinationChargingValue=77391, isChargingStation=false, isRecommendedChargingStation=false, maxChargingPower=0, targetSoc=10, chargerCount=0, chargingPlan=null), waypoints=[])
+10-27 15:53:22.670 18275 18275 I T05     : 12 STT 요청 = ko-KR (호스트 마이크 필요)
+10-27 15:53:22.752 18275 13897 I T05     : 08 현재 위치 = CurrentLocationInfo(latitude=37.4127212, longitude=127.094681, heading=0.0, address=수정구 시흥동, routeId=f1c9509e-d1d2-11f1-8849-72e3ec72fa29, currentRouteIndex=0)
+10-27 15:53:22.763 18275 13897 I T05     : 07 최근 목적지 = [RecentDestinationInfo(latitude=37.48544722, longitude=127.03636666, displayLatitude=null, displayLongitude=null, name=42dot, address=서울시 강남구 남부순환로 2621, poiId=36khp37hh8gqcm5nqhe5, poiSubId=null, poiProvider=)]
+10-27 15:53:23.388 18275 18275 I T05     : 09 addWaypoint = 요청 전송, remainTime 기준=0 (콜백 대기)
+10-27 15:53:23.751 18275 13896 I T05     : 06 목적지 = DestinationInfo(latitude=37.41289678, longitude=127.09383464, displayLatitude=null, displayLongitude=null, name=42dot, address=수정구 시흥동, remainDistance=50, remainTime=60, tollFare=0, poiId=36khp37hh8gqcm5nqhe5, poiSubId=null, poiProvider=)
+10-27 15:53:23.751 18275 13896 I T05     : 06 잔여 거리·시간 = 50m / 60s
+10-27 15:53:23.751 18275 13896 I T05     : 09 경유 후 시간 차이 = 60s (기준=0)
+10-27 15:53:24.169 18275 13896 I T05     : 06 경로 취소 = callback
+10-27 15:53:24.181 18275 13897 I T05     : 06 내비 상태 = FREE_DRIVE
+10-27 15:53:24.187 18275 13897 I T05     : 06 경로 상태 = RouteStateInfo(termsAgreement=true, naviMode=SAFE_GUIDING, isRouting=false, routeOption=RECOMMENDED, remainDestinationChargingInt=0, remainWaypointChargingInt=[0, 0], trafficStatus=TrafficStatus(summary=TrafficCongestionSummary(totalCongestionDist=0.0, totalCongestionTime=60, totalCongestionAvrSpeed=0.0), congestionItemList=[], trafficEventList=[]))
+10-27 15:53:24.187 18275 13897 I T05     : 06 주행 정보 = DrivingInfo(destination=DrivingState(name=42dot, duration=0, distance=0, remainDestinationChargingValue=0, isChargingStation=false, isRecommendedChargingStation=false, maxChargingPower=0, targetSoc=0, chargerCount=0, chargingPlan=null), waypoints=[])
+10-27 15:53:24.195 18275 13896 I T05     : 06 목적지 = DestinationInfo(latitude=0.0, longitude=0.0, displayLatitude=null, displayLongitude=null, name=, address=, remainDistance=0, remainTime=0, tollFare=0, poiId=, poiSubId=null, poiProvider=)
+10-27 15:53:24.195 18275 13896 I T05     : 06 잔여 거리·시간 = 0m / 0s
+10-27 15:53:24.195 18275 13896 I T05     : 09 경유 후 시간 차이 = 0s (기준=0)
+10-27 15:53:24.817 18275 13896 I T05     : 06 TBT = []
+10-27 15:53:29.485 18275 13896 I T05     : 09 경유지 변경 = WaypointChangedInfo(index=FIRST, cmdType=ADD, routeStartInfo=RouteStartInfo(duration=60, distance=10, tollFare=0, name=소프트웨어드림센터, remainDestinationChargingValue=77398))
+10-27 15:53:29.485 18275 13897 I T05     : 06 내비 상태 = ROUTE_DRIVE
+10-27 15:53:29.515 18275 13896 I T05     : 08 현재 위치 = CurrentLocationInfo(latitude=37.4127212, longitude=127.094681, heading=0.0, address=수정구 시흥동, routeId=2dec6f4c-d1d3-11f1-8855-72e3ec72fa29, currentRouteIndex=0)
+10-27 15:53:29.520 18275 13896 I T05     : 07 최근 목적지 = [RecentDestinationInfo(latitude=37.41275833, longitude=127.09481944, displayLatitude=null, displayLongitude=null, name=소프트웨어드림센터, address=경기도 성남시 수정구 창업로40번길 6, poiId=36khp2hdj2cfcm5nqhe3, poiSubId=null, poiProvider=), RecentDestinationInfo(latitude=37.48544722, longitude=127.03636666, displayLatitude=null, displayLongitude=null, name=42dot, address=서울시 강남구 남부순환로 2621, poiId=36khp37hh8gqcm5nqhe5, poiSubId=null, poiProvider=)]
+10-27 15:53:29.529 18275 13896 I T05     : 06 경로 상태 = RouteStateInfo(termsAgreement=true, naviMode=ROUTE_GUIDING, isRouting=false, routeOption=RECOMMENDED, remainDestinationChargingInt=77384, remainWaypointChargingInt=[77398, 0], trafficStatus=TrafficStatus(summary=TrafficCongestionSummary(totalCongestionDist=0.0, totalCongestionTime=60, totalCongestionAvrSpeed=0.0), congestionItemList=[], trafficEventList=[]))
+10-27 15:53:29.538 18275 13896 I T05     : 06 TBT = [TBTInfo(type=TURN_LEFT, distance=4.0, description=이름 없는 도로), TBTInfo(type=TURN_WAY, distance=7.0, description=경유), TBTInfo(type=TURN_RIGHT, distance=10.0, description=창업로40번길), TBTInfo(type=TURN_ARRIVE, distance=60.0, description=도착)]
+10-27 15:53:30.506 18275 13896 I T05     : 06 목적지 = DestinationInfo(latitude=37.41289678, longitude=127.09383464, displayLatitude=null, displayLongitude=null, name=42dot, address=수정구 시흥동, remainDistance=90, remainTime=60, tollFare=0, poiId=36khp37hh8gqcm5nqhe5, poiSubId=null, poiProvider=)
+10-27 15:53:30.506 18275 13896 I T05     : 06 잔여 거리·시간 = 90m / 60s
+10-27 15:53:30.506 18275 13896 I T05     : 09 경유 후 시간 차이 = 60s (기준=0)
+10-27 15:53:30.511 18275 13896 I T05     : 09 경유지 목록 = [WaypointInfo(name=소프트웨어드림센터, address=수정구 시흥동, latitude=0.0, longitude=0.0, displayLatitude=null, displayLongitude=null, remainDistance=10, remainTime=60, poiId=36khp2hdj2cfcm5nqhe3, poiSubId=null, poiProvider=)]
+10-27 15:53:30.566 18275 13896 I T05     : 06 주행 정보 = DrivingInfo(destination=DrivingState(name=42dot, duration=60, distance=90, remainDestinationChargingValue=77384, isChargingStation=false, isRecommendedChargingStation=false, maxChargingPower=0, targetSoc=10, chargerCount=0, chargingPlan=null), waypoints=[DrivingState(name=소프트웨어드림센터, duration=60, distance=10, remainDestinationChargingValue=77398, isChargingStation=false, isRecommendedChargingStation=false, maxChargingPower=0, targetSoc=10, chargerCount=0, chargingPlan=null)])
+10-27 15:58:07.604  4041  4412 I T05     : 04 충전 스위치 현재값 = true
+10-27 15:58:36.542  4041  4041 I T05     : 12 STT = 30초 내 최종 결과 없음 (취소)
+10-27 15:58:55.980  4041  4381 I T05     : 01 기어 콜백 = GEAR_DRIVE
+10-27 15:58:55.990  4041  4041 I T05     : 11 CarUxRestrictions = requiresDO=true, active=80
+10-27 15:59:16.977  4041  4041 I T05     : 01 표시등 capability = 오류 java.lang.SecurityException: checkTelltalesCapabilities need Permission
+10-27 15:59:17.168  4041 14191 I T05     : 08 현재 위치 = CurrentLocationInfo(latitude=37.4127212, longitude=127.094681, heading=0.0, address=수정구 시흥동, routeId=e3e84662-d1d3-11f1-8878-72e3ec72fa29, currentRouteIndex=0)
+10-27 15:59:17.251  4041  9373 I T05     : 01 기어 현재값 = GEAR_DRIVE
+10-27 15:59:18.162  4041 14191 I T05     : 09 경유 후 시간 차이 = 경유 요청 전
+10-27 15:59:45.226  4041 14191 I T05     : 01 기어 콜백 = GEAR_PARK
+10-27 15:59:45.254  4041  4041 I T05     : 11 CarUxRestrictions = requiresDO=false, active=0
+10-27 16:00:29.693  4041  4084 I T05     : 06 내비 상태 = FREE_DRIVE
+10-27 16:00:29.697  4041  9373 I T05     : 06 주행 정보 = DrivingInfo(destination=DrivingState(name=42dot, duration=0, distance=0, remainDestinationChargingValue=0, isChargingStation=false, isRecommendedChargingStation=false, maxChargingPower=0, targetSoc=0, chargerCount=0, chargingPlan=null), waypoints=[DrivingState(name=소프트웨어드림센터, duration=0, distance=0, remainDestinationChargingValue=0, isChargingStation=false, isRecommendedChargingStation=false, maxChargingPower=0, targetSoc=0, chargerCount=0, chargingPlan=null)])
+10-27 16:00:29.698  4041  9373 I T05     : 06 목적지 = DestinationInfo(latitude=0.0, longitude=0.0, displayLatitude=null, displayLongitude=null, name=, address=, remainDistance=0, remainTime=0, tollFare=0, poiId=, poiSubId=null, poiProvider=)
+10-27 16:00:29.698  4041  9373 I T05     : 06 잔여 거리·시간 = 0m / 0s
+10-27 16:00:29.698  4041  9373 I T05     : 09 경유지 목록 = []
+10-27 16:00:29.700  4041  9373 I T05     : 06 경로 상태 = RouteStateInfo(termsAgreement=true, naviMode=SAFE_GUIDING, isRouting=false, routeOption=RECOMMENDED, remainDestinationChargingInt=0, remainWaypointChargingInt=[0, 0], trafficStatus=TrafficStatus(summary=TrafficCongestionSummary(totalCongestionDist=0.0, totalCongestionTime=60, totalCongestionAvrSpeed=0.0), congestionItemList=[], trafficEventList=[]))
+10-27 16:00:30.385  4041  9373 I T05     : 06 TBT = []
+10-27 16:00:35.018  4041  9373 I T05     : 06 내비 상태 = ROUTE_DRIVE
+10-27 16:00:35.034  4041  9373 I T05     : 08 현재 위치 = CurrentLocationInfo(latitude=37.4127212, longitude=127.094681, heading=0.0, address=수정구 시흥동, routeId=2b895a23-d1d4-11f1-8885-72e3ec72fa29, currentRouteIndex=0)
+10-27 16:00:35.054  4041  9373 I T05     : 06 경로 상태 = RouteStateInfo(termsAgreement=true, naviMode=ROUTE_GUIDING, isRouting=false, routeOption=RECOMMENDED, remainDestinationChargingInt=77391, remainWaypointChargingInt=[0, 0], trafficStatus=TrafficStatus(summary=TrafficCongestionSummary(totalCongestionDist=0.0, totalCongestionTime=60, totalCongestionAvrSpeed=0.0), congestionItemList=[], trafficEventList=[]))
+10-27 16:00:35.059  4041  9373 I T05     : 06 TBT = [TBTInfo(type=TURN_ARRIVE, distance=50.0, description=도착)]
+10-27 16:00:35.060  4041  9373 I T05     : 07 최근 목적지 = [RecentDestinationInfo(latitude=37.48544722, longitude=127.03636666, displayLatitude=null, displayLongitude=null, name=42dot, address=서울시 강남구 남부순환로 2621, poiId=36khp37hh8gqcm5nqhe5, poiSubId=null, poiProvider=), RecentDestinationInfo(latitude=37.41275833, longitude=127.09481944, displayLatitude=null, displayLongitude=null, name=소프트웨어드림센터, address=경기도 성남시 수정구 창업로40번길 6, poiId=36khp2hdj2cfcm5nqhe3, poiSubId=null, poiProvider=)]
+10-27 16:00:36.014  4041  4084 I T05     : 06 주행 정보 = DrivingInfo(destination=DrivingState(name=42dot, duration=60, distance=50, remainDestinationChargingValue=77391, isChargingStation=false, isRecommendedChargingStation=false, maxChargingPower=0, targetSoc=10, chargerCount=0, chargingPlan=null), waypoints=[])
+10-27 16:00:36.034  4041  4084 I T05     : 06 목적지 = DestinationInfo(latitude=37.41289678, longitude=127.09383464, displayLatitude=null, displayLongitude=null, name=42dot, address=수정구 시흥동, remainDistance=50, remainTime=60, tollFare=0, poiId=36khp37hh8gqcm5nqhe5, poiSubId=null, poiProvider=)
+10-27 16:00:36.034  4041  4084 I T05     : 06 잔여 거리·시간 = 50m / 60s
+10-27 16:01:12.306  8403  8403 I T05     : 15 Gleo 수신 = action=SEARCH_PLACE, ACTION_PARAM={"category":"CONVENIENCE","near":"ROUTE_AHEAD"}
+10-27 16:01:12.309  8403  8403 I T05     : 15 Gleo 응답 전송 = {"functionName":"SEARCH_PLACE","status":"success","message":"2km 앞 GS25가 있어요. 들를까요?"}
+10-27 16:01:14.333  8403  8745 I T05     : 01 기어 현재값 = GEAR_PARK
+10-27 16:01:14.336  8403  8745 I T05     : 05 누적 capability = 오류 ai.pleos.playground.vehicle.callback.exception.a: ERROR_NOT_SUPPORTED_PROPERTY
+10-27 16:01:14.337  8403  8745 I T05     : 05 충전 이후 capability = 오류 ai.pleos.playground.vehicle.callback.exception.a: ERROR_NOT_SUPPORTED_PROPERTY
+10-27 16:01:44.378 13863 13863 I T05     : 15 Gleo 수신 = action=SEARCH_PLACE, ACTION_PARAM={"category":"UNKNOWN","near":"DESTINATION"}
+10-27 16:01:44.379 13863 13863 I T05     : 15 Gleo 인자 오류 = Invalid category
+10-27 16:01:44.380 13863 13863 I T05     : 15 Gleo 응답 전송 = {"functionName":"SEARCH_PLACE","status":"fail","message":"Invalid SEARCH_PLACE arguments."}
+10-27 16:01:44.384 13863 13863 I T05     : 15 Gleo 수신 = action=SEARCH_PLACE, ACTION_PARAM={}
+10-27 16:01:44.394 13863 13863 I T05     : 15 Gleo 수신 = action=SEARCH_PLACE, ACTION_PARAM=invalid json
+10-27 16:01:44.394 13863 13863 I T05     : 15 Gleo 인자 오류 = Value invalid of type java.lang.String cannot be converted to JSONObject
+10-27 16:12:07.105  6405  6405 I T05     : 15 Gleo 수신 = action=SEARCH_PLACE, ACTION_PARAM={category:CONVENIENCE,near:ROUTE_AHEAD}
+10-27 16:12:07.107  6405  6405 I T05     : 15 Gleo 응답 전송 = {"functionName":"SEARCH_PLACE","status":"success","message":"2km 앞 GS25가 있어요. 들를까요?"}

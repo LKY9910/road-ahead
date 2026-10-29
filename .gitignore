@@ -1,0 +1,25 @@
+# Android / Gradle
+.gradle/
+build/
+/local.properties
+/captures
+.externalNativeBuild/
+.cxx/
+*.iml
+.idea/
+.kotlin/
+
+# Signing keys and secrets
+*.jks
+*.keystore
+keystore.properties
+.env
+/api
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Contest submission paperwork with personal info / signatures
+docs/forms/

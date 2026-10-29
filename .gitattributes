@@ -1,0 +1,14 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+gradlew text eol=lf
+
+*.png binary
+*.jpg binary
+*.apk binary
+*.jar binary
+*.docx binary
+*.mp4 binary
+
+# Left out of the submission repo (tools/export-submission.sh)
+프로젝트1 export-ignore
