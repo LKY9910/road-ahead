@@ -8,6 +8,7 @@ import android.graphics.drawable.GradientDrawable
 import android.graphics.text.LineBreakConfig
 import android.os.Build
 import android.provider.Settings
+import android.text.Layout
 import android.text.TextUtils
 import android.util.Log
 import android.view.Gravity
@@ -215,8 +216,7 @@ class OverlayCard(context: Context) {
         topMargin = dp(top); bottomMargin = dp(bottom)
     }
 
-    private fun flowText(value: String, size: Float, height: Int, color: String = "#FFFFFF", medium: Boolean = false) = TextView(context).apply {
-        applyKoreanWordBreak()
+    private fun flowText(value: String, size: Float, height: Int, color: String = "#FFFFFF", medium: Boolean = false) = cardTextView().apply {
         text = value
         textSize = size
         includeFontPadding = false
@@ -233,8 +233,7 @@ class OverlayCard(context: Context) {
         view.setPadding(0, 0, 0, lineHeight - fontHeight)
     }
 
-    private fun text(value: String, size: Float, color: String = "#FFFFFF", lines: Int = 1) = TextView(context).apply {
-        applyKoreanWordBreak()
+    private fun text(value: String, size: Float, color: String = "#FFFFFF", lines: Int = 1) = cardTextView().apply {
         text = value
         textSize = size
         setTextColor(Color.parseColor(color))
@@ -242,12 +241,35 @@ class OverlayCard(context: Context) {
         ellipsize = TextUtils.TruncateAt.END
     }
 
-    private fun TextView.applyKoreanWordBreak() {
-        if (Build.VERSION.SDK_INT >= 33) {
-            textLocale = Locale.KOREAN
-            lineBreakWordStyle = LineBreakConfig.LINE_BREAK_WORD_STYLE_PHRASE
+    private fun cardTextView() = object : TextView(context) {
+        init {
+            breakStrategy = Layout.BREAK_STRATEGY_BALANCED
+            if (Build.VERSION.SDK_INT >= 33) {
+                textLocale = Locale.KOREAN
+                lineBreakWordStyle = LineBreakConfig.LINE_BREAK_WORD_STYLE_PHRASE
+            }
+        }
+
+        override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
+            super.onMeasure(widthMeasureSpec, heightMeasureSpec)
+            if (lineCount <= 1) return
+            val original = text
+            val separated = sentenceLines(original.toString())
+            if (separated == original.toString()) return
+            val originalHeight = measuredHeight
+            val originalLines = lineCount
+            text = separated
+            super.onMeasure(widthMeasureSpec, heightMeasureSpec)
+            // Prefer whole sentences only when the existing space holds them without clipping.
+            if (measuredHeight != originalHeight || lineCount != originalLines ||
+                (0 until layout.lineCount).any { layout.getEllipsisCount(it) > 0 }) {
+                text = original
+                super.onMeasure(widthMeasureSpec, heightMeasureSpec)
+            }
         }
     }
 
     private fun dp(value: Int) = (value * context.resources.displayMetrics.density).roundToInt()
 }
+
+internal fun sentenceLines(value: String): String = if ('\n' in value) value else value.replace(". ", ".\n")
