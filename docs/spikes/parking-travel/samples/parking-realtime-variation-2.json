@@ -1,0 +1,525 @@
+{
+  "requestedAtKst": "2026-10-29T13:16:10.747695+09:00",
+  "url": "https://apis.data.go.kr/B553881/Parking_v1/PrkRealtimeInfo_v1?pageNo=1&numOfRows=5000&format=2&serviceKey=***",
+  "callNumber": 45,
+  "httpStatus": 200,
+  "downloadBytes": 520201,
+  "response": {
+    "pageNo": "1",
+    "PrkRealtimeInfo": [
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "49",
+        "prk_center_id": "00000-19199-00007-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "68",
+        "prk_center_id": "00000-19199-00008-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "44",
+        "prk_center_id": "00000-19199-00014-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "60",
+        "pkfc_ParkingLots_total": "71",
+        "prk_center_id": "00000-19199-00017-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "51",
+        "pkfc_ParkingLots_total": "51",
+        "prk_center_id": "00000-19199-00019-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "60",
+        "prk_center_id": "00000-19199-00040-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "26",
+        "pkfc_ParkingLots_total": "33",
+        "prk_center_id": "00000-19199-00056-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "78",
+        "prk_center_id": "00000-19199-00057-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "78",
+        "prk_center_id": "00000-19199-00058-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "17",
+        "prk_center_id": "00000-19199-00090-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "11",
+        "prk_center_id": "00000-19199-01154-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "15",
+        "prk_center_id": "00000-19199-01155-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "26",
+        "prk_center_id": "00000-19199-01156-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "53",
+        "prk_center_id": "00000-19199-01157-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "24",
+        "prk_center_id": "00000-19199-01158-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "23",
+        "prk_center_id": "00000-19199-01159-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "4",
+        "prk_center_id": "00000-19199-01280-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "21",
+        "pkfc_ParkingLots_total": "21",
+        "prk_center_id": "00000-19199-01333-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "50",
+        "pkfc_ParkingLots_total": "50",
+        "prk_center_id": "00000-19199-01348-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "78",
+        "pkfc_ParkingLots_total": "78",
+        "prk_center_id": "00000-19199-01366-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "1",
+        "pkfc_ParkingLots_total": "50",
+        "prk_center_id": "00000-19199-01393-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "34",
+        "prk_center_id": "00000-19199-01397-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "50",
+        "prk_center_id": "00000-19199-01399-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "64",
+        "prk_center_id": "00000-19199-01400-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "102",
+        "pkfc_ParkingLots_total": "150",
+        "prk_center_id": "00000-19299-00048-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "22",
+        "prk_center_id": "00000-19299-00070-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "48",
+        "prk_center_id": "00000-19299-00071-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "57",
+        "prk_center_id": "00000-19299-00076-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "967",
+        "prk_center_id": "00000-19299-00077-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "20",
+        "prk_center_id": "00000-19299-00080-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "89",
+        "prk_center_id": "00000-19299-00081-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "68",
+        "prk_center_id": "00000-19299-00082-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "39",
+        "prk_center_id": "00000-19299-00086-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "34",
+        "prk_center_id": "00000-19299-00087-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "25",
+        "pkfc_ParkingLots_total": "44",
+        "prk_center_id": "00000-19299-00098-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "0",
+        "prk_center_id": "00000-19299-00118-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "24",
+        "prk_center_id": "00000-19299-00126-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "43",
+        "prk_center_id": "00000-19299-00128-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "6",
+        "prk_center_id": "00000-19299-00130-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "293",
+        "prk_center_id": "00000-19299-00209-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "16",
+        "pkfc_ParkingLots_total": "52",
+        "prk_center_id": "00000-19299-00214-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "18",
+        "prk_center_id": "00000-19299-00221-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "91",
+        "pkfc_ParkingLots_total": "400",
+        "prk_center_id": "00000-19299-00224-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "103",
+        "pkfc_ParkingLots_total": "152",
+        "prk_center_id": "00000-19299-00228-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "62",
+        "pkfc_ParkingLots_total": "270",
+        "prk_center_id": "00000-19299-00246-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "122",
+        "prk_center_id": "00000-19299-00250-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "31",
+        "pkfc_ParkingLots_total": "46",
+        "prk_center_id": "00000-19299-00260-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "-2",
+        "pkfc_ParkingLots_total": "42",
+        "prk_center_id": "00000-19299-00265-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "100",
+        "prk_center_id": "00000-19299-00492-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "100",
+        "prk_center_id": "00000-19299-00493-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "3",
+        "prk_center_id": "00000-19299-00500-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "29",
+        "prk_center_id": "00000-19299-00547-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "71",
+        "prk_center_id": "00000-19299-00568-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "55",
+        "prk_center_id": "00000-19299-00575-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "79",
+        "prk_center_id": "00000-19299-00600-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "23",
+        "prk_center_id": "00000-19299-00627-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "3",
+        "prk_center_id": "00000-19299-00647-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "11",
+        "prk_center_id": "00000-19299-00651-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "10",
+        "prk_center_id": "00000-19299-00652-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "34",
+        "prk_center_id": "00000-19299-00653-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "11",
+        "prk_center_id": "00000-19299-00654-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "32",
+        "prk_center_id": "00000-19299-00655-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "24",
+        "prk_center_id": "00000-19299-00656-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "35",
+        "prk_center_id": "00000-19299-00660-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "12",
+        "prk_center_id": "00000-19299-00661-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "59",
+        "prk_center_id": "00000-19299-00662-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "12",
+        "prk_center_id": "00000-19299-00663-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "17",
+        "prk_center_id": "00000-19299-00664-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "36",
+        "prk_center_id": "00000-19299-00665-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "36",
+        "prk_center_id": "00000-19299-00666-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "32",
+        "prk_center_id": "00000-19299-00667-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "22",
+        "prk_center_id": "00000-19299-00670-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "42",
+        "prk_center_id": "00000-19299-00671-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "29",
+        "prk_center_id": "00000-19299-00672-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "53",
+        "prk_center_id": "00000-19299-00673-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "95",
+        "prk_center_id": "00000-19299-00674-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "41",
+        "prk_center_id": "00000-19299-00675-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "48",
+        "prk_center_id": "00000-19299-00677-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "12",
+        "prk_center_id": "00000-19299-00678-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "5",
+        "prk_center_id": "00000-19299-00679-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "23",
+        "prk_center_id": "00000-19299-00680-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "20",
+        "prk_center_id": "00000-19299-00681-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "10",
+        "prk_center_id": "00000-19299-00682-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "179",
+        "prk_center_id": "00000-19299-00683-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "4",
+        "prk_center_id": "00000-19299-00687-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "8",
+        "prk_center_id": "00000-19299-00689-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "10",
+        "prk_center_id": "00000-19299-00690-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "4",
+        "prk_center_id": "00000-19299-00691-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "4",
+        "prk_center_id": "00000-19299-00692-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "4",
+        "prk_center_id": "00000-19299-00694-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "4",
+        "prk_center_id": "00000-19299-00695-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "3",
+        "prk_center_id": "00000-19299-00696-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "7",
+        "prk_center_id": "00000-19299-00697-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "4",
+        "prk_center_id": "00000-19299-00698-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "4",
+        "prk_center_id": "00000-19299-00699-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "12",
+        "prk_center_id": "00000-19299-00700-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "4",
+        "prk_center_id": "00000-19299-00701-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "5",
+        "prk_center_id": "00000-19299-00702-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "5",
+        "prk_center_id": "00000-19299-00703-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "6",
+        "prk_center_id": "00000-19299-00704-00-1"
+      }
+    ],
+    "resultCode": "0",
+    "totalCount": "4632",
+    "numOfRows": "5000",
+    "resultMsg": "SUCCESS"
+  },
+  "durationMs": 1355.98,
+  "excerpt": {
+    "response.PrkRealtimeInfo": {
+      "receivedRows": 4632,
+      "savedRows": 100
+    }
+  },
+  "fullRecordSha256": "beb16c27a3ae26e63d0be2f6aa627eea3a728aa161bf25b9cf0470cd49b2438b",
+  "note": "Response arrays excerpted; full redacted record retained in ignored spike .gradle/raw."
+}

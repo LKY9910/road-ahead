@@ -1,0 +1,47 @@
+{
+  "requestedAtKst": "2026-10-29T19:58:02.232437+09:00",
+  "request": {
+    "service": "KorPetTourService2",
+    "operation": "detailPetTour2",
+    "params": {
+      "MobileOS": "AND",
+      "MobileApp": "RoadAhead",
+      "_type": "json",
+      "pageNo": "1",
+      "contentId": "2783557"
+    }
+  },
+  "url": "https://apis.data.go.kr/B551011/KorPetTourService2/detailPetTour2?MobileOS=AND&MobileApp=RoadAhead&_type=json&pageNo=1&contentId=2783557&serviceKey=***",
+  "httpStatus": 200,
+  "downloadBytes": 484,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "contentid": "2783557",
+              "relaAcdntRiskMtr": "",
+              "acmpyTypeCd": "일부구역 동반가능",
+              "relaPosesFclty": "",
+              "relaFrnshPrdlst": "",
+              "etcAcmpyInfo": "- 맹견의 경우, 입마개 착용 필수\n- 배변봉투 지참 및 배변처리 필수",
+              "relaPurcPrdlst": "",
+              "acmpyPsblCpam": "전 견종 동반 가능",
+              "relaRntlPrdlst": "",
+              "acmpyNeedMtr": "목줄 착용"
+            }
+          ]
+        },
+        "numOfRows": 1,
+        "pageNo": 1,
+        "totalCount": 1
+      }
+    }
+  },
+  "durationMs": 141.0
+}

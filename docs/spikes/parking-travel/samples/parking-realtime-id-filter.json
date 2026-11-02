@@ -1,0 +1,67 @@
+{
+  "requestedAtKst": "2026-10-29T12:35:16.923462+09:00",
+  "url": "https://apis.data.go.kr/B553881/Parking_v1/PrkRealtimeInfo_v1?pageNo=1&numOfRows=10&format=2&prk_center_id=00000-19199-00007-00-1&serviceKey=***",
+  "callNumber": 15,
+  "httpStatus": 200,
+  "downloadBytes": 1233,
+  "response": {
+    "pageNo": "1",
+    "PrkRealtimeInfo": [
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "49",
+        "prk_center_id": "00000-19199-00007-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "68",
+        "prk_center_id": "00000-19199-00008-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "44",
+        "prk_center_id": "00000-19199-00014-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "60",
+        "pkfc_ParkingLots_total": "71",
+        "prk_center_id": "00000-19199-00017-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "51",
+        "pkfc_ParkingLots_total": "51",
+        "prk_center_id": "00000-19199-00019-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "60",
+        "prk_center_id": "00000-19199-00040-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "25",
+        "pkfc_ParkingLots_total": "33",
+        "prk_center_id": "00000-19199-00056-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "78",
+        "prk_center_id": "00000-19199-00057-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "78",
+        "prk_center_id": "00000-19199-00058-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "17",
+        "prk_center_id": "00000-19199-00090-00-1"
+      }
+    ],
+    "resultCode": "0",
+    "totalCount": "4632",
+    "numOfRows": "10",
+    "resultMsg": "SUCCESS"
+  },
+  "durationMs": 729.41
+}

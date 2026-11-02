@@ -1,0 +1,22 @@
+{
+  "requestedAtKst": "2026-10-29T12:35:20.531469+09:00",
+  "url": "https://apis.data.go.kr/B551011/KorService2/searchFestival2?MobileOS=ETC&MobileApp=RoadAheadProbe&_type=json&pageNo=1&numOfRows=1000&areaCode=1&eventStartDate=20261029&eventEndDate=20261029&serviceKey=***",
+  "callNumber": 13,
+  "httpStatus": 200,
+  "downloadBytes": 125,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": "",
+        "numOfRows": 0,
+        "pageNo": 1,
+        "totalCount": 0
+      }
+    }
+  },
+  "durationMs": 158.01
+}

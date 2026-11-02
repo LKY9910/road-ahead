@@ -3,9 +3,12 @@ package com.roadahead.feed
 import android.util.Log
 import com.roadahead.BuildConfig
 import com.roadahead.core.hazard.*
+import com.roadahead.core.forecast.*
 import com.roadahead.core.model.*
+import com.roadahead.core.parking.*
 import com.roadahead.core.signal.parseIntersectionPage
 import com.roadahead.core.signal.parseTotalCount
+import com.roadahead.core.tour.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.IOException
@@ -15,6 +18,30 @@ import java.net.URLDecoder
 import java.net.URLEncoder
 import java.time.*
 import java.time.format.DateTimeFormatter
+import java.util.Locale
+
+private fun tourCommonParams() = mapOf("MobileOS" to "AND", "MobileApp" to "RoadAhead", "_type" to "json", "pageNo" to "1")
+internal fun tourPlaceParams(point: GeoPoint): Map<String, String> = tourCommonParams() + mapOf(
+    "mapX" to String.format(Locale.ROOT, "%.3f", point.lon), "mapY" to String.format(Locale.ROOT, "%.3f", point.lat),
+    "radius" to "3000", "arrange" to "E", "numOfRows" to "300")
+internal fun tourFestivalParams(arrival: LocalDate): Map<String, String> {
+    val date = arrival.format(DateTimeFormatter.BASIC_ISO_DATE)
+    return tourCommonParams() + mapOf("eventStartDate" to date, "eventEndDate" to date, "numOfRows" to "1000")
+}
+
+internal fun forecastParams(point: GeoPoint, nowKst: LocalDateTime): Map<String, String> {
+    val base = forecastBase(nowKst)
+    val (x, y) = kmaGrid(point)
+    return mapOf("pageNo" to "1", "numOfRows" to "300", "dataType" to "JSON",
+        "base_date" to base.format(DateTimeFormatter.BASIC_ISO_DATE),
+        "base_time" to base.format(DateTimeFormatter.ofPattern("HHmm")), "nx" to "$x", "ny" to "$y")
+}
+
+internal fun seoulUrl(key: String): String =
+    "http://openapi.seoul.go.kr:8088/${URLEncoder.encode(key, "UTF-8")}/json/GetParkingInfo/1/1000/"
+
+internal fun maskedSeoulUrl(url: String): String =
+    url.replace(Regex("(?i)(https?://openapi\\.seoul\\.go\\.kr(?::[0-9]+)?/)[^/]+"), "$1***")
 
 internal fun requestUrl(endpoint: String, params: Map<String, String>): String = endpoint + "?" +
     params.entries.joinToString("&") { (name, raw) ->
@@ -27,10 +54,47 @@ internal fun weatherProduced(slot: String): Instant = LocalDateTime.parse(slot,
     DateTimeFormatter.ofPattern("yyyyMMddHHmm")).toInstant(ZoneOffset.UTC)
 
 class Apis {
-    private suspend fun get(endpoint: String, params: Map<String, String>): ByteArray = withContext(Dispatchers.IO) {
+    suspend fun tourPlaces(point: GeoPoint): List<TourItem> = parseTourPlaces(get(
+        "https://apis.data.go.kr/B551011/KorService2/locationBasedList2",
+        tourPlaceParams(point) + ("serviceKey" to BuildConfig.SIGNAL_KEY)).toString(Charsets.UTF_8))
+
+    suspend fun tourFestivals(arrival: LocalDate): List<TourItem> = parseTourFestivals(get(
+        "https://apis.data.go.kr/B551011/KorService2/searchFestival2",
+        tourFestivalParams(arrival) + ("serviceKey" to BuildConfig.SIGNAL_KEY)).toString(Charsets.UTF_8))
+
+    suspend fun tourPetPlaces(point: GeoPoint): List<TourItem> = parseTourPlaces(get(
+        "https://apis.data.go.kr/B551011/KorPetTourService2/locationBasedList2",
+        tourPlaceParams(point) + mapOf("numOfRows" to "100", "serviceKey" to BuildConfig.SIGNAL_KEY)).toString(Charsets.UTF_8))
+
+    suspend fun tourPetInfo(id: String): PetInfo? = parsePetInfo(get(
+        "https://apis.data.go.kr/B551011/KorPetTourService2/detailPetTour2",
+        tourCommonParams() + mapOf("contentId" to id, "serviceKey" to BuildConfig.SIGNAL_KEY)).toString(Charsets.UTF_8))
+
+    suspend fun tourFacilities(id: String): Set<Facility> = parseFacilities(get(
+        "https://apis.data.go.kr/B551011/KorWithService2/detailWithTour2",
+        tourCommonParams() + mapOf("contentId" to id, "serviceKey" to BuildConfig.SIGNAL_KEY)).toString(Charsets.UTF_8))
+
+    suspend fun forecast(point: GeoPoint, arrival: LocalDateTime): BadWeather? {
+        val params = forecastParams(point, LocalDateTime.now(ZoneId.of("Asia/Seoul")))
+        val result = arrivalWeather(parseForecast(get(
+            "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst",
+            params + ("serviceKey" to BuildConfig.SIGNAL_KEY)).toString(Charsets.UTF_8)), arrival)
+        Log.i("RoadAhead", "forecast base=${params["base_date"]}/${params["base_time"]} grid=${params["nx"]},${params["ny"]} arrival=$arrival weather=$result")
+        return result
+    }
+
+    suspend fun seoulParking(): List<SeoulLot> {
+        check(BuildConfig.SEOUL_KEY.isNotBlank()) { "API key missing" }
+        return parseSeoulParking(getUrl(seoulUrl(BuildConfig.SEOUL_KEY)).toString(Charsets.UTF_8))
+    }
+
+    private suspend fun get(endpoint: String, params: Map<String, String>): ByteArray {
         check(params.filterKeys { it in setOf("serviceKey", "apiKey", "authKey") }.values.all { it.isNotBlank() }) { "API key missing" }
-        val url = requestUrl(endpoint, params)
-        Log.i("RoadAhead", "GET ${maskedUrl(url)}")
+        return getUrl(requestUrl(endpoint, params))
+    }
+
+    private suspend fun getUrl(url: String): ByteArray = withContext(Dispatchers.IO) {
+        Log.i("RoadAhead", "GET ${maskedSeoulUrl(maskedUrl(url))}")
         val connection = URL(url).openConnection() as HttpURLConnection
         try {
             connection.connectTimeout = 10_000

@@ -36,6 +36,7 @@
 ## 커밋
 
 - 작업 단위로 작게 커밋한다. 자기가 바꾼 파일만 `git add <파일>`로 올린다. (`git add -A` 금지)
+- 여러 작업자가 같은 인덱스를 쓴다. 커밋 직전 `git diff --cached --stat`으로 자기 파일만 있는지 확인하고, 남의 스테이징이 보이면 `git commit --only <자기 파일>`로 커밋한다. 이미 남의 파일이 섞여 커밋됐으면 이력을 고쳐 쓰지 말고 HANDOFF에 적는다. (2026-10-29 두 번 섞임)
 - 메시지 형식: `[T-번호] 요약` (예: `[T-04] Vehicle SDK로 속도 구독 구현`)
 - 커밋 메시지 끝에 작성자 표시를 붙인다.
   - Claude: `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`

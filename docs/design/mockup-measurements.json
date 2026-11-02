@@ -1,0 +1,808 @@
+{
+  "screens": [
+    {
+      "screen": "companions",
+      "file": "companion-selection.png",
+      "viewport": {
+        "width": 2560,
+        "height": 1440,
+        "dpr": 1
+      },
+      "card": null,
+      "text": [],
+      "targets": [
+        {
+          "text": "아이",
+          "x": 1166.5,
+          "y": 476,
+          "width": 344,
+          "height": 112
+        },
+        {
+          "text": "어르신",
+          "x": 1534.5,
+          "y": 476,
+          "width": 344,
+          "height": 112
+        },
+        {
+          "text": "반려동물",
+          "x": 1902.5,
+          "y": 476,
+          "width": 344,
+          "height": 112
+        },
+        {
+          "text": "동행 없음",
+          "x": 1166.5,
+          "y": 645,
+          "width": 1080,
+          "height": 80
+        },
+        {
+          "text": "취소",
+          "x": 1166.5,
+          "y": 825,
+          "width": 160,
+          "height": 80
+        },
+        {
+          "text": "선택 완료",
+          "x": 1926.5,
+          "y": 825,
+          "width": 320,
+          "height": 80
+        }
+      ]
+    },
+    {
+      "screen": "none",
+      "file": "companion-none.png",
+      "viewport": {
+        "width": 2560,
+        "height": 1440,
+        "dpr": 1
+      },
+      "card": null,
+      "text": [],
+      "targets": [
+        {
+          "text": "아이",
+          "x": 1166.5,
+          "y": 476,
+          "width": 344,
+          "height": 112
+        },
+        {
+          "text": "어르신",
+          "x": 1534.5,
+          "y": 476,
+          "width": 344,
+          "height": 112
+        },
+        {
+          "text": "반려동물",
+          "x": 1902.5,
+          "y": 476,
+          "width": 344,
+          "height": 112
+        },
+        {
+          "text": "동행 없음",
+          "x": 1166.5,
+          "y": 645,
+          "width": 1080,
+          "height": 80
+        },
+        {
+          "text": "취소",
+          "x": 1166.5,
+          "y": 825,
+          "width": 160,
+          "height": 80
+        },
+        {
+          "text": "선택 완료",
+          "x": 1926.5,
+          "y": 825,
+          "width": 320,
+          "height": 80
+        }
+      ]
+    },
+    {
+      "screen": "first",
+      "file": "companion-first.png",
+      "viewport": {
+        "width": 2560,
+        "height": 1440,
+        "dpr": 1
+      },
+      "card": null,
+      "text": [],
+      "targets": [
+        {
+          "text": "아이",
+          "x": 1166.5,
+          "y": 476,
+          "width": 344,
+          "height": 112
+        },
+        {
+          "text": "어르신",
+          "x": 1534.5,
+          "y": 476,
+          "width": 344,
+          "height": 112
+        },
+        {
+          "text": "반려동물",
+          "x": 1902.5,
+          "y": 476,
+          "width": 344,
+          "height": 112
+        },
+        {
+          "text": "동행 없음",
+          "x": 1166.5,
+          "y": 645,
+          "width": 1080,
+          "height": 80
+        },
+        {
+          "text": "취소",
+          "x": 1166.5,
+          "y": 825,
+          "width": 160,
+          "height": 80
+        },
+        {
+          "text": "선택 완료",
+          "x": 1926.5,
+          "y": 825,
+          "width": 320,
+          "height": 80
+        }
+      ]
+    },
+    {
+      "screen": "settings",
+      "file": "companion-settings.png",
+      "viewport": {
+        "width": 2560,
+        "height": 1440,
+        "dpr": 1
+      },
+      "card": null,
+      "text": [],
+      "targets": [
+        {
+          "text": "",
+          "x": 2126.5,
+          "y": 388,
+          "width": 120,
+          "height": 80
+        },
+        {
+          "text": "바꾸기",
+          "x": 2086.5,
+          "y": 532.5,
+          "width": 160,
+          "height": 80
+        },
+        {
+          "text": "닫기",
+          "x": 1926.5,
+          "y": 672,
+          "width": 320,
+          "height": 80
+        }
+      ]
+    },
+    {
+      "screen": "travel-child",
+      "file": "travel-child.png",
+      "viewport": {
+        "width": 2560,
+        "height": 1440,
+        "dpr": 1
+      },
+      "card": {
+        "x": 1824,
+        "y": 693,
+        "width": 560,
+        "height": 567
+      },
+      "text": [
+        {
+          "text": "도착 때 비 예보 · 실내 명소 우선",
+          "x": 1864,
+          "y": 759,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "문화가 흐르는 서울광장",
+          "x": 1864,
+          "y": 808,
+          "width": 480,
+          "height": 38,
+          "font": "26px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 38,
+          "clientHeight": 38
+        },
+        {
+          "text": "축제 · 800m · 12월 31일까지",
+          "x": 1864,
+          "y": 846,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "서울 왕궁수문장 교대의식",
+          "x": 1864,
+          "y": 887,
+          "width": 480,
+          "height": 38,
+          "font": "26px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 38,
+          "clientHeight": 38
+        },
+        {
+          "text": "축제 · 800m · 12월 31일까지",
+          "x": 1864,
+          "y": 925,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "덕수궁 대한문",
+          "x": 1864,
+          "y": 966,
+          "width": 480,
+          "height": 38,
+          "font": "26px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 38,
+          "clientHeight": 38
+        },
+        {
+          "text": "관광지 · 800m",
+          "x": 1864,
+          "y": 1004,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "유모차 대여 · 수유실",
+          "x": 1864,
+          "y": 1037,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "국립현대미술관 서울",
+          "x": 1864,
+          "y": 1078,
+          "width": 480,
+          "height": 38,
+          "font": "26px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 38,
+          "clientHeight": 38
+        },
+        {
+          "text": "문화시설 · 800m",
+          "x": 1864,
+          "y": 1116,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "서소문성지역사박물관",
+          "x": 1864,
+          "y": 1157,
+          "width": 480,
+          "height": 38,
+          "font": "26px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 38,
+          "clientHeight": 38
+        },
+        {
+          "text": "문화시설 · 1.5km",
+          "x": 1864,
+          "y": 1195,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        }
+      ],
+      "targets": []
+    },
+    {
+      "screen": "travel-pet",
+      "file": "travel-pet.png",
+      "viewport": {
+        "width": 2560,
+        "height": 1440,
+        "dpr": 1
+      },
+      "card": {
+        "x": 1824,
+        "y": 772,
+        "width": 560,
+        "height": 488
+      },
+      "text": [
+        {
+          "text": "문화가 흐르는 서울광장",
+          "x": 1864,
+          "y": 854,
+          "width": 480,
+          "height": 38,
+          "font": "26px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 38,
+          "clientHeight": 38
+        },
+        {
+          "text": "축제 · 800m · 12월 31일까지",
+          "x": 1864,
+          "y": 892,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "서울 왕궁수문장 교대의식",
+          "x": 1864,
+          "y": 933,
+          "width": 480,
+          "height": 38,
+          "font": "26px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 38,
+          "clientHeight": 38
+        },
+        {
+          "text": "축제 · 800m · 12월 31일까지",
+          "x": 1864,
+          "y": 971,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "인사동",
+          "x": 1864,
+          "y": 1012,
+          "width": 480,
+          "height": 38,
+          "font": "26px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 38,
+          "clientHeight": 38
+        },
+        {
+          "text": "관광지 · 700m",
+          "x": 1864,
+          "y": 1050,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "일부 구역 동반",
+          "x": 1864,
+          "y": 1083,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "명동",
+          "x": 1864,
+          "y": 1124,
+          "width": 480,
+          "height": 38,
+          "font": "26px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 38,
+          "clientHeight": 38
+        },
+        {
+          "text": "관광지 · 1.4km",
+          "x": 1864,
+          "y": 1162,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "일부 구역 동반 · 목줄 착용",
+          "x": 1864,
+          "y": 1195,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        }
+      ],
+      "targets": []
+    },
+    {
+      "screen": "travel-weather",
+      "file": "travel-weather.png",
+      "viewport": {
+        "width": 2560,
+        "height": 1440,
+        "dpr": 1
+      },
+      "card": {
+        "x": 1824,
+        "y": 726,
+        "width": 560,
+        "height": 534
+      },
+      "text": [
+        {
+          "text": "도착 때 비 예보 · 실내 명소 우선",
+          "x": 1864,
+          "y": 792,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "문화가 흐르는 서울광장",
+          "x": 1864,
+          "y": 841,
+          "width": 480,
+          "height": 38,
+          "font": "26px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 38,
+          "clientHeight": 38
+        },
+        {
+          "text": "축제 · 800m · 12월 31일까지",
+          "x": 1864,
+          "y": 879,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "서울 왕궁수문장 교대의식",
+          "x": 1864,
+          "y": 920,
+          "width": 480,
+          "height": 38,
+          "font": "26px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 38,
+          "clientHeight": 38
+        },
+        {
+          "text": "축제 · 800m · 12월 31일까지",
+          "x": 1864,
+          "y": 958,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "국립현대미술관 서울",
+          "x": 1864,
+          "y": 999,
+          "width": 480,
+          "height": 38,
+          "font": "26px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 38,
+          "clientHeight": 38
+        },
+        {
+          "text": "문화시설 · 800m",
+          "x": 1864,
+          "y": 1037,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "서소문성지역사박물관",
+          "x": 1864,
+          "y": 1078,
+          "width": 480,
+          "height": 38,
+          "font": "26px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 38,
+          "clientHeight": 38
+        },
+        {
+          "text": "문화시설 · 1.5km",
+          "x": 1864,
+          "y": 1116,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        },
+        {
+          "text": "경성 부민관 폭탄 의거지",
+          "x": 1864,
+          "y": 1157,
+          "width": 480,
+          "height": 38,
+          "font": "26px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 38,
+          "clientHeight": 38
+        },
+        {
+          "text": "관광지 · 600m",
+          "x": 1864,
+          "y": 1195,
+          "width": 480,
+          "height": 29,
+          "font": "20px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 29,
+          "clientHeight": 29
+        }
+      ],
+      "targets": []
+    },
+    {
+      "screen": "parking-available",
+      "file": "parking-available.png",
+      "viewport": {
+        "width": 2560,
+        "height": 1440,
+        "dpr": 1
+      },
+      "card": {
+        "x": 1824,
+        "y": 870,
+        "width": 560,
+        "height": 390
+      },
+      "text": [
+        {
+          "text": "세종로 주차장",
+          "x": 1864,
+          "y": 952,
+          "width": 480,
+          "height": 48,
+          "font": "34px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 48,
+          "clientHeight": 48
+        },
+        {
+          "text": "빈자리781면",
+          "x": 1864,
+          "y": 1016,
+          "width": 480,
+          "height": 144,
+          "font": "16px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 144,
+          "clientHeight": 144
+        },
+        {
+          "text": "빈자리",
+          "x": 1864,
+          "y": 1093,
+          "width": 88.328125,
+          "height": 44,
+          "font": "32px",
+          "scrollWidth": 88,
+          "clientWidth": 88,
+          "scrollHeight": 45,
+          "clientHeight": 44
+        },
+        {
+          "text": "781",
+          "x": 1964.328125,
+          "y": 1016,
+          "width": 164.171875,
+          "height": 144,
+          "font": "96px",
+          "scrollWidth": 164,
+          "clientWidth": 164,
+          "scrollHeight": 144,
+          "clientHeight": 144
+        },
+        {
+          "text": "면",
+          "x": 2140.5,
+          "y": 1093,
+          "width": 29.453125,
+          "height": 44,
+          "font": "32px",
+          "scrollWidth": 29,
+          "clientWidth": 29,
+          "scrollHeight": 45,
+          "clientHeight": 44
+        },
+        {
+          "text": "목적지에서 200m · 5분에 430원",
+          "x": 1864,
+          "y": 1180,
+          "width": 480,
+          "height": 44,
+          "font": "30px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 44,
+          "clientHeight": 44
+        }
+      ],
+      "targets": []
+    },
+    {
+      "screen": "parking-unknown",
+      "file": "parking-unknown.png",
+      "viewport": {
+        "width": 2560,
+        "height": 1440,
+        "dpr": 1
+      },
+      "card": {
+        "x": 1824,
+        "y": 1034,
+        "width": 560,
+        "height": 226
+      },
+      "text": [
+        {
+          "text": "세종로 주차장",
+          "x": 1864,
+          "y": 1116,
+          "width": 480,
+          "height": 48,
+          "font": "34px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 48,
+          "clientHeight": 48
+        },
+        {
+          "text": "목적지에서 200m · 5분에 430원",
+          "x": 1864,
+          "y": 1180,
+          "width": 480,
+          "height": 44,
+          "font": "30px",
+          "scrollWidth": 480,
+          "clientWidth": 480,
+          "scrollHeight": 44,
+          "clientHeight": 44
+        }
+      ],
+      "targets": []
+    }
+  ],
+  "fontMeasurements": [
+    {
+      "text": "빈자리 10면",
+      "fontSize": 96,
+      "width": 481.34393310546875
+    },
+    {
+      "text": "빈자리 781면",
+      "fontSize": 96,
+      "width": 534.6239624023438
+    },
+    {
+      "text": "동국제강 공영주차장(시)",
+      "fontSize": 34,
+      "width": 343.39996337890625
+    },
+    {
+      "text": "목적지에서 200m · 5분에 430원",
+      "fontSize": 30,
+      "width": 408.83984375
+    }
+  ],
+  "prototypeChecks": "passed"
+}

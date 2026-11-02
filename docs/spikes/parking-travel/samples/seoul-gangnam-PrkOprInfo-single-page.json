@@ -1,0 +1,4625 @@
+{
+  "requestedAtKst": "2026-10-29T12:45:29.363915+09:00",
+  "url": "https://apis.data.go.kr/B553881/Parking_v1/PrkOprInfo_v1?pageNo=1&numOfRows=100000&format=2&sidoCd=11&sigunguCd=11680&serviceKey=***",
+  "callNumber": 24,
+  "httpStatus": 200,
+  "downloadBytes": 12700138,
+  "response": {
+    "pageNo": "1",
+    "PrkOprInfo": [
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1200",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06005-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "80000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1020",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06005-11191-00002-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "0",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "Thursday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "prk_center_id": "06021-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "150000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06023-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "150000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "3000",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        },
+        "Thursday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        },
+        "Holiday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        },
+        "Sunday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        },
+        "prk_center_id": "06031-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "0",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        },
+        "Saturday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "3000",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        },
+        "Thursday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        },
+        "Holiday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        },
+        "Sunday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        },
+        "prk_center_id": "06031-11191-00002-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "0",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        },
+        "Saturday": {
+          "opertn_start_time": "080000",
+          "opertn_end_time": "210000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "Thursday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "prk_center_id": "06038-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "150000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06046-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "150000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06048-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "150000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "Thursday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "prk_center_id": "06065-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "150000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "100000",
+          "opertn_end_time": "200000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06069-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "150000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06160-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "150000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06170-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "120000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "0",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "180000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "180000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "180000"
+        },
+        "Holiday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "180000"
+        },
+        "Sunday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "180000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "180000"
+        },
+        "prk_center_id": "06172-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "0",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "180000"
+        },
+        "Saturday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "180000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06173-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "120000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06175-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "150000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1200",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06177-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "80000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06178-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "150000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06193-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "150000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06198-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "150000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06236-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "150000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06280-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "120000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06284-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "120000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1560",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "150000"
+        },
+        "Sunday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "150000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06288-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "0",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "150000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06291-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "120000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06301-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "120000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06329-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "120000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "150000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "600",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "110000",
+          "opertn_end_time": "210000"
+        },
+        "Thursday": {
+          "opertn_start_time": "110000",
+          "opertn_end_time": "210000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "110000",
+          "opertn_end_time": "210000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "110000",
+          "opertn_end_time": "210000"
+        },
+        "prk_center_id": "06343-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "50000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "110000",
+          "opertn_end_time": "210000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06378-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "120000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "210000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "210000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "210000"
+        },
+        "Holiday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "210000"
+        },
+        "Sunday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "210000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "210000"
+        },
+        "prk_center_id": "06001-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "0",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "210000"
+        },
+        "Saturday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "210000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06029-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "180000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06032-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "150000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06066-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "180000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06089-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "280000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06119-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "180000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06130-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "180000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06153-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "280000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "600",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06171-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "70000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06187-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "180000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06205-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "180000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06208-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "280000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06218-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "280000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06244-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "280000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "2400",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06256-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "280000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1200",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06268-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "120000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1560",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "050000",
+          "opertn_end_time": "010000"
+        },
+        "Thursday": {
+          "opertn_start_time": "050000",
+          "opertn_end_time": "010000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "050000",
+          "opertn_end_time": "010000"
+        },
+        "Holiday": {
+          "opertn_start_time": "050000",
+          "opertn_end_time": "010000"
+        },
+        "Sunday": {
+          "opertn_start_time": "050000",
+          "opertn_end_time": "010000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "050000",
+          "opertn_end_time": "010000"
+        },
+        "prk_center_id": "06287-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "0",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "050000",
+          "opertn_end_time": "010000"
+        },
+        "Saturday": {
+          "opertn_start_time": "050000",
+          "opertn_end_time": "010000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1800",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06296-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "180000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1200",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06304-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "120000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1200",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06311-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "120000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1200",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06328-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "120000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "600",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06336-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "70000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "600",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06336-11291-00002-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "70000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "600",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06338-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "70000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "600",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06341-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "70000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "0",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06341-11291-00002-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "0",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "150000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "600",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "060000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "060000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "060000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "060000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06343-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "70000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "060000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "780",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "prk_center_id": "06350-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "0",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1920",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "prk_center_id": "06352-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "0",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1020",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "000000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06355-11191-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "0",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "150000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1200",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06358-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "120000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "1200",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Thursday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "prk_center_id": "06358-11291-00002-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "120000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "090000",
+          "opertn_end_time": "190000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "600",
+          "parking_chrge_adit_unit_chrge": "0",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Thursday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Holiday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Sunday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Wednesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "prk_center_id": "06365-11291-00001-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "70000",
+          "parking_chrge_one_day_chrge": "0"
+        },
+        "Tuesday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        },
+        "Saturday": {
+          "opertn_start_time": "000000",
+          "opertn_end_time": "230000"
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06000-29391-00004-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06000-29391-00005-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06000-29391-00006-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06001-29391-00002-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06003-29391-00002-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06005-29391-00005-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06005-29391-00006-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06005-29391-00007-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06005-29391-00008-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06005-29392-00009-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06008-29391-00002-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06009-29391-00003-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06009-29391-00005-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06009-29391-00006-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06009-29391-00007-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06009-29391-12380-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06009-29391-12381-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06009-29391-12382-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06009-29392-12383-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06009-29392-12384-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00004-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00006-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00007-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00009-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00012-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00013-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00014-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00015-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00016-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00017-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00018-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00019-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00020-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00021-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00022-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00023-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00024-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      },
+      {
+        "basic_info": {
+          "parking_chrge_bs_time": "30",
+          "parking_chrge_bs_chrge": "",
+          "parking_chrge_adit_unit_chrge": "",
+          "parking_chrge_adit_unit_time": "10"
+        },
+        "Monday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Thursday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "opertn_bs_free_time": "0",
+        "Friday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Holiday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Sunday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Wednesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "prk_center_id": "06010-29391-00025-00-1",
+        "fxamt_info": {
+          "parking_chrge_mon_unit_chrge": "",
+          "parking_chrge_one_day_chrge": ""
+        },
+        "Tuesday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        },
+        "Saturday": {
+          "opertn_start_time": "",
+          "opertn_end_time": ""
+        }
+      }
+    ],
+    "resultCode": "0",
+    "totalCount": "17084",
+    "numOfRows": "100000",
+    "resultMsg": "SUCCESS"
+  },
+  "durationMs": 4086.74,
+  "excerpt": {
+    "response.PrkOprInfo": {
+      "receivedRows": 17084,
+      "savedRows": 100
+    }
+  },
+  "fullRecordSha256": "89ff44fa2e78db67ccb2595a3764e76d7965d9b6e45a83ebed6f3945fbbe8b0d",
+  "note": "Response arrays excerpted; full redacted record retained in ignored spike .gradle/raw."
+}

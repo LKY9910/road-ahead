@@ -9,6 +9,22 @@ import java.io.ByteArrayOutputStream
 import java.util.zip.*
 
 class AnnouncerTest {
+    @Test fun `forget only releases the selected advice keys`() {
+        val a = Announcer()
+        val parking = Advice("parking:d1", Priority.NORMAL, "parking")
+        val travel = Advice("travel:d1", Priority.NORMAL, "travel")
+        val valid = listOf(sig, high, parking, travel)
+        assertEquals(high, a.pick(valid, false, false, 0))
+        assertEquals(sig, a.pick(valid, false, false, 20))
+        assertEquals(parking, a.pick(valid, false, false, 40))
+        assertEquals(travel, a.pick(valid, false, false, 60))
+        assertNull(a.pick(valid, false, false, 80))
+        a.forget(parking.key)
+        a.forget(travel.key)
+        assertEquals(parking, a.pick(valid, false, false, 100))
+        assertEquals(travel, a.pick(valid, false, false, 120))
+        assertNull(a.pick(valid, false, false, 140))
+    }
     private val sig = Advice("sig:a:red", Priority.SIGNAL, "s"); private val high = Advice("fog:1:DANGER", Priority.HIGH, "h")
     private val normal = Advice("evt:1:NORMAL", Priority.NORMAL, "n")
 

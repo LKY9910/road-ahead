@@ -6,6 +6,8 @@ class Announcer(private val naviGapMs: Long = 200, private val forgetAfterMs: Lo
     private val spoken = mutableMapOf<String, Long>()
     private var lastNaviActiveMs: Long? = null
 
+    fun forget(key: String) { spoken.remove(key) }
+
     fun pick(valid: List<Advice>, naviSpeaking: Boolean, selfSpeaking: Boolean, nowMonoMs: Long): Advice? {
         for (advice in valid) if (advice.key in spoken) spoken[advice.key] = nowMonoMs
         spoken.entries.removeAll { nowMonoMs - it.value > forgetAfterMs }

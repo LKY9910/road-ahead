@@ -1,0 +1,44 @@
+{
+  "destination": {
+    "name": "서울시청 주변",
+    "latitude": 37.567,
+    "longitude": 126.978
+  },
+  "date": "2026-10-29",
+  "sourceSample": "tour-seoul-ldong-today.json",
+  "note": "Original event row plus client-side haversine distance; no dist field in festival response.",
+  "candidate": {
+    "distanceMeters": 185.79,
+    "event": {
+      "addr1": "서울특별시 중구 을지로 지하12 (을지로1가)",
+      "addr2": "",
+      "zipcode": "04533",
+      "cat1": "",
+      "cat2": "",
+      "cat3": "",
+      "contentid": "2598331",
+      "contenttypeid": "15",
+      "createdtime": "20190420005447",
+      "eventstartdate": "20260506",
+      "eventenddate": "20261231",
+      "firstimage": "https://tong.visitkorea.or.kr/cms/resource/68/4059668_image2_1.jpg",
+      "firstimage2": "https://tong.visitkorea.or.kr/cms/resource/68/4059668_image3_1.jpg",
+      "cpyrhtDivCd": "Type3",
+      "mapx": "126.97878183534239",
+      "mapy": "37.56544835496842",
+      "mlevel": "6",
+      "modifiedtime": "20260422105729",
+      "areacode": "",
+      "sigungucode": "",
+      "tel": "02-2133-2543",
+      "title": "문화가 흐르는 서울광장",
+      "lDongRegnCd": "11",
+      "lDongSignguCd": "140",
+      "lclsSystm1": "EV",
+      "lclsSystm2": "EV02",
+      "lclsSystm3": "EV020900",
+      "progresstype": "선택안함",
+      "festivaltype": ""
+    }
+  }
+}

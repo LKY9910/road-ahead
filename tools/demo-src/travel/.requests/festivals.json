@@ -1,0 +1,17 @@
+{
+  "requestedAtKst": "2026-10-29T19:58:01.376677+09:00",
+  "request": {
+    "service": "KorService2",
+    "operation": "searchFestival2",
+    "params": {
+      "MobileOS": "AND",
+      "MobileApp": "RoadAhead",
+      "_type": "json",
+      "pageNo": "1",
+      "eventStartDate": "20261029",
+      "eventEndDate": "20261029",
+      "numOfRows": "1000"
+    }
+  },
+  "url": "https://apis.data.go.kr/B551011/KorService2/searchFestival2?MobileOS=AND&MobileApp=RoadAhead&_type=json&pageNo=1&eventStartDate=20261029&eventEndDate=20261029&numOfRows=1000&serviceKey=***"
+}

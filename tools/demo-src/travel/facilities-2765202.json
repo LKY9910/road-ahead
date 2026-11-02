@@ -1,0 +1,66 @@
+{
+  "requestedAtKst": "2026-10-29T19:58:04.468967+09:00",
+  "request": {
+    "service": "KorWithService2",
+    "operation": "detailWithTour2",
+    "params": {
+      "MobileOS": "AND",
+      "MobileApp": "RoadAhead",
+      "_type": "json",
+      "pageNo": "1",
+      "contentId": "2765202"
+    }
+  },
+  "url": "https://apis.data.go.kr/B551011/KorWithService2/detailWithTour2?MobileOS=AND&MobileApp=RoadAhead&_type=json&pageNo=1&contentId=2765202&serviceKey=***",
+  "httpStatus": 200,
+  "downloadBytes": 978,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "contentid": "2765202",
+              "parking": "지하1층에 5면 있음지하3층에 3면 있음",
+              "publictransport": "",
+              "route": "",
+              "ticketoffice": "",
+              "promotion": "",
+              "wheelchair": "휠체어 대여 가능(1층 안내데스크)",
+              "exit": "주 출입구 자동문, 수동문",
+              "elevator": "엘리베이터 있음",
+              "restroom": "지하1층과 지하3층에 있음",
+              "auditorium": "",
+              "room": "",
+              "handicapetc": "",
+              "braileblock": "계단과 엘리베이터 근처에 점자블록 있음",
+              "helpdog": "",
+              "guidehuman": "",
+              "audioguide": "음성안내서비스 있음",
+              "bigprint": "",
+              "brailepromotion": "",
+              "guidesystem": "",
+              "blindhandicapetc": "",
+              "signguide": "",
+              "videoguide": "",
+              "hearingroom": "",
+              "hearinghandicapetc": "",
+              "stroller": "유아차 대여 가능(1층 안내데스크)",
+              "lactationroom": "",
+              "babysparechair": "",
+              "infantsfamilyetc": "장애인 화장실 내 기저귀 교환대 있음"
+            }
+          ]
+        },
+        "numOfRows": 1,
+        "pageNo": 1,
+        "totalCount": 1
+      }
+    }
+  },
+  "durationMs": 125.0
+}

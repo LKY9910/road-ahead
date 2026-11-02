@@ -1,0 +1,223 @@
+{
+  "recordedAtKst": "2026-10-29T19:56:41.966001+09:00",
+  "destination": {
+    "id": null,
+    "name": "세종문화회관",
+    "lat": 37.57200988776222,
+    "lon": 126.97630706471843,
+    "coordinateSource": "https://access.visitkorea.or.kr/ms/detail.do?cotId=4d28e66c-2efa-47d7-881e-403875952880",
+    "presentInLocationList": false,
+    "seedCoordinateSource": "https://access.visitkorea.or.kr/ms/detail.do?cotId=4d28e66c-2efa-47d7-881e-403875952880",
+    "parkingTsPoint": [
+      37.5733652,
+      126.9736652
+    ],
+    "parkingDistanceMeters": 277.348,
+    "grid": [
+      60,
+      127
+    ]
+  },
+  "callsByService": {
+    "KorWithService2": 25,
+    "KorService2": 2,
+    "KorPetTourService2": 7,
+    "SeoulParking": 1,
+    "VilageFcstInfoService_2.0": 0
+  },
+  "places": {
+    "received": 244,
+    "eligible": 67,
+    "totalCount": 244
+  },
+  "festivals": {
+    "received": 69,
+    "totalCount": 69
+  },
+  "pet": {
+    "received": 10,
+    "eligible": 6,
+    "targets": [
+      "264353",
+      "2946228",
+      "264311",
+      "2783557",
+      "1019041",
+      "1037031"
+    ],
+    "populatedDetails": 6,
+    "confirmedScopes": {
+      "264353": "PARTIAL",
+      "2946228": "PARTIAL",
+      "264311": "PARTIAL",
+      "2783557": "PARTIAL",
+      "1019041": "ALL",
+      "1037031": "ALL"
+    }
+  },
+  "facilities": {
+    "targets": [
+      "1364932",
+      "1364975",
+      "1604697",
+      "735749",
+      "2373204",
+      "127015",
+      "1604824",
+      "605497",
+      "605961",
+      "264353",
+      "1934593",
+      "1019294",
+      "3106658",
+      "2765202",
+      "130263",
+      "2904906",
+      "1799798",
+      "130352",
+      "2692866",
+      "130355",
+      "2946228",
+      "264311",
+      "2783557",
+      "1019041",
+      "1037031"
+    ],
+    "nearestTen": [
+      "1364932",
+      "1364975",
+      "1604697",
+      "735749",
+      "2373204",
+      "127015",
+      "1604824",
+      "605497",
+      "605961",
+      "264353"
+    ],
+    "nearestCultureTen": [
+      "1934593",
+      "1019294",
+      "3106658",
+      "2765202",
+      "130263",
+      "2904906",
+      "1799798",
+      "130352",
+      "2692866",
+      "130355"
+    ],
+    "populatedDetails": 17,
+    "withRecognizedFacilities": 17,
+    "parsed": {
+      "1364932": [
+        "ELEVATOR",
+        "STEP_FREE"
+      ],
+      "1364975": [
+        "ELEVATOR",
+        "ACCESSIBLE_TOILET",
+        "STEP_FREE"
+      ],
+      "1604697": [
+        "ELEVATOR",
+        "ACCESSIBLE_TOILET",
+        "STEP_FREE"
+      ],
+      "735749": [],
+      "2373204": [],
+      "127015": [
+        "ACCESSIBLE_TOILET"
+      ],
+      "1604824": [
+        "STROLLER",
+        "LACTATION",
+        "WHEELCHAIR",
+        "ELEVATOR",
+        "ACCESSIBLE_TOILET",
+        "STEP_FREE"
+      ],
+      "605497": [],
+      "605961": [],
+      "264353": [
+        "ACCESSIBLE_TOILET",
+        "STEP_FREE"
+      ],
+      "1934593": [
+        "STROLLER",
+        "LACTATION",
+        "WHEELCHAIR",
+        "ELEVATOR",
+        "ACCESSIBLE_TOILET",
+        "STEP_FREE"
+      ],
+      "1019294": [
+        "WHEELCHAIR",
+        "ELEVATOR",
+        "ACCESSIBLE_TOILET",
+        "STEP_FREE"
+      ],
+      "3106658": [],
+      "2765202": [
+        "STROLLER",
+        "WHEELCHAIR",
+        "ELEVATOR",
+        "ACCESSIBLE_TOILET"
+      ],
+      "130263": [],
+      "2904906": [
+        "ELEVATOR",
+        "ACCESSIBLE_TOILET"
+      ],
+      "1799798": [
+        "ACCESSIBLE_TOILET",
+        "STEP_FREE"
+      ],
+      "130352": [
+        "WHEELCHAIR",
+        "ELEVATOR",
+        "ACCESSIBLE_TOILET",
+        "STEP_FREE"
+      ],
+      "2692866": [
+        "ELEVATOR",
+        "STEP_FREE"
+      ],
+      "130355": [
+        "ELEVATOR",
+        "ACCESSIBLE_TOILET",
+        "STEP_FREE"
+      ],
+      "2946228": [],
+      "264311": [
+        "ACCESSIBLE_TOILET"
+      ],
+      "2783557": [
+        "ACCESSIBLE_TOILET"
+      ],
+      "1019041": [
+        "ACCESSIBLE_TOILET",
+        "STEP_FREE"
+      ],
+      "1037031": []
+    }
+  },
+  "seoul": {
+    "id": "171721",
+    "name": "세종로 공영주차장(시)",
+    "linked": true,
+    "total": 1260.0,
+    "occupied": 411.0,
+    "updatedAtKst": "2026-10-29T19:58:43+09:00",
+    "ageSeconds": 40.98,
+    "fresh": true,
+    "available": 849,
+    "rows": 122
+  },
+  "forecast": {
+    "file": "forecast-20261029-1700.json",
+    "source": "docs/spikes/travel-companion/forecast-20261029-1700.json",
+    "sourceSha256": "95ea7ce958d2be164af616b004808f3c0f9efbe96499a727b18a5b6a67a97805",
+    "requestedAtKst": "2026-10-29 19:36 KST 직후 기록"
+  }
+}

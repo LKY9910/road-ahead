@@ -1,0 +1,48 @@
+{
+  "response": {
+    "header": {
+      "resultCode": "0000",
+      "resultMsg": "OK"
+    },
+    "body": {
+      "items": {
+        "item": [
+          {
+            "contentid": "127015",
+            "parking": "",
+            "publictransport": "",
+            "route": "",
+            "ticketoffice": "",
+            "promotion": "",
+            "wheelchair": "",
+            "exit": "",
+            "elevator": "",
+            "restroom": "장애인전용 화장실 있음 (지하에 위치 / 안내소 쪽 출입문을 통해 들어갈 수 있음)_무장애 편의시설",
+            "auditorium": "",
+            "room": "",
+            "handicapetc": "",
+            "braileblock": "",
+            "helpdog": "",
+            "guidehuman": "",
+            "audioguide": "",
+            "bigprint": "",
+            "brailepromotion": "",
+            "guidesystem": "",
+            "blindhandicapetc": "",
+            "signguide": "",
+            "videoguide": "",
+            "hearingroom": "",
+            "hearinghandicapetc": "",
+            "stroller": "",
+            "lactationroom": "",
+            "babysparechair": "",
+            "infantsfamilyetc": ""
+          }
+        ]
+      },
+      "numOfRows": 1,
+      "pageNo": 1,
+      "totalCount": 1
+    }
+  }
+}

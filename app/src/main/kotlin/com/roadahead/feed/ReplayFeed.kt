@@ -2,24 +2,48 @@ package com.roadahead.feed
 
 import android.content.Context
 import android.os.SystemClock
+import com.roadahead.car.navigationDestination
 import com.roadahead.core.RoadAheadEngine
 import com.roadahead.core.hazard.parseItsEvents
 import com.roadahead.core.hazard.parseWeatherCsv
 import com.roadahead.core.model.*
+import com.roadahead.core.forecast.*
+import com.roadahead.core.geo.distanceMeters
+import com.roadahead.core.parking.*
+import com.roadahead.core.tour.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 import kotlinx.serialization.json.*
-import java.time.Instant
+import java.time.*
+
+internal class RecordedTourSource(private val recording: JsonObject, private val started: Instant) : TourSource {
+    private fun body(key: String) = recording.getValue(key).jsonPrimitive.content
+    // Missing fixtures must escape collectTour's normal unavailable-data fallback.
+    private fun detail(key: String, id: String) = recording[key]?.jsonObject?.get(id)?.jsonPrimitive?.content
+        ?: throw AssertionError("Missing replay $key for $id")
+
+    override suspend fun places(point: GeoPoint) = parseTourPlaces(body("places"))
+    override suspend fun festivals(date: LocalDate) = parseTourFestivals(body("festivals"))
+    override suspend fun petPlaces(point: GeoPoint) = parseTourPlaces(body("petPlaces"))
+    override suspend fun petInfo(id: String) = parsePetInfo(detail("petDetails", id))
+    override suspend fun facilities(id: String) = parseFacilities(detail("facilities", id))
+    override suspend fun weather(point: GeoPoint, arrival: LocalDateTime): BadWeather? {
+        val shift = Duration.between(Instant.parse(body("forecastRecordedAt")), started)
+        return arrivalWeather(parseForecast(body("forecast")), arrival.minus(shift))
+    }
+}
 
 class ReplayFeed internal constructor(
     private val events: List<JsonObject>,
     private val monoMs: () -> Long,
-    private val now: () -> Instant
+    private val now: () -> Instant,
+    private val parkingLots: List<ParkingLot> = emptyList()
 ) : Feed {
     constructor(context: Context, asset: String) : this(
         context.assets.open(asset).bufferedReader().useLines { lines ->
             lines.map { Json.parseToJsonElement(it).jsonObject }.toList()
-        }, SystemClock::elapsedRealtime, Instant::now)
+        }, SystemClock::elapsedRealtime, Instant::now,
+        context.assets.open("parking/lots.tsv").bufferedReader().use { parseParkingAsset(it.readText()) })
 
     private var job: Job? = null
     private var lastSpeed: Double? = null
@@ -32,6 +56,15 @@ class ReplayFeed internal constructor(
     private val _naviSpeaking = MutableStateFlow(false)
     private val _data = MutableSharedFlow<DataEvent>(extraBufferCapacity = 16)
     private val _label = MutableStateFlow<String?>(null)
+    private val _destination = MutableStateFlow<Destination?>(null)
+    private val _parked = MutableStateFlow(false)
+    private var recordedTour: JsonObject? = null
+    private var recordedSeoul: JsonObject? = null
+    private var pendingTour: Triple<Destination, LocalDateTime, Set<Companion>>? = null
+    private var pendingParking: Destination? = null
+    private var activeScope: CoroutineScope? = null
+    private var started: Instant? = null
+    private var tourJob: Job? = null
     override val navMode = _navMode.asStateFlow()
     override val turn = _turn.asStateFlow()
     override val fix = _fix.asStateFlow()
@@ -41,6 +74,44 @@ class ReplayFeed internal constructor(
     override val naviSpeaking = _naviSpeaking.asStateFlow()
     override val data = _data.asSharedFlow()
     override val label = _label.asStateFlow()
+    override val destination = _destination.asStateFlow()
+    override val parked = _parked.asStateFlow()
+
+    override fun requestParking(dest: Destination) {
+        pendingParking = dest
+        emitParkingIfReady()
+    }
+
+    private fun emitParkingIfReady() {
+        val dest = pendingParking ?: return
+        val recording = recordedSeoul ?: return
+        val replayNow = now()
+        val recordedAt = Instant.parse(recording.getValue("recordedAt").jsonPrimitive.content)
+        val shift = Duration.between(recordedAt, replayNow)
+        val seoul = parseSeoulParking(recording.getValue("body").jsonPrimitive.content)
+        val nearby = parkingLots.filter { distanceMeters(dest.point, it.point) <= 500.0 }
+        // Reproduce recorded operating hours and fees, then move only the availability age.
+        val lots = applySeoul(nearby, seoul, recordedAt).map { it.copy(availableProduced = it.availableProduced?.plus(shift)) }
+        check(_data.tryEmit(DataEvent.ParkingLots(dest.key, lots))) { "Replay data buffer full" }
+        pendingParking = null
+    }
+
+    override fun requestTour(dest: Destination, arrival: LocalDateTime, companions: Set<Companion>) {
+        pendingTour = Triple(dest, arrival, companions)
+        emitTourIfReady()
+    }
+
+    private fun emitTourIfReady() {
+        val (dest, arrival, companions) = pendingTour ?: return
+        val recording = recordedTour ?: return
+        val scope = activeScope ?: return
+        pendingTour = null
+        tourJob?.cancel()
+        tourJob = scope.launch {
+            val data = collectTour(RecordedTourSource(recording, checkNotNull(started)), dest, arrival, companions)
+            _data.emit(DataEvent.TourData(dest.key, data))
+        }
+    }
 
     init {
         val times = events.map { it.getValue("t").jsonPrimitive.long }
@@ -49,6 +120,9 @@ class ReplayFeed internal constructor(
 
     override fun start(scope: CoroutineScope, engine: RoadAheadEngine) {
         check(job == null)
+        activeScope = scope
+        started = now()
+        emitTourIfReady()
         job = scope.launch {
             val started = monoMs()
             launch {
@@ -75,6 +149,12 @@ class ReplayFeed internal constructor(
         when (text("kind")) {
             "label" -> _label.value = text("text")
             "nav" -> _navMode.value = NavMode.valueOf(text("mode"))
+            "dest" -> _destination.value = if (event["clear"]?.jsonPrimitive?.booleanOrNull == true) null else
+                navigationDestination(number("lat"), number("lon"), text("name"), number("remainM"),
+                    event.getValue("remainSec").jsonPrimitive.int)
+            "gear" -> _parked.value = event.getValue("parked").jsonPrimitive.boolean
+            "tour" -> { recordedTour = event; emitTourIfReady() }
+            "seoul" -> { recordedSeoul = event; emitParkingIfReady() }
             "turn" -> _turn.value = Turn(event["movement"]?.jsonPrimitive?.contentOrNull?.let(Movement::valueOf), number("distanceM"))
             "fix" -> _fix.value = Fix(GeoPoint(number("lat"), number("lon")), event["bearing"]?.jsonPrimitive?.doubleOrNull, receivedMonoMs)
             "speed" -> { lastSpeed = number("mps"); emitSpeed(receivedMonoMs) }
@@ -90,5 +170,5 @@ class ReplayFeed internal constructor(
         }
     }
 
-    override fun stop() { job?.cancel() }
+    override fun stop() { job?.cancel(); tourJob?.cancel(); activeScope = null }
 }

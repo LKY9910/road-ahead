@@ -1,0 +1,56 @@
+{
+  "requestedAtKst": "2026-10-29T12:37:01.906267+09:00",
+  "url": "https://apis.data.go.kr/B551011/KorService2/searchFestival2?MobileOS=ETC&MobileApp=RoadAheadProbe&_type=json&pageNo=1&numOfRows=1000&areaCode=7&eventStartDate=20251220&eventEndDate=20251220&serviceKey=***",
+  "callNumber": 18,
+  "httpStatus": 200,
+  "downloadBytes": 939,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "addr1": "울산광역시 남구 대공원로 94 (옥동)",
+              "addr2": "",
+              "zipcode": "44660",
+              "cat1": "A02",
+              "cat2": "A0208",
+              "cat3": "A02081300",
+              "contentid": "3578130",
+              "contenttypeid": "15",
+              "createdtime": "20251203130821",
+              "eventstartdate": "20251205",
+              "eventenddate": "20251227",
+              "firstimage": "http://tong.visitkorea.or.kr/cms/resource/65/3578165_image2_1.jpg",
+              "firstimage2": "http://tong.visitkorea.or.kr/cms/resource/65/3578165_image3_1.jpg",
+              "cpyrhtDivCd": "Type3",
+              "mapx": "129.2935470479",
+              "mapy": "35.5316989268",
+              "mlevel": "6",
+              "modifiedtime": "20251203140138",
+              "areacode": "7",
+              "sigungucode": "2",
+              "tel": "052-271-8701",
+              "title": "울산의 밤, 크리스마스 마켓",
+              "lDongRegnCd": "31",
+              "lDongSignguCd": "140",
+              "lclsSystm1": "EV",
+              "lclsSystm2": "EV03",
+              "lclsSystm3": "EV030400",
+              "progresstype": "선택안함",
+              "festivaltype": "선택안함"
+            }
+          ]
+        },
+        "numOfRows": 1,
+        "pageNo": 1,
+        "totalCount": 1
+      }
+    }
+  },
+  "durationMs": 172.63
+}

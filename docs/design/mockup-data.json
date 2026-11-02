@@ -1,0 +1,128 @@
+{
+  "note": "Layout samples, not a live recommendation or verified entrance coordinate",
+  "destination": {
+    "label": "세종문화회관 인근 목업점",
+    "lat": 37.5725,
+    "lon": 126.976
+  },
+  "places": [
+    {
+      "contentid": "2373204",
+      "title": "경성 부민관 폭탄 의거지",
+      "contenttypeid": "12",
+      "mapy": "37.5675596526",
+      "mapx": "126.9768017026",
+      "distanceM": 553.868,
+      "displayDistance": "600m"
+    },
+    {
+      "contentid": "127015",
+      "title": "대한성공회 서울주교좌성당",
+      "contenttypeid": "12",
+      "mapy": "37.5674235431",
+      "mapx": "126.9760378872",
+      "distanceM": 564.487,
+      "displayDistance": "600m"
+    },
+    {
+      "contentid": "1605981",
+      "title": "덕수궁 대한문",
+      "contenttypeid": "12",
+      "mapy": "37.5651071556",
+      "mapx": "126.9765906796",
+      "distanceM": 823.695,
+      "displayDistance": "800m"
+    },
+    {
+      "contentid": "264311",
+      "title": "명동",
+      "contenttypeid": "12",
+      "mapy": "37.5621520930",
+      "mapx": "126.9849150050",
+      "distanceM": 1393.327,
+      "displayDistance": "1.4km"
+    },
+    {
+      "contentid": "264353",
+      "title": "인사동",
+      "contenttypeid": "12",
+      "mapy": "37.5754616322",
+      "mapx": "126.9835230884",
+      "distanceM": 740.289,
+      "displayDistance": "700m"
+    },
+    {
+      "contentid": "2765202",
+      "title": "서소문성지역사박물관",
+      "contenttypeid": "14",
+      "mapy": "37.5596854342",
+      "mapx": "126.9693637143",
+      "distanceM": 1540.296,
+      "displayDistance": "1.5km"
+    },
+    {
+      "contentid": "1934593",
+      "title": "국립현대미술관 서울",
+      "contenttypeid": "14",
+      "mapy": "37.5786500878",
+      "mapx": "126.9800038741",
+      "distanceM": 769.525,
+      "displayDistance": "800m"
+    }
+  ],
+  "festivals": [
+    {
+      "contentid": "2598331",
+      "title": "문화가 흐르는 서울광장",
+      "mapy": "37.56544835496842",
+      "mapx": "126.97878183534239",
+      "eventstartdate": "20260506",
+      "eventenddate": "20261231",
+      "distanceM": 821.546,
+      "displayDistance": "800m"
+    },
+    {
+      "contentid": "292961",
+      "title": "서울 왕궁수문장 교대의식",
+      "mapy": "37.565054919430565",
+      "mapx": "126.97657463444833",
+      "eventstartdate": "20260101",
+      "eventenddate": "20261231",
+      "distanceM": 829.404,
+      "displayDistance": "800m"
+    }
+  ],
+  "parking": {
+    "seoulId": "171721",
+    "kotsaId": "03172-11291-00001-00-1",
+    "name": "세종로 공영주차장(시)",
+    "lat": 37.5733652,
+    "lon": 126.9736652,
+    "total": 1260.0,
+    "occupied": 479.0,
+    "available": 781,
+    "updatedAt": "2026-10-29 18:56:43",
+    "basicMinutes": 5.0,
+    "basicFeeWon": 430.0,
+    "distanceM": 227.147,
+    "displayDistance": "200m",
+    "source": "../spikes/seoul-parking/summary.json"
+  },
+  "forecast": {
+    "source": "../spikes/travel-companion/forecast-20261029-1700.json",
+    "baseDate": "20261029",
+    "baseTime": "1700",
+    "fcstDate": "20261029",
+    "fcstTime": "2000",
+    "nx": 60,
+    "ny": 127,
+    "PTY": "1",
+    "POP": "60",
+    "TMP": "10"
+  },
+  "profileSamples": {
+    "child": "positive child amenities before indoor preference",
+    "pet": "verified partial pet areas only; no indoor place selected so no weather line",
+    "weather": "no companion; indoor culture places first"
+  }
+}

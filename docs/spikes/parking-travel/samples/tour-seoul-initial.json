@@ -1,0 +1,109 @@
+{
+  "requestedAtKst": "2026-10-29T12:33:13.476224+09:00",
+  "url": "https://apis.data.go.kr/B551011/KorService2/locationBasedList2?MobileOS=ETC&MobileApp=RoadAheadProbe&_type=json&pageNo=1&numOfRows=3&mapX=126.978&mapY=37.567&radius=3000&arrange=E&contentTypeId=12&serviceKey=***",
+  "callNumber": 1,
+  "httpStatus": 200,
+  "downloadBytes": 2249,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "addr1": "서울특별시 중구 세종대로 125 (태평로1가)",
+              "addr2": "",
+              "zipcode": "04519",
+              "areacode": "1",
+              "cat1": "A02",
+              "cat2": "A0201",
+              "cat3": "A02010700",
+              "contentid": "2373204",
+              "contenttypeid": "12",
+              "createdtime": "20160317011015",
+              "dist": "123.31838480553962",
+              "firstimage": "http://tong.visitkorea.or.kr/cms/resource/30/3077530_image2_1.JPG",
+              "firstimage2": "http://tong.visitkorea.or.kr/cms/resource/30/3077530_image3_1.JPG",
+              "cpyrhtDivCd": "Type3",
+              "mapx": "126.9768017026",
+              "mapy": "37.5675596526",
+              "mlevel": "6",
+              "modifiedtime": "20250820142318",
+              "sigungucode": "24",
+              "tel": "",
+              "title": "경성 부민관 폭탄 의거지",
+              "lDongRegnCd": "11",
+              "lDongSignguCd": "140",
+              "lclsSystm1": "HS",
+              "lclsSystm2": "HS01",
+              "lclsSystm3": "HS011200"
+            },
+            {
+              "addr1": "서울특별시 중구 세종대로21길 15 (정동)",
+              "addr2": "",
+              "zipcode": "04519",
+              "areacode": "1",
+              "cat1": "A02",
+              "cat2": "A0201",
+              "cat3": "A02010900",
+              "contentid": "127015",
+              "contenttypeid": "12",
+              "createdtime": "20030109090000",
+              "dist": "180.6563352705851",
+              "firstimage": "http://tong.visitkorea.or.kr/cms/resource/54/3568354_image2_1.jpg",
+              "firstimage2": "http://tong.visitkorea.or.kr/cms/resource/54/3568354_image3_1.jpg",
+              "cpyrhtDivCd": "Type1",
+              "mapx": "126.9760378872",
+              "mapy": "37.5674235431",
+              "mlevel": "6",
+              "modifiedtime": "20251201164049",
+              "sigungucode": "24",
+              "tel": "",
+              "title": "대한성공회 서울주교좌성당",
+              "lDongRegnCd": "11",
+              "lDongSignguCd": "140",
+              "lclsSystm1": "HS",
+              "lclsSystm2": "HS03",
+              "lclsSystm3": "HS030200"
+            },
+            {
+              "addr1": "서울특별시 중구 세종대로 99 (정동)",
+              "addr2": "",
+              "zipcode": "04519",
+              "areacode": "1",
+              "cat1": "A02",
+              "cat2": "A0201",
+              "cat3": "A02010300",
+              "contentid": "1605981",
+              "contenttypeid": "12",
+              "createdtime": "20120418205524",
+              "dist": "244.6255225376717",
+              "firstimage": "http://tong.visitkorea.or.kr/cms/resource/91/3384991_image2_1.JPG",
+              "firstimage2": "http://tong.visitkorea.or.kr/cms/resource/91/3384991_image3_1.JPG",
+              "cpyrhtDivCd": "Type3",
+              "mapx": "126.9765906796",
+              "mapy": "37.5651071556",
+              "mlevel": "6",
+              "modifiedtime": "20250730154607",
+              "sigungucode": "24",
+              "tel": "",
+              "title": "덕수궁 대한문",
+              "lDongRegnCd": "11",
+              "lDongSignguCd": "140",
+              "lclsSystm1": "HS",
+              "lclsSystm2": "HS01",
+              "lclsSystm3": "HS010300"
+            }
+          ]
+        },
+        "numOfRows": 3,
+        "pageNo": 1,
+        "totalCount": 50
+      }
+    }
+  },
+  "durationMs": 201.75
+}

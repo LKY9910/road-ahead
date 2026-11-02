@@ -1,0 +1,49 @@
+{
+  "requestedAtKst": "2026-10-29T12:37:02.730581+09:00",
+  "url": "https://apis.data.go.kr/B551011/KorService2/detailIntro2?MobileOS=ETC&MobileApp=RoadAheadProbe&_type=json&pageNo=1&numOfRows=1000&contentId=2933428&contentTypeId=15&serviceKey=***",
+  "callNumber": 23,
+  "httpStatus": 200,
+  "downloadBytes": 643,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "contentid": "2933428",
+              "contenttypeid": "15",
+              "sponsor1": "청춘문화기획단",
+              "sponsor1tel": "010-4825-0560",
+              "sponsor2": "",
+              "sponsor2tel": "",
+              "eventenddate": "20251228",
+              "playtime": "13:00~21:00",
+              "eventplace": "성남동 소방서 부지",
+              "eventhomepage": "",
+              "agelimit": "",
+              "bookingplace": "",
+              "placeinfo": "",
+              "subevent": "",
+              "program": "",
+              "eventstartdate": "20251224",
+              "usetimefestival": "무료",
+              "discountinfofestival": "",
+              "spendtimefestival": "",
+              "festivalgrade": "",
+              "progresstype": "선택안함",
+              "festivaltype": "선택안함"
+            }
+          ]
+        },
+        "numOfRows": 1,
+        "pageNo": 1,
+        "totalCount": 1
+      }
+    }
+  },
+  "durationMs": 180.73
+}

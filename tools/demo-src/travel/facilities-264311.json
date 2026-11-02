@@ -1,0 +1,66 @@
+{
+  "requestedAtKst": "2026-10-29T19:58:05.570275+09:00",
+  "request": {
+    "service": "KorWithService2",
+    "operation": "detailWithTour2",
+    "params": {
+      "MobileOS": "AND",
+      "MobileApp": "RoadAhead",
+      "_type": "json",
+      "pageNo": "1",
+      "contentId": "264311"
+    }
+  },
+  "url": "https://apis.data.go.kr/B551011/KorWithService2/detailWithTour2?MobileOS=AND&MobileApp=RoadAhead&_type=json&pageNo=1&contentId=264311&serviceKey=***",
+  "httpStatus": 200,
+  "downloadBytes": 1158,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "contentid": "264311",
+              "parking": "장애인 전용 주차구역 있음(밀리오레,명동성당)_무장애 편의시설",
+              "publictransport": "",
+              "route": "수동휠체어로 다니기에 무리는 없으나 골목 가게들은 턱이 있는 곳이 일부 있음<br/>눈스퀘어,밀리오레 등 장애인 편의시설을 갖춘 대형 쇼핑몰도 다수 있음",
+              "ticketoffice": "",
+              "promotion": "",
+              "wheelchair": "",
+              "exit": "",
+              "elevator": "",
+              "restroom": "장애인용화장실은 눈스퀘어와 명동성당, YWCA 신관 화장실을 이용할 수 있으며, 평화방송 앞 사거리에 유료화장실도 장애인 이용 가능함",
+              "auditorium": "",
+              "room": "",
+              "handicapetc": "눈스퀘어 식당가에서 전동휠체어 충전 가능함",
+              "braileblock": "",
+              "helpdog": "",
+              "guidehuman": "",
+              "audioguide": "",
+              "bigprint": "",
+              "brailepromotion": "",
+              "guidesystem": "",
+              "blindhandicapetc": "",
+              "signguide": "",
+              "videoguide": "",
+              "hearingroom": "",
+              "hearinghandicapetc": "",
+              "stroller": "",
+              "lactationroom": "",
+              "babysparechair": "",
+              "infantsfamilyetc": ""
+            }
+          ]
+        },
+        "numOfRows": 1,
+        "pageNo": 1,
+        "totalCount": 1
+      }
+    }
+  },
+  "durationMs": 141.0
+}

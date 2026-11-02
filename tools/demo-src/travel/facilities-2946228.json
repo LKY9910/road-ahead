@@ -1,0 +1,32 @@
+{
+  "requestedAtKst": "2026-10-29T19:58:05.433855+09:00",
+  "request": {
+    "service": "KorWithService2",
+    "operation": "detailWithTour2",
+    "params": {
+      "MobileOS": "AND",
+      "MobileApp": "RoadAhead",
+      "_type": "json",
+      "pageNo": "1",
+      "contentId": "2946228"
+    }
+  },
+  "url": "https://apis.data.go.kr/B551011/KorWithService2/detailWithTour2?MobileOS=AND&MobileApp=RoadAhead&_type=json&pageNo=1&contentId=2946228&serviceKey=***",
+  "httpStatus": 200,
+  "downloadBytes": 125,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": "",
+        "numOfRows": 0,
+        "pageNo": 1,
+        "totalCount": 0
+      }
+    }
+  },
+  "durationMs": 125.0
+}

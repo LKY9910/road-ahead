@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<title>앞길 안내 · T-32 디자인 목업</title>
+<style>
+@font-face{font-family:RoadNoto;src:url('file:///C:/Windows/Fonts/NotoSansKR-VF.ttf');font-weight:100 900}
+*{box-sizing:border-box}html,body{margin:0;width:2560px;height:1440px;overflow:hidden;background:#F5F7FA;font-family:RoadNoto,'Noto Sans KR',sans-serif;color:#FFF}
+button{font:inherit;color:inherit;cursor:pointer}button:focus-visible{outline:4px solid #F5C518;outline-offset:6px}button:disabled{cursor:default}
+.vehicle{position:absolute;inset:0;width:2560px;height:1440px;object-fit:fill}
+.old-card-mask{position:absolute;left:1824px;top:813px;width:560px;height:447px;background:#F5F7FA}
+.app{position:absolute;left:853px;top:90px;width:1707px;height:1210px;background:#111418;padding:48px 64px}
+.brand{font-size:32px;line-height:48px;font-weight:500;margin:0}
+.form{width:1080px;margin:102px auto 0}
+h1{font-size:36px;line-height:52px;font-weight:600;margin:0 0 12px}
+.intro{font-size:24px;line-height:36px;color:#C9D1D9;margin:0}
+.previous{font-size:24px;line-height:36px;color:#B8D4FF;margin:32px 0 20px}
+.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.choice{height:112px;border:2px solid #687383;border-radius:16px;background:#1B2028;padding:24px;display:flex;align-items:center;gap:20px;text-align:left;font-size:28px;line-height:40px}
+.choice.selected{background:#253B58;border-color:#8CB8FF}
+.check{width:32px;height:32px;border:2px solid #A7B0BA;border-radius:6px;flex-shrink:0;display:grid;place-items:center}
+.selected .check{border-color:#8CB8FF;background:#8CB8FF;color:#101923}
+.check svg{width:24px;height:24px;visibility:hidden}.selected .check svg{visibility:visible}
+.none-wrap{margin-top:32px;border-top:1px solid #414A56;padding-top:24px}
+.none{height:80px;width:100%}
+.radio{border-radius:50%}.radio::after{content:'';height:14px;width:14px;border-radius:50%;background:#101923;visibility:hidden}.selected .radio::after{visibility:visible}
+.hint{font-size:24px;color:#C9D1D9;line-height:36px;margin:16px 0 0}
+.actions{display:flex;justify-content:space-between;align-items:center;margin-top:48px;gap:24px}
+.action{height:80px;min-width:160px;padding:0 32px;border-radius:40px;border:2px solid #687383;background:transparent;font-size:28px;line-height:40px;font-weight:500}
+.primary{min-width:320px;background:#B8D4FF;color:#0A2342;border:0}
+.primary:disabled{background:#343D49;color:#8A96A6}
+.settings{width:1080px;margin:98px auto 0}
+.settings-title{font-size:36px;line-height:52px;margin:0 0 36px}
+.setting-row{display:flex;align-items:center;justify-content:space-between;min-height:112px;gap:24px}
+.setting-label{font-size:28px;line-height:40px;font-weight:500;margin:0 0 8px}.setting-sub{font-size:24px;line-height:36px;color:#C9D1D9;margin:0}
+.toggle{height:80px;width:120px;background:transparent;border:0;display:grid;place-items:center;padding:0}
+.track{height:52px;width:88px;border-radius:32px;background:#B8D4FF;display:flex;align-items:center;padding:5px;justify-content:flex-end}
+.track.off{justify-content:flex-start;background:#687383}.thumb{height:42px;width:42px;background:#0A2342;border-radius:50%}
+.companion-summary{border-top:1px solid #414A56;margin-top:20px;padding-top:24px}.settings .actions{margin-top:56px}
+.plain-status{height:900px;display:grid;place-items:center;text-align:center;font-size:24px;color:#C9D1D9}
+.overlay-card{position:absolute;right:176px;bottom:180px;width:560px;padding:28px 40px 36px;background:rgba(17,20,24,.941176);border-radius:32px;opacity:.8;pointer-events:none;overflow:visible}
+.card-header{font-size:24px;line-height:34px;color:#A7B0BA;font-weight:400;margin:0 0 20px;display:flex;align-items:center;gap:12px;white-space:nowrap}
+.card-header.has-weather{margin-bottom:4px}.weather-context{font-size:20px;line-height:29px;color:#C9D1D9;margin:0 0 20px;white-space:nowrap}
+.parking-dot{width:16px;height:16px;background:#3E7BFA;border-radius:50%;flex:none}
+.travel-item+.travel-item{margin-top:12px}.travel-title{font-size:26px;line-height:38px;font-weight:400;margin:0;overflow-wrap:anywhere}
+.travel-meta{font-size:20px;line-height:29px;color:#C9D1D9;margin:0;white-space:nowrap}
+.reason{font-size:20px;line-height:29px;color:#B8D4FF;margin:4px 0 0;white-space:nowrap}
+.parking-title{font-size:34px;line-height:48px;font-weight:500;margin:0 0 16px;overflow-wrap:anywhere}
+.availability{display:flex;align-items:baseline;gap:12px;margin:0 0 20px;white-space:nowrap;line-height:144px}
+.availability-label,.availability-unit{font-size:32px;line-height:44px}.availability-number{font-size:96px;line-height:144px;font-weight:500;font-variant-numeric:tabular-nums}
+.parking-meta{font-size:30px;line-height:44px;margin:0;color:#C9D1D9}.parking-meta span{display:block;white-space:nowrap}
+</style>
+<img class="vehicle" src="../demo/overlay-e-travel.png" alt="기존 시연 E의 차량·내비 화면">
+<main id="content"></main>
+<script>
+const screen=new URLSearchParams(location.search).get('screen')||'companions';
+const root=document.querySelector('#content');
+const state={saved:['child','pet'],draft:[],travel:false,intent:'enable',parked:true};
+const labels={child:'아이',elder:'어르신',pet:'반려동물',none:'동행 없음'};
+const check='<span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>';
+const app=inner=>`<section class="app"><p class="brand">앞길 안내</p>${inner}</section>`;
+const checked=id=>state.draft.includes(id);
+function openPicker(intent='enable'){
+ if(!state.parked)return;
+ state.intent=intent;state.draft=[...state.saved];renderPicker();
+}
+function renderPicker(){
+ root.dataset.state='picker';
+ root.innerHTML=app(`<div class="form"><h1>누구와 함께 가세요?</h1><p class="intro">해당하는 동행을 모두 골라 주세요.</p><p class="previous">${state.saved.length?'지난 동행을 미리 골랐어요.':'동행에 맞춰 가까운 명소를 추천해 드려요.'}</p><div class="choices" role="group" aria-label="동행 복수 선택">${['child','elder','pet'].map(id=>`<button class="choice ${checked(id)?'selected':''}" data-choice="${id}" role="checkbox" aria-checked="${checked(id)}">${check}<span>${labels[id]}</span></button>`).join('')}</div><div class="none-wrap"><button class="choice none ${checked('none')?'selected':''}" data-choice="none" role="radio" aria-checked="${checked('none')}"><span class="check radio"></span><span>동행 없음</span></button><p class="hint">동행 없음은 다른 동행과 함께 선택할 수 없어요.</p></div><div class="actions"><button class="action" data-action="cancel">취소</button><button class="action primary" data-action="confirm" ${state.draft.length?'':'disabled'}>선택 완료</button></div><p class="hint">${state.intent==='enable'?'선택을 마치면 여행 모드가 켜져요.':'완료하면 동행 선택을 기억해요.'}</p></div>`);
+ root.querySelectorAll('[data-choice]').forEach(button=>button.onclick=()=>{
+  const id=button.dataset.choice;
+  if(id==='none')state.draft=['none'];
+  else{state.draft=state.draft.filter(v=>v!=='none');state.draft=checked(id)?state.draft.filter(v=>v!==id):[...state.draft,id];}
+  renderPicker();
+ });
+ root.querySelector('[data-action="cancel"]').onclick=renderSettings;
+ root.querySelector('[data-action="confirm"]').onclick=()=>{if(!state.parked||!state.draft.length)return;state.saved=[...state.draft];if(state.intent==='enable')state.travel=true;renderSettings();};
+}
+function renderSettings(){
+ root.dataset.state='settings';
+ const summary=state.saved.length?['child','elder','pet','none'].filter(v=>state.saved.includes(v)).map(v=>labels[v]).join(' · '):'아직 선택하지 않았어요';
+ root.innerHTML=app(`<div class="settings"><h1 class="settings-title">설정</h1><div class="setting-row"><div><p class="setting-label">여행 모드</p><p class="setting-sub">주차와 근처 행사·명소를 안내해요.</p></div><button class="toggle" role="switch" aria-checked="${state.travel}" aria-label="여행 모드"><span class="track ${state.travel?'':'off'}"><span class="thumb"></span></span></button></div><div class="setting-row companion-summary"><div><p class="setting-label">${state.travel?'동행':'지난 동행'}</p><p class="setting-sub">${summary}</p></div>${state.travel?'<button class="action" data-action="change">바꾸기</button>':''}</div><div class="actions"><span></span><button class="action primary" data-action="close">닫기</button></div></div>`);
+ root.querySelector('.toggle').onclick=()=>{if(state.travel){state.travel=false;renderSettings();}else openPicker('enable');};
+ root.querySelector('[data-action="change"]')?.addEventListener('click',()=>openPicker('edit'));
+ root.querySelector('[data-action="close"]').onclick=renderMain;
+}
+function renderMain(){root.dataset.state='main';root.innerHTML=app('<div class="plain-status">내비 화면 위에 안내 카드를 보여 드려요</div>');}
+const festivalRows=[{title:'문화가 흐르는 서울광장',meta:'축제 · 800m · 12월 31일까지'},
+ {title:'서울 왕궁수문장 교대의식',meta:'축제 · 800m · 12월 31일까지'}];
+const indoorRows=[{title:'국립현대미술관 서울',meta:'문화시설 · 800m'},
+ {title:'서소문성지역사박물관',meta:'문화시설 · 1.5km'}];
+const childRows=[...festivalRows,{title:'덕수궁 대한문',meta:'관광지 · 800m',reasons:['유모차 대여','수유실']},...indoorRows];
+const petRows=[...festivalRows,{title:'인사동',meta:'관광지 · 700m',reasons:['일부 구역 동반']},
+ {title:'명동',meta:'관광지 · 1.4km',reasons:['일부 구역 동반','목줄 착용']}];
+const weatherRows=[...festivalRows,...indoorRows,{title:'경성 부민관 폭탄 의거지',meta:'관광지 · 600m'}];
+function travel(rows,weather=false){root.dataset.state='travel';root.innerHTML=`<div class="old-card-mask"></div><section class="overlay-card travel-card" aria-label="여행 목록"><p class="card-header ${weather?'has-weather':''}">앞길 안내 · 여행</p>${weather?'<p class="weather-context">도착 때 비 예보 · 실내 명소 우선</p>':''}${rows.map(r=>`<article class="travel-item"><p class="travel-title">${r.title}</p><p class="travel-meta">${r.meta}</p>${r.reasons?`<p class="reason">${r.reasons.join(' · ')}</p>`:''}</article>`).join('')}</section>`;}
+function parking(known){root.dataset.state='parking';root.innerHTML=`<div class="old-card-mask"></div><section class="overlay-card parking-card" aria-label="주차 안내"><p class="card-header"><span class="parking-dot"></span>앞길 안내 · 주차</p><h1 class="parking-title">세종로 주차장</h1>${known?'<p class="availability"><span class="availability-label">빈자리</span><span class="availability-number">781</span><span class="availability-unit">면</span></p>':''}<p class="parking-meta"><span>목적지에서 200m · 5분에 430원</span></p></section>`;}
+window.design={state,setParked(value){state.parked=value;if(!value){state.draft=[];renderMain();}},openPicker,travel,parking};
+if(screen==='settings'){state.travel=true;renderSettings();}
+else if(screen==='first'){state.saved=[];openPicker();}
+else if(screen==='none'){state.saved=['none'];openPicker();}
+else if(screen==='travel-child')travel(childRows,true);
+else if(screen==='travel-pet')travel(petRows);
+else if(screen==='travel-weather')travel(weatherRows,true);
+else if(screen==='parking-available')parking(true);
+else if(screen==='parking-unknown')parking(false);
+else openPicker();
+</script>
+</html>

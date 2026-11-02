@@ -1,0 +1,66 @@
+{
+  "requestedAtKst": "2026-10-29T19:58:04.729501+09:00",
+  "request": {
+    "service": "KorWithService2",
+    "operation": "detailWithTour2",
+    "params": {
+      "MobileOS": "AND",
+      "MobileApp": "RoadAhead",
+      "_type": "json",
+      "pageNo": "1",
+      "contentId": "2904906"
+    }
+  },
+  "url": "https://apis.data.go.kr/B551011/KorWithService2/detailWithTour2?MobileOS=AND&MobileApp=RoadAhead&_type=json&pageNo=1&contentId=2904906&serviceKey=***",
+  "httpStatus": 200,
+  "downloadBytes": 854,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "contentid": "2904906",
+              "parking": "장애인 주차장 있음",
+              "publictransport": "",
+              "route": "",
+              "ticketoffice": "",
+              "promotion": "",
+              "wheelchair": "",
+              "exit": "",
+              "elevator": "엘리베이터 있음",
+              "restroom": "장애인 화장실 있음",
+              "auditorium": "",
+              "room": "",
+              "handicapetc": "",
+              "braileblock": "",
+              "helpdog": "",
+              "guidehuman": "",
+              "audioguide": "음성 안내 서비스 있음",
+              "bigprint": "큰활자 홍보물 있음",
+              "brailepromotion": "점자 홍보물 있음",
+              "guidesystem": "촉지도식 점자 안내판 있음",
+              "blindhandicapetc": "",
+              "signguide": "",
+              "videoguide": "",
+              "hearingroom": "",
+              "hearinghandicapetc": "",
+              "stroller": "",
+              "lactationroom": "",
+              "babysparechair": "",
+              "infantsfamilyetc": "장애인 화장실 내 영유아 거치대 있음"
+            }
+          ]
+        },
+        "numOfRows": 1,
+        "pageNo": 1,
+        "totalCount": 1
+      }
+    }
+  },
+  "durationMs": 141.0
+}

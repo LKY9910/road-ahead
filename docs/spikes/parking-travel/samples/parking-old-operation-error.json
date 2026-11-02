@@ -1,0 +1,17 @@
+{
+  "requestedAtKst": "2026-10-29T12:35:18.247448+09:00",
+  "url": "https://apis.data.go.kr/B553881/Parking_v1/PrkSttusInfo?pageNo=1&numOfRows=1&format=2&serviceKey=***",
+  "callNumber": 18,
+  "httpStatus": 400,
+  "downloadBytes": 292,
+  "response": {
+    "OpenAPI_ServiceResponse": {
+      "cmmMsgHeader": {
+        "errMsg": "NO_OPENAPI_SERVICE_ERROR",
+        "returnAuthMsg": "해당 오픈API 서비스가 없거나 폐기됨",
+        "returnReasonCode": "12"
+      }
+    }
+  },
+  "durationMs": 98.5
+}

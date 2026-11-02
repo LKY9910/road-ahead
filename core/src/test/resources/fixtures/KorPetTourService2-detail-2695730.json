@@ -1,0 +1,29 @@
+{
+  "response": {
+    "header": {
+      "resultCode": "0000",
+      "resultMsg": "OK"
+    },
+    "body": {
+      "items": {
+        "item": [
+          {
+            "contentid": "2695730",
+            "relaAcdntRiskMtr": "",
+            "acmpyTypeCd": "전구역 동반가능",
+            "relaPosesFclty": "",
+            "relaFrnshPrdlst": "",
+            "etcAcmpyInfo": "",
+            "relaPurcPrdlst": "",
+            "acmpyPsblCpam": "훈련된 소형견",
+            "relaRntlPrdlst": "",
+            "acmpyNeedMtr": ""
+          }
+        ]
+      },
+      "numOfRows": 1,
+      "pageNo": 1,
+      "totalCount": 1
+    }
+  }
+}

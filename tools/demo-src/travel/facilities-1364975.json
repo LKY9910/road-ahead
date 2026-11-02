@@ -1,0 +1,66 @@
+{
+  "requestedAtKst": "2026-10-29T19:58:02.775871+09:00",
+  "request": {
+    "service": "KorWithService2",
+    "operation": "detailWithTour2",
+    "params": {
+      "MobileOS": "AND",
+      "MobileApp": "RoadAhead",
+      "_type": "json",
+      "pageNo": "1",
+      "contentId": "1364975"
+    }
+  },
+  "url": "https://apis.data.go.kr/B551011/KorWithService2/detailWithTour2?MobileOS=AND&MobileApp=RoadAhead&_type=json&pageNo=1&contentId=1364975&serviceKey=***",
+  "httpStatus": 200,
+  "downloadBytes": 780,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "contentid": "1364975",
+              "parking": "",
+              "publictransport": "",
+              "route": "해치마당에서 광장으로 이어지는 경사로 있음_무장애 편의시설",
+              "ticketoffice": "",
+              "promotion": "",
+              "wheelchair": "",
+              "exit": "",
+              "elevator": "엘리베이터 있음\n에스컬레이터 있음",
+              "restroom": "장애인전용 화장실 있음",
+              "auditorium": "",
+              "room": "",
+              "handicapetc": "",
+              "braileblock": "",
+              "helpdog": "",
+              "guidehuman": "",
+              "audioguide": "",
+              "bigprint": "",
+              "brailepromotion": "",
+              "guidesystem": "",
+              "blindhandicapetc": "",
+              "signguide": "",
+              "videoguide": "",
+              "hearingroom": "",
+              "hearinghandicapetc": "",
+              "stroller": "",
+              "lactationroom": "",
+              "babysparechair": "",
+              "infantsfamilyetc": ""
+            }
+          ]
+        },
+        "numOfRows": 1,
+        "pageNo": 1,
+        "totalCount": 1
+      }
+    }
+  },
+  "durationMs": 140.0
+}

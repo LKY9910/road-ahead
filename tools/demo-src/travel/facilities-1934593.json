@@ -1,0 +1,66 @@
+{
+  "requestedAtKst": "2026-10-29T19:58:04.017514+09:00",
+  "request": {
+    "service": "KorWithService2",
+    "operation": "detailWithTour2",
+    "params": {
+      "MobileOS": "AND",
+      "MobileApp": "RoadAhead",
+      "_type": "json",
+      "pageNo": "1",
+      "contentId": "1934593"
+    }
+  },
+  "url": "https://apis.data.go.kr/B551011/KorWithService2/detailWithTour2?MobileOS=AND&MobileApp=RoadAhead&_type=json&pageNo=1&contentId=1934593&serviceKey=***",
+  "httpStatus": 200,
+  "downloadBytes": 1191,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "contentid": "1934593",
+              "parking": "장애인전용 주차구역 있음(15대/지하2층 10대, 지하3층 5대)_무장애 편의시설",
+              "publictransport": "",
+              "route": "",
+              "ticketoffice": "",
+              "promotion": "",
+              "wheelchair": "휠체어 대여가능 (수동 5대, 전동스쿠터 2대 / 안내데스크에서 대여가능)",
+              "exit": "경사로를 이용하여 휠체어로 출입가능",
+              "elevator": "엘리베이터",
+              "restroom": "다목적 화장실 있음 (장애인, 영유아가족 이용가능)",
+              "auditorium": "장애인 전용 관람석 및 공간 있음",
+              "room": "",
+              "handicapetc": "",
+              "braileblock": "점자블록 설치되어있음",
+              "helpdog": "",
+              "guidehuman": "",
+              "audioguide": "",
+              "bigprint": "",
+              "brailepromotion": "점자촉지도 설치되어있음 (3개소 배치/ 주출입구, 1층로비, 지하1층 전시실)",
+              "guidesystem": "",
+              "blindhandicapetc": "",
+              "signguide": "예약시 수화안내 준비 가능",
+              "videoguide": "",
+              "hearingroom": "",
+              "hearinghandicapetc": "",
+              "stroller": "유모차 대여",
+              "lactationroom": "수유실 있음(1층)",
+              "babysparechair": "",
+              "infantsfamilyetc": ""
+            }
+          ]
+        },
+        "numOfRows": 1,
+        "pageNo": 1,
+        "totalCount": 1
+      }
+    }
+  },
+  "durationMs": 141.0
+}

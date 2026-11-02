@@ -1,0 +1,66 @@
+{
+  "requestedAtKst": "2026-10-29T19:58:04.153914+09:00",
+  "request": {
+    "service": "KorWithService2",
+    "operation": "detailWithTour2",
+    "params": {
+      "MobileOS": "AND",
+      "MobileApp": "RoadAhead",
+      "_type": "json",
+      "pageNo": "1",
+      "contentId": "1019294"
+    }
+  },
+  "url": "https://apis.data.go.kr/B551011/KorWithService2/detailWithTour2?MobileOS=AND&MobileApp=RoadAhead&_type=json&pageNo=1&contentId=1019294&serviceKey=***",
+  "httpStatus": 200,
+  "downloadBytes": 1189,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "contentid": "1019294",
+              "parking": "장애인 주차장 있음(2대)_무장애 편의시설",
+              "publictransport": "",
+              "route": "출입구까지 경사로가 설치되어 있음",
+              "ticketoffice": "",
+              "promotion": "",
+              "wheelchair": "대여 가능(1대/안내데스크)",
+              "exit": "주출입구는 경사로가 설치되어 있음(회전문,수동문)",
+              "elevator": "엘리베이터 1,2동에 설치되어 있으며 3동에는 설치되어 있지 않음",
+              "restroom": "장애인 화장실 있음",
+              "auditorium": "",
+              "room": "",
+              "handicapetc": "장애인 무료우편 택배서비스가 있으며 자료실 공간 확보 되어있음",
+              "braileblock": "점자유도로 있음",
+              "helpdog": "",
+              "guidehuman": "",
+              "audioguide": "",
+              "bigprint": "",
+              "brailepromotion": "점자안내판 있음(출입구 앞)",
+              "guidesystem": "",
+              "blindhandicapetc": "약시인을 위한 실물화상기 1식 설치되어 있음_시각장애인 편의시설",
+              "signguide": "",
+              "videoguide": "",
+              "hearingroom": "",
+              "hearinghandicapetc": "",
+              "stroller": "",
+              "lactationroom": "",
+              "babysparechair": "",
+              "infantsfamilyetc": "어린이실 있음"
+            }
+          ]
+        },
+        "numOfRows": 1,
+        "pageNo": 1,
+        "totalCount": 1
+      }
+    }
+  },
+  "durationMs": 156.0
+}

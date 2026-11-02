@@ -8,9 +8,17 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
     <application android:label="@string/app_name" android:allowBackup="false"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:theme="@android:style/Theme.Material.NoActionBar" android:resizeableActivity="true">
         <uses-library android:name="android.car" android:required="false" />
+        <service android:name=".RoadAheadService" android:exported="false" android:foregroundServiceType="specialUse">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Shows road-ahead guidance cards over the navigation app while driving" />
+        </service>
         <activity android:name=".MainActivity" android:exported="true" android:launchMode="singleTop"
             android:resizeableActivity="true">
             <meta-data android:name="distractionOptimized" android:value="true" />

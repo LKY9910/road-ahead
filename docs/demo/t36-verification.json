@@ -1,0 +1,92 @@
+{
+  "first-before-complete": {
+    "travelMode": false,
+    "companions": null
+  },
+  "first-question": {
+    "secretOccurrences": 0,
+    "cleartext": [
+      "seoul cleartext=true other=false"
+    ],
+    "questionCount": 1
+  },
+  "after-selection-recompose": {
+    "secretOccurrences": 0,
+    "cleartext": [
+      "seoul cleartext=true other=false"
+    ],
+    "questionCount": 1
+  },
+  "enabling-drive-cancel": {
+    "travelMode": false,
+    "companions": null
+  },
+  "selected-child-pet": {
+    "travelMode": true,
+    "companions": [
+      "CHILD",
+      "PET"
+    ]
+  },
+  "edit-without-question": {
+    "secretOccurrences": 0,
+    "cleartext": [
+      "seoul cleartext=true other=false"
+    ],
+    "questionCount": 2
+  },
+  "editing-drive-cancel": {
+    "travelMode": true,
+    "companions": [
+      "CHILD",
+      "PET"
+    ]
+  },
+  "switch-off-preserves-answer": {
+    "travelMode": false,
+    "companions": [
+      "CHILD",
+      "PET"
+    ]
+  },
+  "back-cancel": {
+    "travelMode": false,
+    "companions": [
+      "CHILD",
+      "PET"
+    ]
+  },
+  "none-persisted": {
+    "travelMode": true,
+    "companions": []
+  },
+  "final-emulator": {
+    "secretOccurrences": 0,
+    "cleartext": [
+      "seoul cleartext=true other=false"
+    ],
+    "questionCount": 4,
+    "ttsOnStart": 0
+  },
+  "device": "emulator-5556",
+  "user": 10,
+  "logOnlySpeech": true,
+  "tests": {
+    "app": 28,
+    "core": 167,
+    "newT36": 2,
+    "concurrentT37": 3
+  },
+  "restored": {
+    "settingsBytesIdentical": true,
+    "overlayPermission": "default",
+    "gear": "Park",
+    "speedKph": 0,
+    "pedals": 0,
+    "steering": 0,
+    "consoleActive": false,
+    "appStopped": true
+  },
+  "deferred": "새 여행·주차 카드의 실제 글꼴 캡처는 조정 지시에 따라 T-37에서 확인",
+  "notChecked": "실제 화면 회전 시험은 생략; rememberSaveable과 클릭 시 질문 전송으로 구현"
+}

@@ -1,4 +1,4 @@
-# 앞길 안내 API 실측 명세 — T-14
+# 앞길 안내 API 실측 명세 — T-14·T-23
 
 2026-10-28 · Codex. 공식 명세와 실제 응답을 구분한다. 아래 URL의 키 표시는 `***`이며, 실행 도구는 저장소 루트의 gitignore 대상 `api` 또는 `ROAD_AHEAD_SIGNAL_KEY`, `ROAD_AHEAD_DISASTER_KEY`, `ROAD_AHEAD_WEATHER_KEY` 환경 변수만 읽는다. 원본 키·인증 URL을 터미널에 출력하지 않는다. [실측 보고](spikes/road-ahead.md), [응답 표본](spikes/road-ahead/samples/).
 
@@ -115,3 +115,84 @@ PC 시계가 NTP보다 **29.88초 느렸다**. HTTP `Date`도 PC보다 약 30초
 - 신호 화면의 경과 시간은 수신 직후의 값과 단조 시계로 줄인다. 수신 이후 **3초** 동안 새 생산시각을 확인하지 못하면 신호 발화·카운트다운을 숨기는 시험 기준을 제안한다. 수신시각만 새로워도 오래된 본문일 수 있어 생산시각의 증가도 검사해야 한다. 최초 데이터의 절대 나이 판정에는 보정된 시계가 필요하다. 이번 3초는 측정된 약 1초 생산 간격과 0.2초 수준 요청 시간을 고려한 후보값이며 차량 검증 완료 기준이 아니다.
 - 기상은 5분 자료를 경로 주변에 캐시하고, 생산시각 기준 **10분**을 넘으면 새 날씨 위험을 발화하지 않는 시험 기준을 제안한다. 이번 성공 표본은 과거 시각 명시 요청으로 받은 자료이므로 실시간 최신 게시 지연을 검증한 자료가 아니다.
 - 재난은 종료·해제 상태와 빈 통제 정보를 먼저 처리한다. 공사·사고 서비스 신청을 추가하기 전에는 그 기능의 실시간 시연을 확정하지 않는다. API 오류·무자료를 ‘안전’ 값으로 바꾸지 않는다.
+
+## 5. 한국교통안전공단 주차정보 — T-23
+
+2026-10-29 측정. [공식 포털](https://www.data.go.kr/data/15099883/openapi.do)의 `주차정보시스템_기술문서_20261001.docx`(서비스 1.5)와 실제 응답을 대조했다. [실측·지원 범위](spikes/parking-travel.md), [키 제거 표본](spikes/parking-travel/samples/), [집계](spikes/parking-travel/summary.json). 같은 공공데이터포털 일반 키를 쓰며 이번 도구는 루트 `api`의 신호 키 또는 `ROAD_AHEAD_SIGNAL_KEY`를 읽는다.
+
+| 기능 | GET 엔드포인트 | 실제 JSON 배열 |
+|---|---|---|
+| 시설 | `https://apis.data.go.kr/B553881/Parking_v1/PrkSttusInfo_v1` | `PrkSttusInfo` |
+| 운영·요금 | `https://apis.data.go.kr/B553881/Parking_v1/PrkOprInfo_v1` | `PrkOprInfo` |
+| 실시간 면수 | `https://apis.data.go.kr/B553881/Parking_v1/PrkRealtimeInfo_v1` | `PrkRealtimeInfo` |
+
+공통 요청은 `serviceKey=***`, `pageNo=1`, `numOfRows`, `format=2`(JSON, 1은 XML). 선택 필터 `sidoCd` 두 자리, `sigunguCd` 다섯 자리: 서울 중구 `11/11140`, 강남구 `11/11680`, 울산 남구 `31/31140`. 기술문서에는 관리번호 조회 인자가 없다. 실제 `prk_center_id=유효ID`와 `prk_center_id=NOT_A_PARKING_ID` 모두 전국 총 4,632건의 같은 첫 10건을 반환해 **미지원 인자를 무시했다**. 지역 목록을 받은 뒤 클라이언트에서 관리번호로 결합한다.
+
+본문 최상위의 `resultCode="0"`, `resultMsg="SUCCESS"`, `totalCount`, `pageNo`, `numOfRows`와 기능별 배열을 검사한다. 숫자도 문자열이다. HTTP 200을 성공·무자료와 동치로 읽지 않는다.
+
+| 응답 위치·필드 | 의미·실제 주의 |
+|---|---|
+| 공통 `prk_center_id` | 확장 관리 ID. 숫자로 바꾸지 않는다. 세 기능끼리 결합 가능하나 전국 시설 첫 10만 행에서 중복 ID 585행을 관측했다. |
+| 시설 `prk_plce_nm`, `prk_plce_adres` | 이름·주소. 이름이 빈 항목이 많다. |
+| 시설 `prk_plce_entrc_la`, `prk_plce_entrc_lo` | WGS84 위도·경도 문자열. 빈 문자열이 있어 유효성 검사 필요. |
+| 시설 `prk_cmprt_co` | 시설 총 구획 수. 실시간 총 구획 수와 다른 사례가 있다. |
+| 시설 `parkng_chrge_se`, `parkng_chrge_se_nm` | 1 무료, 2 유료, 미기재는 빈 문자열. |
+| 시설 `prk_manage_agent`, `prk_manage_agent_nm` | 공영/민영/기타 구분. |
+| 운영 `basic_info.parking_chrge_bs_time`, `parking_chrge_bs_chrge` | 기본시간(분)·기본요금(원). 시간 30이 있어도 금액은 빈 문자열인 행이 많다. 빈 값을 0원으로 바꾸지 않는다. |
+| 운영 `basic_info.parking_chrge_adit_unit_time`, `parking_chrge_adit_unit_chrge` | 추가시간·추가요금. |
+| 운영 `fxamt_info.parking_chrge_one_day_chrge`, `parking_chrge_mon_unit_chrge` | 일·월 정액. 0만으로 무료 주차장을 판정하지 않는다. |
+| 운영 `Monday`…`Sunday`, `Holiday`의 `opertn_start_time`, `opertn_end_time` | `090000` 등의 시각 문자열. `opertn_bs_free_time`은 기본 회차 무료시간이며 요금 기본시간과 다르다. |
+| 실시간 `pkfc_ParkingLots_total`, `pkfc_Available_ParkingLots_total` | 실시간 총 구획·주차가능 구획. 4,632행 전부 이 두 값과 관리 ID만 있었다. |
+
+**갱신 시각 필드가 없다.** 요청 수신시각은 데이터 생산시각이 아니다. 10분 이내 비율은 산출 불가이며 0%라고 쓰지 않는다. 포털의 갱신주기 설명은 실시간, 기술문서의 서비스 개요는 일 1회여서 실제 신선도를 보장하는 근거로 사용할 수 없다.
+
+페이지 크기 10,000·100,000이 실제 허용됐다. 문서에 서버 상한은 명시되지 않았으며 100,000을 최대값으로 단정하지 않는다. 울산 남구 시설은 총계 10,633에 비해 배열은 10,632행이어서 `totalCount`와 실제 배열 길이를 별도로 검증한다.
+
+전국 18페이지 본문은 합계 683,877,454 bytes·1,733,740행·고유 ID 1,733,155개였다. 총계 1,737,445와 차이가 있어 완전한 스냅샷으로 취급하지 않는다. 실시간 4,632개 ID 중 이 시설 수집 결과에 매칭되는 것은 878개, 이름·유효 좌표까지 있는 것은 487개였다. 주차 호출은 43회였으며 실시간 7회의 지연 중앙값 321.93ms·최대 1,164.36ms다. 지역 목록의 높은 매칭률로 전국 제공 범위를 추정하지 않는다.
+
+오류 실측: `_v1` 없는 기능명은 **HTTP 400, XML `OpenAPI_ServiceResponse.cmmMsgHeader.returnReasonCode=12`**, `NO_OPENAPI_SERVICE_ERROR`. 잘못된 지역 `99/99999`는 HTTP 200·성공 코드·빈 배열이어서 유효 지역인지 별도 검사해야 한다. 문서의 인증/한도 오류는 20 접근 거부, 22 호출 한도 초과, 30 미등록 키, 31 기간 만료 등이며 이번에 일부러 유발하지 않았다. 개발계정 10,000회/일. 요청 지연과 실제 호출 수는 실측 보고에 기록했다.
+
+운영정보에 기본요금 필드가 있어 조건부 대안 API는 호출하지 않았다. 보완 후보인 [전국주차장정보표준데이터](https://www.data.go.kr/data/15012896/standard.do)의 공식 경로는 `https://api.data.go.kr/openapi/tn_pubr_prkplce_info_api`, 주요 필드는 `prkplceNo`, `prkplceNm`, `latitude`, `longitude`, `basicTime`, `basicCharge`, `addUnitTime`, `addUnitCharge`다. TS의 확장 `prk_center_id`와 같은 ID라고 가정하지 않는다. 별도 활용신청·실제 응답·교차 매칭률은 이번 범위에서 검증하지 않았다.
+
+## 6. 한국관광공사 국문 관광정보 — T-23
+
+[공식 포털](https://www.data.go.kr/data/15101578/openapi.do), [새 분류·법정동 코드 공지](https://api.visitkorea.or.kr/#/cmsNoticeDetail?no=207). 2026-10-29 실제 호출에서 아래 경로를 확인했다. 인증은 주차와 같은 일반 키이며 **이번 측정 상한 50회, 실제 관광 API 28회**다. 개발계정 하루 1,000회.
+
+| 기능 | GET 엔드포인트 | 주요 요청 |
+|---|---|---|
+| 위치 목록 | `https://apis.data.go.kr/B551011/KorService2/locationBasedList2` | `mapX` 경도, `mapY` 위도, `radius` m, `arrange=E` 거리순, `contentTypeId` 선택 |
+| 행사 목록 | `https://apis.data.go.kr/B551011/KorService2/searchFestival2` | `eventStartDate=yyyyMMdd`, `eventEndDate` 선택, `lDongRegnCd` 선택 |
+| 행사 기간 보충 시험 | `https://apis.data.go.kr/B551011/KorService2/detailIntro2` | `contentId`, `contentTypeId=15` |
+
+공통 `serviceKey=***`, `MobileOS=ETC`(앱은 AND), `MobileApp=RoadAheadProbe`, `_type=json`, `pageNo=1`, `numOfRows=1000`. 좌표는 소수 셋째 자리로 반올림해 시험했다. `contentTypeId=12` 관광지, 14 문화시설, 28 레포츠, 15 행사 각각 성공했으며 생략하면 식당·숙박 등 다른 종류도 포함한다. 거리순은 실제 `dist` 값의 오름차순을 확인했다.
+
+실제 JSON은 `response.header.resultCode="0000"`, `resultMsg="OK"`, `response.body.totalCount`, `items.item` 배열이다. 빈 응답에서는 `items=""`도 나온다. 주요 행 필드 `contentid`, `contenttypeid`, `title`, `addr1`, `addr2`, `mapx`, `mapy`, `dist`(위치 목록만, m 문자열), `modifiedtime`, `lDongRegnCd`, `lDongSignguCd`, `lclsSystm1`…`3`. 행사 목록에는 **좌표와 `eventstartdate`·`eventenddate`가 함께 오지만 `dist`는 없다**. 좌표로 앱에서 거리를 계산한다. 위치 목록에서 `contentTypeId=15`만 지정하면 날짜 필드가 없어 오늘 행사로 간주할 수 없다.
+
+**행사 지역은 새 법정동 코드를 사용한다.** `areaCode=1` 서울·7 울산은 요청 자체는 성공하지만 2026-10-29 행사를 0건 반환했다. 같은 날짜의 `lDongRegnCd=11`은 서울 **19건**, 그중 시청 반경 5km·기간 포함 **14건**을 반환했다. 해당 새 행들의 `areacode`·`sigungucode`는 빈 문자열이다. 울산 `lDongRegnCd=31`은 그날 0건이었다. 전국 날짜 조회는 69건이었다. 기존 지역코드의 무자료를 실제 행사 없음으로 해석하면 누락된다.
+
+날짜는 도착 예정일을 시작·종료일에 같이 넣어 조회하고, 반환 기간에도 포함되는지 클라이언트에서 재검사한다. 2025-12-20 단일 날짜 요청에 12월 12일 시작·1월 4일 종료 행사가 포함돼 **행사 시작일이 요청일 이후인 것만 반환하는 필터가 아님**을 확인했다. 행사 정보의 기간 포함은 매일 실제 공연이 열린다는 보장이 아니며 상세 일정은 별도다.
+
+두 호출 후보는 ① 종류를 생략한 위치 목록 반경 5km를 받고 12/14/28·3km만 추림, ② 법정동 시도 또는 전국 날짜 행사 목록을 받아 5km 거리 계산이다. 이번 표본은 시청 444행·태화강 주변 48행으로 각각 한 페이지에 들어갔다. `totalCount`가 받은 수보다 많으면 추가 페이지 없이 ‘가까운 결과 전체’라고 주장하지 않는다. `searchFestival2`에는 실측으로 확인한 위치·반경·거리순 지원이 없으므로 클라이언트 거리 계산이 필요하다.
+
+## 7. 서울 시영주차장 실시간
+
+2026-10-29 T-26. [서울 열린데이터광장 OA-21709](https://data.seoul.go.kr/dataList/OA-21709/S/1/datasetView.do)의 공식 서비스는 **`GetParkingInfo`**다. [실측 보고·파서 계약](spikes/seoul-parking.md), [집계](spikes/seoul-parking/summary.json), [키 없는 표본](spikes/seoul-parking/samples.json)을 따른다.
+
+`GET http://openapi.seoul.go.kr:8088/***/json/GetParkingInfo/1/1000/`
+
+서울 키를 URL **경로**에 넣는다. 환경변수 `ROAD_AHEAD_SEOUL_KEY` 또는 루트 `api`의 `서울 api` 항목을 사용하며 요청 URL 로그에서는 경로의 키를 `***`로 가린다. 한 번 최대 1,000행. 선택 경로 인자 `ADDR`는 자치구명이며 공식 예시는 `/1/5/구로구`다. 이번 전체 122행은 지역 필터 없이 **1회**로 받았다. 총계가 늘면 1,000행씩 이어 받는다.
+
+| 쓰는 필드 | 계약 |
+|---|---|
+| `GetParkingInfo.RESULT.CODE`, `list_total_count`, `row` | 정상 `INFO-000`, 총계와 배열 길이를 별도 검사 |
+| `PKLT_CD`, `PKLT_NM`, `ADDR` | 문자열 코드·이름·주소. KOTSA ID와 다름. **좌표 필드는 없음** |
+| `TPKCT`, `NOW_PRK_VHCL_CNT` | 총면수·**점유 차량 수**. 유한 정수형 숫자이며 JSON `13.0`도 옴. 빈자리는 총면수−점유 |
+| `PRK_STTS_YN`, `NOW_PRK_VHCL_UPDT_TM` | 연계 `1`, 시각은 KST `yyyy-MM-dd HH:mm:ss`. 연계 표시의 설명은 최근 20분 기준이므로 앱의 **10분** 신선도를 별도 검사 |
+| `BSC_PRK_CRG`, `BSC_PRK_HR`, `ADD_PRK_CRG`, `ADD_PRK_HR` | 기본 원/분, 추가 원/분. `HR`은 분 단위. 기존 자산의 시간과 금액을 함께 처리 |
+| `PAY_YN`, `OPER_SE`, 운영 시각·요일 과금 필드 | Y 유료/N 무료, 운영 4는 버스전용. `WD_` 평일·`WE_` 주말·`LHLDY_` 공휴일의 HHMM 시각. 종료 `2400` 처리 필요 |
+
+빈자리 수는 연계=1, 총면수>0, 0≤점유≤총면수, 정수 값, 파싱 가능한 갱신 시각, **0≤나이≤600초**를 모두 만족할 때만 만든다. 미연계 13행도 점유 0을 보내므로 이를 전부 빈자리로 바꾸지 않는다. 시간대별 과금의 N, 야간 개방의 N은 뜻이 달라 코드 설명도 확인한다. 일최대요금 0은 무료라는 뜻이 아니다.
+
+오류 실측: 잘못된 키는 **HTTP 200·XML `RESULT/CODE=INFO-100`**, 1/1002 범위 초과는 **HTTP 200·XML `ERROR-336`**, 데이터 없음은 **HTTP 200·JSON 최상위 `RESULT.CODE=INFO-200`**다. JSON 요청만으로 JSON 응답을 보장할 수 없다. 키별 일일·초당 한도는 이번 실측으로 확인하지 못했다.
+
+KOTSA 자산과 원문 이름 일치는 0/122, 제한적인 접미사 제거 후 유일 후보 78/122, 미대응 44/122다. 서울 좌표가 없어 50m 매칭은 산출 불가이며 이름 후보에 위치 오류 의심 사례도 있다. T-30은 주소·좌표를 확인한 명시적 ID 대응부터 연결하고, 미대응·미연계는 실시간 null로 유지해야 한다. 이 절은 앱 연결 완료를 뜻하지 않는다.

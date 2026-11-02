@@ -1,0 +1,49 @@
+{
+  "requestedAtKst": "2026-10-29T12:37:02.422311+09:00",
+  "url": "https://apis.data.go.kr/B551011/KorService2/detailIntro2?MobileOS=ETC&MobileApp=RoadAheadProbe&_type=json&pageNo=1&numOfRows=1000&contentId=2785797&contentTypeId=15&serviceKey=***",
+  "callNumber": 21,
+  "httpStatus": 200,
+  "downloadBytes": 695,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "contentid": "2785797",
+              "contenttypeid": "15",
+              "sponsor1": "경향신문",
+              "sponsor1tel": "02-904-1159",
+              "sponsor2": "2025 청계천의 빛 조직위원회",
+              "sponsor2tel": "",
+              "eventenddate": "20251231",
+              "playtime": "18:00~22:00",
+              "eventplace": "서울특별시 중구 청계천 청계광장 일대",
+              "eventhomepage": "",
+              "agelimit": "",
+              "bookingplace": "",
+              "placeinfo": "",
+              "subevent": "",
+              "program": "",
+              "eventstartdate": "20251212",
+              "usetimefestival": "무료",
+              "discountinfofestival": "",
+              "spendtimefestival": "",
+              "festivalgrade": "",
+              "progresstype": "선택안함",
+              "festivaltype": "선택안함"
+            }
+          ]
+        },
+        "numOfRows": 1,
+        "pageNo": 1,
+        "totalCount": 1
+      }
+    }
+  },
+  "durationMs": 154.53
+}

@@ -1,0 +1,19 @@
+{
+  "requestedAtKst": "2026-10-29T19:58:01.655960+09:00",
+  "request": {
+    "service": "KorPetTourService2",
+    "operation": "locationBasedList2",
+    "params": {
+      "MobileOS": "AND",
+      "MobileApp": "RoadAhead",
+      "_type": "json",
+      "pageNo": "1",
+      "mapX": "126.976",
+      "mapY": "37.572",
+      "radius": "3000",
+      "arrange": "E",
+      "numOfRows": "100"
+    }
+  },
+  "url": "https://apis.data.go.kr/B551011/KorPetTourService2/locationBasedList2?MobileOS=AND&MobileApp=RoadAhead&_type=json&pageNo=1&mapX=126.976&mapY=37.572&radius=3000&arrange=E&numOfRows=100&serviceKey=***"
+}

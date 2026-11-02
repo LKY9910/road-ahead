@@ -1,0 +1,419 @@
+{
+  "measuredAtKst": "2026-10-29T13:01:51.048720+09:00",
+  "regions": {
+    "seoul-jung": {
+      "facilityRows": 3609,
+      "uniqueIds": 3609,
+      "facilityReportedTotal": 3609,
+      "namedRows": 1297,
+      "coordinateRows": 3270,
+      "operationRows": 3609,
+      "operationMatches": 3609,
+      "numericBasicFeeRows": 72,
+      "realtimeRows": 42,
+      "realtimeMatches": 42,
+      "realtimePositiveRows": 39
+    },
+    "seoul-gangnam": {
+      "facilityRows": 17084,
+      "uniqueIds": 17084,
+      "facilityReportedTotal": 17084,
+      "namedRows": 5684,
+      "coordinateRows": 16072,
+      "operationRows": 17084,
+      "operationMatches": 17084,
+      "numericBasicFeeRows": 62,
+      "realtimeRows": 28,
+      "realtimeMatches": 28,
+      "realtimePositiveRows": 26
+    },
+    "ulsan-nam": {
+      "facilityRows": 10632,
+      "uniqueIds": 10632,
+      "facilityReportedTotal": 10633,
+      "namedRows": 2155,
+      "coordinateRows": 9720,
+      "operationRows": 10633,
+      "operationMatches": 10632,
+      "numericBasicFeeRows": 61,
+      "realtimeRows": 0,
+      "realtimeMatches": 0,
+      "realtimePositiveRows": 0
+    }
+  },
+  "navi": {
+    "sdkRoute2StartedMs": 5847,
+    "searchRoute2StartedMs": 5979,
+    "favoriteRoute1StartedMs": 60543,
+    "favoriteRoute2StartedMs": 5961,
+    "pollDestinationMs": [
+      1011,
+      1010,
+      1012
+    ],
+    "cancelStatusMs": 258,
+    "cancelEmptyDestinationMs": 297,
+    "destinationChangedObserved": false,
+    "note": "Stationary emulator observations. UI host marks include ADB delivery overhead; not a timing guarantee."
+  },
+  "nationalFacility": {
+    "totalCount": 1737445,
+    "sampleRows": 100000,
+    "sampleUniqueIds": 99415,
+    "sampleDownloadBytes": 39740090,
+    "projectedWireBytes": 690462207,
+    "validNamedSampleRows": 35308,
+    "sampleCompactNamedBytes": 2810365,
+    "sampleCompactNamedGzipBytes": 725152,
+    "projectedCompactNamedBytes": 48828546,
+    "projectedCompactNamedGzipBytes": 12599117,
+    "projectionWarning": "Extrapolation from first 100000 rows, not a nationwide download; excludes fees."
+  },
+  "nationalRealtime": {
+    "rows": 4632,
+    "uniqueIds": 4632,
+    "positiveRows": 1467,
+    "fieldUnion": [
+      "pkfc_Available_ParkingLots_total",
+      "pkfc_ParkingLots_total",
+      "prk_center_id"
+    ],
+    "freshnessKnownRows": 0,
+    "freshWithinTenMinutesRatio": null,
+    "note": "No production/update timestamp in any record; 0 known is not 0% fresh."
+  },
+  "fullNationalFacility": {
+    "pages": [
+      {
+        "label": "parking-facility-100000",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 39740090
+      },
+      {
+        "label": "parking-national-page-02",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 39338519
+      },
+      {
+        "label": "parking-national-page-03",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 39259777
+      },
+      {
+        "label": "parking-national-page-04",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 38322221
+      },
+      {
+        "label": "parking-national-page-05",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 38817561
+      },
+      {
+        "label": "parking-national-page-06",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 39553071
+      },
+      {
+        "label": "parking-national-page-07",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 38812838
+      },
+      {
+        "label": "parking-national-page-08",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 39577541
+      },
+      {
+        "label": "parking-national-page-09",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 40095665
+      },
+      {
+        "label": "parking-national-page-10",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 39714106
+      },
+      {
+        "label": "parking-national-page-11",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 38674079
+      },
+      {
+        "label": "parking-national-page-12",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 38897677
+      },
+      {
+        "label": "parking-national-page-13",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 38797992
+      },
+      {
+        "label": "parking-national-page-14",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 39214105
+      },
+      {
+        "label": "parking-national-page-15",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 39395366
+      },
+      {
+        "label": "parking-national-page-16",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 41022453
+      },
+      {
+        "label": "parking-national-page-17",
+        "rows": 100000,
+        "totalCount": 1737445,
+        "wireBytes": 41056702
+      },
+      {
+        "label": "parking-national-page-18",
+        "rows": 33740,
+        "totalCount": 1737445,
+        "wireBytes": 13587691
+      }
+    ],
+    "receivedRows": 1733740,
+    "uniqueIds": 1733155,
+    "duplicateRows": 585,
+    "wireBytes": 683877454,
+    "namedValidCoordinateUniqueRows": 305896,
+    "compactNamedJsonBytes": 23887061,
+    "compactNamedGzipBytes": 7014971,
+    "realtimeMatchedIds": 878,
+    "realtimeTotalIds": 4632,
+    "realtimeMatchedNamedValidIds": 487,
+    "note": "All 18 pages fetched sequentially, not a transactional snapshot. Compact rows contain ID/name/lat/lon only, no fees or region codes."
+  },
+  "sceneD": {
+    "distanceMeters": 292.11,
+    "within500Meters": 2
+  },
+  "tour": {
+    "seoul": {
+      "locationByType": {
+        "12": 50,
+        "14": 14,
+        "28": 2,
+        "15": 5
+      },
+      "allTypesWithin5km": 444,
+      "allowedTypesWithin3kmFromCombined": 66,
+      "oldAreaTodayEvents": 0,
+      "legalDongTodayEvents": 19,
+      "eventsWithin5kmToday": 14,
+      "nearestToday": [
+        {
+          "distanceMeters": 185.79,
+          "event": {
+            "addr1": "서울특별시 중구 을지로 지하12 (을지로1가)",
+            "addr2": "",
+            "zipcode": "04533",
+            "cat1": "",
+            "cat2": "",
+            "cat3": "",
+            "contentid": "2598331",
+            "contenttypeid": "15",
+            "createdtime": "20190420005447",
+            "eventstartdate": "20260506",
+            "eventenddate": "20261231",
+            "firstimage": "https://tong.visitkorea.or.kr/cms/resource/68/4059668_image2_1.jpg",
+            "firstimage2": "https://tong.visitkorea.or.kr/cms/resource/68/4059668_image3_1.jpg",
+            "cpyrhtDivCd": "Type3",
+            "mapx": "126.97878183534239",
+            "mapy": "37.56544835496842",
+            "mlevel": "6",
+            "modifiedtime": "20260422105729",
+            "areacode": "",
+            "sigungucode": "",
+            "tel": "02-2133-2543",
+            "title": "문화가 흐르는 서울광장",
+            "lDongRegnCd": "11",
+            "lDongSignguCd": "140",
+            "lclsSystm1": "EV",
+            "lclsSystm2": "EV02",
+            "lclsSystm3": "EV020900",
+            "progresstype": "선택안함",
+            "festivaltype": ""
+          }
+        },
+        {
+          "distanceMeters": 250.12,
+          "event": {
+            "addr1": "서울특별시 중구 세종대로 99 (정동)",
+            "addr2": "",
+            "zipcode": "04519",
+            "cat1": "",
+            "cat2": "",
+            "cat3": "",
+            "contentid": "292961",
+            "contenttypeid": "15",
+            "createdtime": "20060126190026",
+            "eventstartdate": "20260101",
+            "eventenddate": "20261231",
+            "firstimage": "https://tong.visitkorea.or.kr/cms/resource/79/4039379_image2_1.jpg",
+            "firstimage2": "https://tong.visitkorea.or.kr/cms/resource/79/4039379_image3_1.jpg",
+            "cpyrhtDivCd": "Type3",
+            "mapx": "126.97657463444833",
+            "mapy": "37.565054919430565",
+            "mlevel": "6",
+            "modifiedtime": "20260312090840",
+            "areacode": "",
+            "sigungucode": "",
+            "tel": "02-6242-7402",
+            "title": "서울 왕궁수문장 교대의식",
+            "lDongRegnCd": "11",
+            "lDongSignguCd": "140",
+            "lclsSystm1": "EV",
+            "lclsSystm2": "EV02",
+            "lclsSystm3": "EV020100",
+            "progresstype": "선택안함",
+            "festivaltype": ""
+          }
+        }
+      ]
+    },
+    "ulsan": {
+      "locationByType": {
+        "12": 7,
+        "14": 1,
+        "28": 2,
+        "15": 2
+      },
+      "allTypesWithin5km": 48,
+      "allowedTypesWithin3kmFromCombined": 10,
+      "oldAreaTodayEvents": 0,
+      "legalDongTodayEvents": 0,
+      "eventsWithin5kmToday": 0,
+      "nearestToday": []
+    }
+  },
+  "calls": {
+    "parking": {
+      "count": 43,
+      "medianMs": 2037.87,
+      "maxMs": 54305.42
+    },
+    "tour": {
+      "count": 28,
+      "medianMs": 175.16500000000002,
+      "maxMs": 389.54
+    }
+  },
+  "realtimeVariation": {
+    "apiCalls": 3,
+    "operation": "PrkRealtimeInfo_v1",
+    "numOfRows": 5000,
+    "samples": [
+      {
+        "index": 1,
+        "label": "parking-realtime-variation-1",
+        "requestedAtKst": "2026-10-29T13:11:10.734787+09:00",
+        "httpStatus": 200,
+        "resultCode": "0",
+        "reportedTotal": 4632,
+        "receivedRows": 4632,
+        "uniqueIds": 4632,
+        "numOfRowsRequested": 5000,
+        "localCallNumber": 44,
+        "durationMs": 951.39,
+        "fullRecordSha256": "2ec543d3c96fd72ca82936c48d730734e15f9f98517921a0765decd658662ff5"
+      },
+      {
+        "index": 2,
+        "label": "parking-realtime-variation-2",
+        "requestedAtKst": "2026-10-29T13:16:10.747695+09:00",
+        "httpStatus": 200,
+        "resultCode": "0",
+        "reportedTotal": 4632,
+        "receivedRows": 4632,
+        "uniqueIds": 4632,
+        "numOfRowsRequested": 5000,
+        "localCallNumber": 45,
+        "durationMs": 1355.98,
+        "fullRecordSha256": "beb16c27a3ae26e63d0be2f6aa627eea3a728aa161bf25b9cf0470cd49b2438b"
+      },
+      {
+        "index": 3,
+        "label": "parking-realtime-variation-3",
+        "requestedAtKst": "2026-10-29T13:21:10.735781+09:00",
+        "httpStatus": 200,
+        "resultCode": "0",
+        "reportedTotal": 4632,
+        "receivedRows": 4632,
+        "uniqueIds": 4632,
+        "numOfRowsRequested": 5000,
+        "localCallNumber": 46,
+        "durationMs": 1456.94,
+        "fullRecordSha256": "2782ab6d9cd2e27b484a7bac8a731766d8079ef61a1b17a92084bcbc6eed6a9e"
+      }
+    ],
+    "requestIntervalsSeconds": [
+      300.012908,
+      299.988086
+    ],
+    "originalNamedCoordinateCohortSize": 487,
+    "comparisons": [
+      {
+        "interval": "1->2",
+        "comparableIds": 4632,
+        "changedIds": 326,
+        "changedRatio": 0.07037996545768567,
+        "cohortComparableIds": 487,
+        "cohortChangedIds": 1,
+        "cohortChangedRatio": 0.002053388090349076,
+        "cohortMissingInPair": 0
+      },
+      {
+        "interval": "2->3",
+        "comparableIds": 4632,
+        "changedIds": 315,
+        "changedRatio": 0.06800518134715026,
+        "cohortComparableIds": 487,
+        "cohortChangedIds": 0,
+        "cohortChangedRatio": 0.0,
+        "cohortMissingInPair": 0
+      },
+      {
+        "interval": "1->3",
+        "comparableIds": 4632,
+        "changedIds": 411,
+        "changedRatio": 0.08873056994818652,
+        "cohortComparableIds": 487,
+        "cohortChangedIds": 1,
+        "cohortChangedRatio": 0.002053388090349076,
+        "cohortMissingInPair": 0
+      }
+    ],
+    "sceneD": {
+      "prk_center_id": "04540-11291-00001-00-1",
+      "availability": [
+        8,
+        8,
+        8
+      ]
+    },
+    "evidence": "realtime-variation-values.json",
+    "interpretation": "Value changes are observable; production timestamps and absolute freshness remain unknown. Unchanged rows do not prove stale data."
+  }
+}

@@ -1,4 +1,4 @@
-"""Build offline demo scenes from the scrubbed T-14 samples."""
+"""Build offline demo scenes from scrubbed T-14, T-23 and T-34 recordings."""
 
 import argparse
 import csv
@@ -15,6 +15,8 @@ SIGNAL_LABEL = "시연: 기록한 울산 신호 재생 · 방향 가정: 진입 
 FOG_LABEL = "시연: 10월 28일 기록한 중부내륙선 안개 자료 재생"
 EVENT_LABEL = "시연: 10월 28일 기록한 수도권 공사 자료 재생"
 ICE_LABEL = "합성 시나리오: 살얼음 자료는 11월 15일부터 제공돼 예시로 만들었어요"
+TRAVEL_LABEL = "시연 E · 여행 모드 · 동행·날씨 맞춤 추천과 세종로 빈자리(2026-10-29 기록)"
+TRAVEL_SOURCE = ROOT / "tools/demo-src/travel"
 
 
 def sample(pattern):
@@ -104,9 +106,38 @@ def hazard_scene():
     return sorted(rows, key=lambda row: row["t"])
 
 
+def travel_scene():
+    def response(name):
+        source = TRAVEL_SOURCE / (name + ".json")
+        return compact(json.loads(source.read_text(encoding="utf-8"))["response"])
+
+    summary = json.loads((TRAVEL_SOURCE / "summary.json").read_text(encoding="utf-8"))
+    destination = summary["destination"]
+    seoul = json.loads((TRAVEL_SOURCE / "seoul-parking.json").read_text(encoding="utf-8"))
+    details = {field: {p.stem.removeprefix(prefix): response(p.stem)
+                      for p in sorted(TRAVEL_SOURCE.glob(prefix + "*.json")) if p.stem != "pet-places"}
+               for field, prefix in [("petDetails", "pet-"), ("facilities", "facilities-")]}
+    def dest(t, meters):
+        return event(t, "dest", name=destination["name"], lat=destination["lat"], lon=destination["lon"],
+                     remainM=meters, remainSec=math.ceil(meters / 1800 * 420))
+
+    # shortcut: festival dates stay recorded; events may disappear after 2026-12-31.
+    rows = [event(0, "label", text=TRAVEL_LABEL), event(0, "gear", parked=True), event(0, "nav", mode="FREE"),
+            event(0, "speed", mps=0.0),
+            event(0, "seoul", body=response("seoul-parking"), recordedAt=seoul["requestedAtKst"]),
+            event(2000, "nav", mode="ROUTE"), dest(2000, 1800),
+            event(2000, "tour", places=response("places"), festivals=response("festivals"),
+                  petPlaces=response("pet-places"), forecast=response("forecast-20261029-1700"),
+                  forecastRecordedAt="2026-10-29T19:36:00+09:00", **details),
+            event(32000, "gear", parked=False), event(32000, "speed", mps=10.0)]
+    rows += [dest(32000 + step * 2000, 1800 - step * 100) for step in range(1, 17)]
+    rows.append(dest(66000, 150))
+    return rows
+
+
 def generate():
     OUTPUT.mkdir(parents=True, exist_ok=True)
-    for name, rows in zip("abc", (signal_scene("100", True, 40), signal_scene("1", False, 23), hazard_scene())):
+    for name, rows in zip("abce", (signal_scene("100", True, 40), signal_scene("1", False, 23), hazard_scene(), travel_scene())):
         (OUTPUT / f"scene-{name}.jsonl").write_text("".join(compact(row) + "\n" for row in rows), encoding="utf-8")
     self_test()
 
@@ -120,7 +151,7 @@ def self_test():
                 value = line.split("=", 1)[1].strip().strip("\"'")
                 if value:
                     secrets.extend((value, unquote(value), quote(unquote(value), safe="")))
-    for scene in "abc":
+    for scene in "abce":
         path = OUTPUT / f"scene-{scene}.jsonl"
         text = path.read_text(encoding="utf-8")
         assert not any(token.lower() in text.lower() for token in ("serviceKey", "apiKey", "authKey")), "credential field found"
@@ -130,6 +161,36 @@ def self_test():
         times = [event["t"] for event in events]
         assert all(isinstance(t, int) and t >= 0 for t in times)
         assert times == sorted(times) and times[-1] <= 90_000
+        if scene == "e":
+            assert events[0]["text"] == TRAVEL_LABEL
+            assert [e["parked"] for e in events if e["kind"] == "gear"] == [True, False]
+            assert [(e["t"], e["mode"]) for e in events if e["kind"] == "nav"] == [(0, "FREE"), (2000, "ROUTE")]
+            destinations = [e for e in events if e["kind"] == "dest"]
+            assert destinations[0]["remainM"] == 1800 and destinations[0]["remainSec"] == 420
+            assert destinations[-1]["remainM"] == 150 and destinations[-1]["t"] == 66000
+            assert all(e["name"] == "세종문화회관" for e in destinations)
+            assert all(a["remainM"] > b["remainM"] for a, b in zip(destinations, destinations[1:]))
+            assert [e["t"] for e in destinations[1:]] == list(range(34000, 66001, 2000))
+            summary = json.loads((TRAVEL_SOURCE / "summary.json").read_text(encoding="utf-8"))
+            assert summary["destination"]["parkingDistanceMeters"] <= 500
+            assert all((e["lat"], e["lon"]) == (summary["destination"]["lat"], summary["destination"]["lon"]) for e in destinations)
+            assert [(e["t"], e["mps"]) for e in events if e["kind"] == "speed"] == [(0, 0.0), (32000, 10.0)]
+            assert all(e["remainSec"] > 180 for e in destinations if e["remainM"] > 1000)
+            assert next(e["t"] for e in destinations if e["remainM"] <= 1000) == 48000
+            assert next(e["t"] for e in events if e["kind"] == "gear" and not e["parked"]) == 32000
+            tour = next(e for e in events if e["kind"] == "tour")
+            assert tour["t"] == 2000 and tour["forecastRecordedAt"] == "2026-10-29T19:36:00+09:00"
+            for field, name in [("places", "places"), ("festivals", "festivals"), ("petPlaces", "pet-places"),
+                                ("forecast", "forecast-20261029-1700")]:
+                assert json.loads(tour[field]) == json.loads((TRAVEL_SOURCE / (name + ".json")).read_text(encoding="utf-8"))["response"]
+            for field, prefix in [("petDetails", "pet-"), ("facilities", "facilities-")]:
+                files = [p for p in TRAVEL_SOURCE.glob(prefix + "*.json") if p.stem != "pet-places"]
+                assert set(tour[field]) == {p.stem.removeprefix(prefix) for p in files}
+                for path in files:
+                    assert json.loads(tour[field][path.stem.removeprefix(prefix)]) == json.loads(path.read_text(encoding="utf-8"))["response"]
+            seoul = next(e for e in events if e["kind"] == "seoul")
+            source = json.loads((TRAVEL_SOURCE / "seoul-parking.json").read_text(encoding="utf-8"))
+            assert json.loads(seoul["body"]) == source["response"] and seoul["recordedAt"] == source["requestedAtKst"]
 
 
 def main():

@@ -1,0 +1,227 @@
+{
+  "requestedAtKst": "2026-10-29T12:34:29.452616+09:00",
+  "url": "https://apis.data.go.kr/B553881/Parking_v1/PrkRealtimeInfo_v1?pageNo=1&numOfRows=10000&format=2&sidoCd=11&sigunguCd=11140&serviceKey=***",
+  "callNumber": 7,
+  "httpStatus": 200,
+  "downloadBytes": 4844,
+  "response": {
+    "pageNo": "1",
+    "PrkRealtimeInfo": [
+      {
+        "pkfc_Available_ParkingLots_total": "59",
+        "pkfc_ParkingLots_total": "189",
+        "prk_center_id": "04501-29391-00005-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "2",
+        "pkfc_ParkingLots_total": "4",
+        "prk_center_id": "04511-29391-00002-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "8",
+        "pkfc_ParkingLots_total": "18",
+        "prk_center_id": "04512-11191-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "11",
+        "pkfc_ParkingLots_total": "16",
+        "prk_center_id": "04513-11191-00002-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "48",
+        "pkfc_ParkingLots_total": "49",
+        "prk_center_id": "04513-11291-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "9",
+        "pkfc_ParkingLots_total": "12",
+        "prk_center_id": "04527-11191-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "2",
+        "prk_center_id": "04528-11191-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "6",
+        "pkfc_ParkingLots_total": "9",
+        "prk_center_id": "04528-11191-00002-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "5",
+        "pkfc_ParkingLots_total": "9",
+        "prk_center_id": "04532-11191-00002-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "8",
+        "pkfc_ParkingLots_total": "13",
+        "prk_center_id": "04540-11291-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "32",
+        "pkfc_ParkingLots_total": "80",
+        "prk_center_id": "04543-11191-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "5",
+        "pkfc_ParkingLots_total": "14",
+        "prk_center_id": "04547-11191-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "9",
+        "pkfc_ParkingLots_total": "20",
+        "prk_center_id": "04548-11191-00002-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "19",
+        "pkfc_ParkingLots_total": "33",
+        "prk_center_id": "04549-11191-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "24",
+        "pkfc_ParkingLots_total": "49",
+        "prk_center_id": "04550-11191-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "332",
+        "pkfc_ParkingLots_total": "491",
+        "prk_center_id": "04559-29391-00024-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "231",
+        "pkfc_ParkingLots_total": "873",
+        "prk_center_id": "04562-29391-00002-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "4",
+        "pkfc_ParkingLots_total": "5",
+        "prk_center_id": "04563-11191-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "8",
+        "pkfc_ParkingLots_total": "20",
+        "prk_center_id": "04566-11191-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "905",
+        "pkfc_ParkingLots_total": "1092",
+        "prk_center_id": "04566-29391-00011-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "4",
+        "prk_center_id": "04568-11191-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "4",
+        "pkfc_ParkingLots_total": "13",
+        "prk_center_id": "04573-29392-00090-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "26",
+        "pkfc_ParkingLots_total": "113",
+        "prk_center_id": "04576-29391-00062-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "14",
+        "pkfc_ParkingLots_total": "51",
+        "prk_center_id": "04577-29391-00002-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "1",
+        "pkfc_ParkingLots_total": "26",
+        "prk_center_id": "04578-11291-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "87",
+        "pkfc_ParkingLots_total": "220",
+        "prk_center_id": "04584-29391-00015-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "24",
+        "pkfc_ParkingLots_total": "51",
+        "prk_center_id": "04589-29391-00029-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "34",
+        "pkfc_ParkingLots_total": "83",
+        "prk_center_id": "04592-29391-00006-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "66",
+        "pkfc_ParkingLots_total": "88",
+        "prk_center_id": "04594-11291-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "10",
+        "pkfc_ParkingLots_total": "93",
+        "prk_center_id": "04601-29391-00022-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "5",
+        "pkfc_ParkingLots_total": "97",
+        "prk_center_id": "04602-29391-00002-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "26",
+        "pkfc_ParkingLots_total": "75",
+        "prk_center_id": "04602-29391-00020-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "7",
+        "pkfc_ParkingLots_total": "44",
+        "prk_center_id": "04602-29391-00049-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "0",
+        "pkfc_ParkingLots_total": "79",
+        "prk_center_id": "04604-29391-00028-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "12",
+        "pkfc_ParkingLots_total": "76",
+        "prk_center_id": "04610-29392-00009-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "35",
+        "pkfc_ParkingLots_total": "118",
+        "prk_center_id": "04618-29391-00037-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "15",
+        "pkfc_ParkingLots_total": "47",
+        "prk_center_id": "04622-29391-00015-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "14",
+        "pkfc_ParkingLots_total": "16",
+        "prk_center_id": "04626-11191-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "26",
+        "pkfc_ParkingLots_total": "39",
+        "prk_center_id": "04628-11291-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "12",
+        "pkfc_ParkingLots_total": "21",
+        "prk_center_id": "04630-29391-00001-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "11",
+        "pkfc_ParkingLots_total": "48",
+        "prk_center_id": "04631-29391-00018-00-1"
+      },
+      {
+        "pkfc_Available_ParkingLots_total": "4",
+        "pkfc_ParkingLots_total": "21",
+        "prk_center_id": "04635-11191-00001-00-1"
+      }
+    ],
+    "resultCode": "0",
+    "totalCount": "42",
+    "numOfRows": "10000",
+    "resultMsg": "SUCCESS"
+  },
+  "durationMs": 174.18
+}

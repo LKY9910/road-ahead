@@ -1,0 +1,10 @@
+{
+  "gear": "Park",
+  "speed_kph": 0,
+  "overlay_present": false,
+  "overlay_permission_granted_user10": false,
+  "appops": "SYSTEM_ALERT_WINDOW: default; time=+4m24s959ms ago; rejectTime=+7m7s214ms ago; duration=+18ms",
+  "display_size": "Physical size: 2560x1440",
+  "density": "Physical density: 160",
+  "services": "ACTIVITY MANAGER SERVICES (dumpsys activity services)\r\n  (nothing)"
+}

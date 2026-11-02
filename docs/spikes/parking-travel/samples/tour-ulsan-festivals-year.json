@@ -1,0 +1,56 @@
+{
+  "requestedAtKst": "2026-10-29T12:35:19.213440+09:00",
+  "url": "https://apis.data.go.kr/B551011/KorService2/searchFestival2?MobileOS=ETC&MobileApp=RoadAheadProbe&_type=json&pageNo=1&numOfRows=1000&areaCode=7&eventStartDate=20260101&arrange=A&serviceKey=***",
+  "callNumber": 6,
+  "httpStatus": 200,
+  "downloadBytes": 934,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "addr1": "울산광역시 울주군 서생면 대송리",
+              "addr2": "간절곶",
+              "zipcode": "45015",
+              "cat1": "A02",
+              "cat2": "A0207",
+              "cat3": "A02070200",
+              "contentid": "141375",
+              "contenttypeid": "15",
+              "createdtime": "20061219090000",
+              "eventstartdate": "20251231",
+              "eventenddate": "20260101",
+              "firstimage": "http://tong.visitkorea.or.kr/cms/resource/79/3588879_image2_1.jpg",
+              "firstimage2": "http://tong.visitkorea.or.kr/cms/resource/79/3588879_image2_1.jpg",
+              "cpyrhtDivCd": "Type3",
+              "mapx": "129.3619181517",
+              "mapy": "35.3591723598",
+              "mlevel": "6",
+              "modifiedtime": "20251229094204",
+              "areacode": "7",
+              "sigungucode": "5",
+              "tel": "052-980-2232",
+              "title": "울주 간절곶 해맞이",
+              "lDongRegnCd": "31",
+              "lDongSignguCd": "710",
+              "lclsSystm1": "EV",
+              "lclsSystm2": "EV01",
+              "lclsSystm3": "EV010200",
+              "progresstype": "선택안함",
+              "festivaltype": "선택안함"
+            }
+          ]
+        },
+        "numOfRows": 1,
+        "pageNo": 1,
+        "totalCount": 1
+      }
+    }
+  },
+  "durationMs": 175.4
+}

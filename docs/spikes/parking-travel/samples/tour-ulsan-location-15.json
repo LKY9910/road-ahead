@@ -1,0 +1,81 @@
+{
+  "requestedAtKst": "2026-10-29T12:35:19.051957+09:00",
+  "url": "https://apis.data.go.kr/B551011/KorService2/locationBasedList2?MobileOS=ETC&MobileApp=RoadAheadProbe&_type=json&pageNo=1&numOfRows=1000&mapX=129.297&mapY=35.548&radius=5000&arrange=E&contentTypeId=15&serviceKey=***",
+  "callNumber": 5,
+  "httpStatus": 200,
+  "downloadBytes": 1600,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "addr1": "울산광역시 남구 대공원로 94 (옥동)",
+              "addr2": "",
+              "zipcode": "44660",
+              "areacode": "7",
+              "cat1": "A02",
+              "cat2": "A0208",
+              "cat3": "A02081300",
+              "contentid": "3578130",
+              "contenttypeid": "15",
+              "createdtime": "20251203130821",
+              "dist": "1835.2728900353231",
+              "firstimage": "http://tong.visitkorea.or.kr/cms/resource/65/3578165_image2_1.jpg",
+              "firstimage2": "http://tong.visitkorea.or.kr/cms/resource/65/3578165_image3_1.jpg",
+              "cpyrhtDivCd": "Type3",
+              "mapx": "129.2935470479",
+              "mapy": "35.5316989268",
+              "mlevel": "6",
+              "modifiedtime": "20251203140138",
+              "sigungucode": "2",
+              "tel": "052-271-8701",
+              "title": "울산의 밤, 크리스마스 마켓",
+              "lDongRegnCd": "31",
+              "lDongSignguCd": "140",
+              "lclsSystm1": "EV",
+              "lclsSystm2": "EV03",
+              "lclsSystm3": "EV030400"
+            },
+            {
+              "addr1": "울산광역시 중구 젊음의거리 27-4 (성남동)",
+              "addr2": "성남동 소방서 부지",
+              "zipcode": "44532",
+              "areacode": "7",
+              "cat1": "A02",
+              "cat2": "A0207",
+              "cat3": "A02070200",
+              "contentid": "2933428",
+              "contenttypeid": "15",
+              "createdtime": "20221216100639",
+              "dist": "1971.8715216992803",
+              "firstimage": "http://tong.visitkorea.or.kr/cms/resource/64/3586264_image2_1.jpg",
+              "firstimage2": "http://tong.visitkorea.or.kr/cms/resource/64/3586264_image3_1.jpg",
+              "cpyrhtDivCd": "Type3",
+              "mapx": "129.3179304069",
+              "mapy": "35.5538802250",
+              "mlevel": "6",
+              "modifiedtime": "20251219142106",
+              "sigungucode": "1",
+              "tel": "010-4825-0560",
+              "title": "울산 성남동 눈꽃축제",
+              "lDongRegnCd": "31",
+              "lDongSignguCd": "110",
+              "lclsSystm1": "EV",
+              "lclsSystm2": "EV01",
+              "lclsSystm3": "EV010600"
+            }
+          ]
+        },
+        "numOfRows": 2,
+        "pageNo": 1,
+        "totalCount": 2
+      }
+    }
+  },
+  "durationMs": 159.07
+}

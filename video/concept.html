@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>앞길 안내 · 콘셉트 영상</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #141b22; }
+  body { font-family: 'Malgun Gothic', sans-serif; color: #fff; }
+  #screen { position: absolute; width: 1920px; height: 1080px; transform-origin: top left; overflow: hidden; }
+  #navigation { position: absolute; inset: 0 0 130px; overflow: hidden; background: #202932; }
+  canvas { position: absolute; inset: 0; }
+  #concept-label { position: absolute; z-index: 2; left: 30px; top: 22px; padding: 8px 15px; border: 1px solid #65717c; border-radius: 7px; background: #182029e8; font-size: 20px; font-weight: 700; }
+  #turn { position: absolute; left: 30px; top: 91px; width: 408px; display: flex; gap: 24px; align-items: center; padding: 25px 28px; background: #182029; border-radius: 18px; box-shadow: 0 6px 25px #0003; }
+  #turn svg { width: 64px; height: 70px; flex-shrink: 0; }
+  #turn-distance { font-size: 43px; line-height: 1.1; font-weight: 800; }
+  #turn-direction { font-size: 23px; margin-top: 11px; color: #d8dfe6; }
+  #arrival { position: absolute; bottom: 30px; left: 30px; padding: 22px 28px; min-width: 310px; border-radius: 18px; background: #182029; box-shadow: 0 6px 25px #0003; }
+  #arrival strong { font-size: 36px; }
+  #arrival span { font-size: 23px; color: #bdc8d2; margin-left: 22px; }
+  #arrival div { margin-top: 8px; font-size: 19px; color: #a2afbb; }
+  #card { position: absolute; width: 450px; right: 30px; bottom: 30px; border-radius: 24px; padding: 21px 30px 27px; background: rgba(17,20,24,.94); box-shadow: 0 15px 42px rgba(0,0,0,.35); }
+  #card-label { color: #a7b0ba; font-size: 18px; margin-bottom: 22px; }
+  #card-content { display: flex; gap: 28px; align-items: center; }
+  #signal { flex: 0 0 66px; width: 66px; height: 66px; border-radius: 50%; background: var(--signal); box-shadow: 0 0 0 9px var(--ring); display: grid; place-items: center; }
+  #signal svg { width: 39px; height: 39px; stroke: #27241c; fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+  #card-copy { min-width: 0; flex: 1; }
+  #card-title { font-size: 25px; font-weight: 700; line-height: 1.36; word-break: keep-all; }
+  #countdown { font-size: 72px; line-height: 1.15; font-weight: 900; font-variant-numeric: tabular-nums; letter-spacing: -2px; margin-top: 4px; white-space: nowrap; }
+  #countdown small { font-size: 29px; font-weight: 700; margin-left: 9px; letter-spacing: 0; }
+  #countdown .prefix { font-size: 22px; font-weight: 500; letter-spacing: 0; margin-right: 7px; color: #c9d1d9; }
+  #card-detail { margin-top: 10px; color: #c9d1d9; font-size: 22px; line-height: 1.4; word-break: keep-all; }
+  #signal .parking { font-size: 41px; font-weight: 800; color: #fff; }
+  #parking-spaces { margin-top: 9px; font-size: 42px; font-weight: 800; white-space: nowrap; }
+  #card.travel #card-content { align-items: flex-start; }
+  #card.travel #signal { margin-top: 13px; }
+  .travel-item + .travel-item { border-top: 1px solid #414952; padding-top: 17px; margin-top: 18px; }
+  .travel-name { font-size: 25px; line-height: 1.4; font-weight: 700; }
+  .travel-detail { font-size: 22px; line-height: 1.5; margin-top: 7px; color: #c9d1d9; word-break: keep-all; }
+  #source { color: #a7b0ba; font-size: 17px; margin-top: 22px; }
+  #captions { position: absolute; bottom: 0; height: 130px; width: 100%; display: grid; place-items: center; padding: 15px 130px; background: #11171e; border-top: 1px solid #3e4852; }
+  #subtitle { font-size: 32px; line-height: 1.55; font-weight: 700; text-align: center; word-break: keep-all; }
+  #title-layer { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; padding: 0 170px; background: linear-gradient(90deg,#101820ed 0%,#101820b8 57%,#10182030 100%); }
+  #headline { font-size: 60px; font-weight: 700; line-height: 1.5; letter-spacing: -2px; max-width: 1450px; word-break: keep-all; }
+  #app-name { font-size: 104px; font-weight: 800; letter-spacing: -4px; margin: 0 0 28px; }
+  #introduction { color: #d4dce5; font-size: 28px; line-height: 1.7; max-width: 1580px; word-break: keep-all; white-space: pre-line; }
+  #cut { position: absolute; inset: 0; background: #151d25; pointer-events: none; opacity: 0; }
+  #gear-status { position:absolute; right:30px; top:30px; font-size:20px; color:#bdc8d2; }
+  #subtitle-speaker { position:absolute; font-size:18px; line-height:28px; font-weight:700; color:#b8d4ff; }
+  #subtitle.balanced, #headline.balanced { text-wrap:balance; }
+  #card.question, #card.travel, #card.parking { --ui-scale:.8035714286; padding:calc(28px * var(--ui-scale)) calc(40px * var(--ui-scale)) calc(36px * var(--ui-scale)); border-radius:calc(32px * var(--ui-scale)); }
+  #card.question #card-content, #card.travel #card-content, #card.parking #card-content { display:block; }
+  #card.question #card-label, #card.travel #card-label, #card.parking #card-label { font-size:calc(24px * var(--ui-scale)); line-height:calc(34px * var(--ui-scale)); margin-bottom:calc(20px * var(--ui-scale)); }
+  #card.question #card-title { font-size:calc(36px * var(--ui-scale)); line-height:calc(52px * var(--ui-scale)); font-weight:600; white-space:nowrap; }
+  #companion-answer { height:calc(48px * var(--ui-scale)); margin-top:calc(16px * var(--ui-scale)); font-size:calc(34px * var(--ui-scale)); line-height:calc(48px * var(--ui-scale)); font-weight:500; color:#b8d4ff; }
+  #card.travel #card-label { margin-bottom:calc(4px * var(--ui-scale)); }
+  #travel-weather { font-size:calc(20px * var(--ui-scale)); line-height:calc(29px * var(--ui-scale)); color:#c9d1d9; margin-bottom:calc(20px * var(--ui-scale)); white-space:nowrap; }
+  #card.travel .travel-item + .travel-item { border:0; padding:0; margin-top:calc(12px * var(--ui-scale)); }
+  #card.travel .travel-name { font-size:calc(26px * var(--ui-scale)); line-height:calc(38px * var(--ui-scale)); font-weight:400; white-space:nowrap; }
+  #card.travel .travel-detail, .travel-reason { font-size:calc(20px * var(--ui-scale)); line-height:calc(29px * var(--ui-scale)); font-weight:400; margin-top:0; white-space:nowrap; }
+  .travel-reason { color:#b8d4ff; margin-top:calc(4px * var(--ui-scale)); }
+  #card.parking #card-label { display:flex; align-items:center; gap:calc(12px * var(--ui-scale)); }
+  #parking-dot { width:calc(16px * var(--ui-scale)); height:calc(16px * var(--ui-scale)); border-radius:50%; background:#3e7bfa; flex:none; }
+  #card.parking #card-title { font-size:calc(34px * var(--ui-scale)); line-height:calc(48px * var(--ui-scale)); font-weight:500; }
+  #card.parking #parking-spaces { display:flex; align-items:baseline; gap:calc(12px * var(--ui-scale)); margin-top:calc(16px * var(--ui-scale)); font-weight:500; line-height:calc(144px * var(--ui-scale)); }
+  .parking-label, .parking-unit { font-size:calc(32px * var(--ui-scale)); line-height:calc(44px * var(--ui-scale)); }
+  #parking-number { font-size:calc(96px * var(--ui-scale)); line-height:calc(144px * var(--ui-scale)); font-variant-numeric:tabular-nums; }
+  #card.parking #card-detail { margin-top:calc(20px * var(--ui-scale)); font-size:calc(30px * var(--ui-scale)); line-height:calc(44px * var(--ui-scale)); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main id="screen" aria-label="앞길 안내 콘셉트 애니메이션">
+  <section id="navigation" aria-label="직접 그린 가상의 내비게이션">
+    <canvas id="map" width="1920" height="950" aria-label="일반적인 도로 지도와 움직이는 차량"></canvas>
+    <div id="concept-label">콘셉트 영상</div>
+    <div id="gear-status" hidden>기어 P</div>
+    <div id="turn">
+      <svg viewBox="0 0 64 70" aria-hidden="true"><path id="turn-arrow" d="M48 65V32Q48 20 36 20H12M27 4L11 20L27 36" fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round"/></svg>
+      <div><div id="turn-distance">150m</div><div id="turn-direction">시청 방면 좌회전</div></div>
+    </div>
+    <div id="arrival"><strong id="arrival-time">12분</strong><span id="arrival-distance">3.2km</span><div id="arrival-status">목적지까지</div></div>
+    <aside id="card" aria-label="앞길 안내 카드">
+      <div id="card-label"><span id="parking-dot" hidden></span><span id="card-kind">앞길 안내 · 신호</span></div>
+      <div id="travel-weather" hidden>도착 때 비 예보 · 실내 명소 우선</div>
+      <div id="card-content">
+        <div id="signal"><svg id="hazard-icon" viewBox="0 0 40 40" aria-hidden="true"></svg><span id="parking-icon" class="parking" hidden>P</span></div>
+        <div id="card-copy"><div id="card-title"></div><div id="companion-answer" hidden></div><div id="countdown"></div><div id="parking-spaces" hidden><span class="parking-label">빈자리</span><span id="parking-number">23</span><span class="parking-unit">면</span></div><div id="card-detail"></div><div id="travel-list" role="list" hidden></div></div>
+      </div>
+      <div id="source"></div>
+    </aside>
+    <div id="cut"></div>
+  </section>
+  <div id="captions"><span id="subtitle-speaker" hidden>운전자</span><div id="subtitle" aria-live="off"></div></div>
+  <div id="title-layer"><div id="headline"></div><div id="app-name">앞길 안내</div><div id="introduction"></div></div>
+</main>
+<script>
+(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const canvas = $('map'), ctx = canvas.getContext('2d');
+  const clamp = (value, low = 0, high = 1) => Math.min(high, Math.max(low, value));
+  const smooth = value => { const p = clamp(value); return p * p * (3 - 2 * p); };
+  const mix = (a, b, t) => a + (b - a) * t;
+  const introLine = 'Pleos 내비 위 카드 한 장과 음성 한 번으로, 앞길의 신호·도로 위험부터 목적지 주차와 여행 정보까지 묻기 전에 알려 주는 내비 기능 개선 제안과 그 시제품 앱입니다.';
+  const cues = [
+    { section: 'intro', start: 0, end: 5, text: '교차로 앞, 신호가 언제 바뀔지 모른 채 다가갑니다' },
+    { section: 'intro', start: 5, end: 10, text: '안개 낀 고속도로, 앞에 무엇이 있는지 모릅니다' },
+    { section: 'intro', start: 10, end: 15, text: '아이·반려동물과 떠난 날, 함께 갈 곳은 따로 찾아야 합니다' },
+    { section: 'concept', start: 0.5, end: 4, text: '앞 신호 빨간불이에요. 속도를 줄이세요.' },
+    { section: 'concept', start: 4.4, end: 9.5, text: '좌회전 신호까지 32초 남았어요.' },
+    { section: 'concept', start: 17, end: 21.5, text: '곧 좌회전 신호로 바뀌어요.' },
+    { section: 'concept', start: 25.5, end: 31, text: '앞 신호 빨간불이에요.' },
+    { section: 'concept', start: 35.3, end: 41, text: '3km 앞 안개 구간이에요. 앞이 500m도 안 보여요. 속도를 줄이세요.' },
+    { section: 'concept', start: 41.3, end: 45.5, text: '2.5km 앞 공사 구간이에요. 4차로 차단.' },
+    { section: 'concept', start: 45.8, end: 50, text: '3km 앞 살얼음 주의 구간이에요. 속도를 줄이세요.' },
+    { section: 'concept', start: 50.4, end: 53.8, text: '누구와 함께 가세요?' },
+    { section: 'concept', start: 54.2, end: 58.6, speaker:'driver', text: '아이랑 강아지랑 가요.' },
+    { section: 'concept', start: 59.4, end: 64.4, text: '목적지 근처에서 11월 2일까지 강변 가을 축제가 열려요. 목적지에서 1.2km예요.' },
+    { section: 'concept', start: 64.6, end: 68.5, text: '도착할 때쯤 비 예보가 있어 실내 명소를 먼저 골랐어요.' },
+    { section: 'concept', start: 68.7, end: 74.9, text: '반려동물과 갈 수 있는 가까운 명소는 시립 어린이 미술관, 전망대 공원이에요. 시립 어린이 미술관은 유모차를 빌릴 수 있어요.' },
+    { section: 'concept', start: 75.4, end: 84.6, text: '목적지 근처 중앙 공영주차장에 빈자리 23면이 있어요. 30분에 1,000원이에요.' },
+    { section: 'outro', start: 0, end: 2, text: "Pleos 내비에 '앞길 안내'가 더해지면" },
+    { section: 'outro', start: 2, end: 5, text: '앞길 안내' },
+  ];
+  const durations = { intro: 15, concept: 85, outro: 5 };
+  const scenes = { E1:[50,59], E2:[59,75], D:[75,85] };
+  const weatherLine = '도착 때 비 예보 · 실내 명소 우선';
+  const travelItems = [
+    { name:'강변 가을 축제', detail:'축제 · 1.2km · 11월 2일까지', reasons:[] },
+    { name:'시립 어린이 미술관', detail:'문화시설 · 800m', reasons:['반려동물 동반','유모차 대여'] },
+    { name:'전망대 공원', detail:'관광지 · 2.1km', reasons:['일부 구역 동반','목줄 착용'] },
+  ];
+  $('travel-list').innerHTML=travelItems.map(item=>`<div class="travel-item" role="listitem"><div class="travel-name">${item.name}</div><div class="travel-detail">${item.detail}</div>${item.reasons.length ? `<div class="travel-reason">${item.reasons.join(' · ')}</div>` : ''}</div>`).join('');
+
+  function stroke(path, color, width, dash = []) {
+    ctx.strokeStyle = color; ctx.lineWidth = width; ctx.setLineDash(dash); ctx.stroke(path); ctx.setLineDash([]);
+  }
+  function path(points) { const p = new Path2D(); points.forEach(([x,y], i) => i ? p.lineTo(x,y) : p.moveTo(x,y)); return p; }
+  function baseMap(highway) {
+    const layer = document.createElement('canvas'); layer.width = 2120; layer.height = 1150;
+    const b = layer.getContext('2d');
+    b.fillStyle = highway ? '#253830' : '#26313b'; b.fillRect(0,0,2120,1150);
+    if (!highway) {
+      for (let row = 0; row < 8; row++) for (let col = 0; col < 13; col++) {
+        const x = col * 180 - 60, y = row * 160 - 65;
+        if (Math.abs(x - 1030) < 150 || Math.abs(y - 430) < 125) continue;
+        b.fillStyle = (row + col) % 7 === 0 ? '#31463f' : '#35424d';
+        b.beginPath(); b.roundRect(x + 12, y + 12, 137, 113, 9); b.fill();
+        if ((row + col) % 7 !== 0) {
+          b.fillStyle = '#43515d'; b.fillRect(x + 26,y + 24,48,72); b.fillRect(x + 82,y + 24,54,35); b.fillRect(x + 82,y + 67,54,29);
+        }
+      }
+      b.strokeStyle = '#45515d'; b.lineWidth = 16;
+      for (let x = 110; x < 2200; x += 360) { b.beginPath(); b.moveTo(x,0); b.lineTo(x,1150); b.stroke(); }
+      for (let y = 90; y < 1200; y += 320) { b.beginPath(); b.moveTo(0,y); b.lineTo(2120,y); b.stroke(); }
+      for (const [p,w] of [[path([[1030,-100],[1030,1250]]),130],[path([[-100,430],[2200,430]]),125]]) {
+        b.strokeStyle='#172028'; b.lineWidth=w+8; b.stroke(p); b.strokeStyle='#515d69'; b.lineWidth=w; b.stroke(p);
+        b.strokeStyle='#81909b'; b.lineWidth=2; b.setLineDash([20,22]); b.stroke(p); b.setLineDash([]);
+      }
+      b.fillStyle='#c4cbd0';
+      for(let x=973;x<1090;x+=17) { b.fillRect(x,513,8,27); b.fillRect(x,322,8,27); }
+      b.fillRect(970,551,120,5);
+      for(let y=375;y<490;y+=17) { b.fillRect(907,y,27,8); b.fillRect(1127,y,27,8); }
+      b.font='22px "Malgun Gothic"'; b.fillStyle='#9aabb9';
+      b.fillText('시청로',1165,415); b.fillText('중앙공원',244,258); b.fillText('문화거리',562,731);
+    } else {
+      b.fillStyle='#304b3d';
+      for (let i=0;i<45;i++) { b.beginPath(); b.ellipse((i*331)%2100,(i*173)%1150,50+i%4*25,30+i%3*30,i,0,Math.PI*2); b.fill(); }
+      const water=new Path2D('M0 900 Q450 640 620 170 T900 -100');
+      b.strokeStyle='#2c4b5e'; b.lineWidth=95; b.stroke(water);
+      b.strokeStyle='#3b5867'; b.lineWidth=2; b.stroke(water);
+      const p=new Path2D('M930 1250 C930 900 1000 670 1090 400 S1310 -100 1400 -200');
+      b.strokeStyle='#18271f'; b.lineWidth=210; b.stroke(p); b.strokeStyle='#56616b'; b.lineWidth=174; b.stroke(p);
+      b.strokeStyle='#b2b8b6'; b.lineWidth=3; b.stroke(p);
+      b.strokeStyle='#e0e3df'; b.lineWidth=1.5;
+      for (const offset of [-62,-27,27,62]) { b.save(); b.translate(offset,0); b.setLineDash([25,22]); b.stroke(p); b.restore(); }
+      b.setLineDash([]); b.font='22px "Malgun Gothic"'; b.fillStyle='#91a59a'; b.fillText('고속도로',1290,250);
+    }
+    return layer;
+  }
+  const city = baseMap(false), highway = baseMap(true);
+  function drawCar(x,y,angle=0) {
+    ctx.save(); ctx.translate(x,y); ctx.rotate(angle);
+    const glow=ctx.createRadialGradient(0,0,4,0,0,67); glow.addColorStop(0,'#62bdff65'); glow.addColorStop(1,'#62bdff00');
+    ctx.fillStyle=glow; ctx.fillRect(-70,-70,140,140);
+    ctx.shadowColor='#0007'; ctx.shadowBlur=12; ctx.fillStyle='#fff'; ctx.beginPath();
+    ctx.moveTo(0,-30); ctx.lineTo(22,24); ctx.quadraticCurveTo(0,14,-22,24); ctx.closePath(); ctx.fill();
+    ctx.shadowBlur=0; ctx.fillStyle='#3b9fff'; ctx.beginPath(); ctx.moveTo(0,-17); ctx.lineTo(11,12); ctx.lineTo(0,7); ctx.lineTo(-11,12); ctx.closePath(); ctx.fill(); ctx.restore();
+  }
+  function drawMap(scene,t,routed=true) {
+    ctx.clearRect(0,0,1920,950);
+    const high = scene==='C';
+    const drift = high ? t*4 : (scene==='A' && t<4 ? -14+14*smooth(t/4) : 0);
+    ctx.drawImage(high ? highway : city,-55,drift-40);
+    if (routed) {
+      const route = high ? new Path2D('M875 1150 C875 860 945 630 1035 360 S1255 -140 1345 -240') : new Path2D('M975 1100 L975 466 Q975 390 900 390 L-100 390');
+      const dash=scene==='E2' ? [2000,2000] : [];
+      ctx.lineDashOffset=scene==='E2' ? 2000*(1-smooth(t/1.8)) : 0;
+      ctx.lineJoin='round'; ctx.lineCap='round'; stroke(route,'#172c56',21,dash); stroke(route,'#368cf6',13,dash); ctx.lineDashOffset=0;
+    }
+    let x=975,y=740,angle=0;
+    if(scene==='A') {
+      y=mix(795,545,smooth(t/4));
+      if(t>=22) {
+        const p=clamp((t-22)/3);
+        if(p<.45) { y=mix(545,410,smooth(p/.45)); }
+        else { const q=smooth((p-.45)/.55); x=mix(975,655,q); y=mix(410,390,q); angle=-Math.PI/2*q; }
+      }
+    } else if(scene==='B') { y=mix(780,545,smooth(t/4)); }
+    else if(high) { x=948+Math.sin(t*.3)*5; y=693; angle=.31; }
+    else if(scene==='D') { y=mix(780,670,smooth(t/10)); }
+    drawCar(x,y,angle);
+    canvas.dataset.scene=scene; canvas.dataset.routed=String(routed);
+    canvas.dataset.carX=String(x); canvas.dataset.carY=String(y);
+    canvas.dataset.routeProgress=String(!routed ? 0 : scene==='E2' ? smooth(t/1.8) : 1);
+    if(high && t<6) {
+      const fog=ctx.createLinearGradient(0,0,0,950); fog.addColorStop(0,'#c2d3d463'); fog.addColorStop(.62,'#c2d3d40c'); fog.addColorStop(1,'#c2d3d400');
+      ctx.fillStyle=fog; ctx.fillRect(0,0,1920,950);
+    }
+  }
+  const icons = {
+    fog:'<path d="M5 11H35M5 20H35M5 29H35"/>',
+    work:'<path d="M20 5L35 33H5Z M20 15V23 M20 28V29"/>',
+    ice:'<path d="M20 4V36M6 12L34 28M6 28L34 12M15 7L20 12L25 7M15 33L20 28L25 33M6 18L12 16L11 10M29 30L28 24L34 22M11 30L12 24L6 22M34 18L28 16L29 10"/>',
+    flag:'<path d="M10 34V6M11 7C20 1 23 13 33 7V23C23 29 20 17 11 23Z"/>'
+  };
+  function setText(id,text) { if($(id).textContent!==text) $(id).textContent=text; }
+  function setCard({title, seconds, prefix='', detail='', hazard='', source='', green=false, alpha=1, type='', answer=false, answerAlpha=1}) {
+    const parking=type==='parking', travel=type==='travel', question=type==='question';
+    $('card').classList.toggle('travel',travel);
+    $('card').classList.toggle('parking',parking); $('card').classList.toggle('question',question);
+    $('card').hidden=alpha<=0; $('card').style.opacity=clamp(alpha);
+    $('card').style.transform=`translateY(${(1-clamp(alpha))*14}px)`;
+    $('card').style.setProperty('--signal', parking ? '#3E7BFA' : travel || green ? '#30A46C' : hazard ? '#F5A524' : '#E5484D');
+    $('card').style.setProperty('--ring', parking ? 'rgba(62,123,250,.22)' : travel || green ? 'rgba(48,164,108,.22)' : hazard ? 'rgba(245,165,36,.22)' : 'rgba(229,72,77,.22)');
+    setText('card-kind',parking ? '앞길 안내 · 주차' : travel || question ? '앞길 안내 · 여행' : hazard ? '앞길 안내 · 도로 위험' : '앞길 안내 · 신호');
+    $('signal').hidden=parking || travel || question; $('parking-dot').hidden=!parking;
+    $('travel-weather').hidden=!travel; $('companion-answer').hidden=!question;
+    setText('companion-answer',answer ? '아이 · 반려동물' : ''); $('companion-answer').style.opacity=clamp(answerAlpha);
+    setText('card-title',title); setText('card-detail',detail); setText('source',source);
+    $('card-title').hidden=!title; $('parking-icon').hidden=true; $('parking-spaces').hidden=!parking; $('travel-list').hidden=!travel;
+    $('card-detail').hidden=!detail; $('source').hidden=!source; $('countdown').hidden=seconds===undefined;
+    if(seconds!==undefined && ($('countdown').dataset.value!==String(seconds) || $('countdown').dataset.prefix!==prefix)) {
+      $('countdown').innerHTML=`${prefix ? `<span class="prefix">${prefix}</span>` : ''}${seconds}<small>초</small>`; $('countdown').dataset.value=String(seconds); $('countdown').dataset.prefix=prefix;
+    }
+    const icon=hazard;
+    $('hazard-icon').toggleAttribute('hidden',!icon);
+    if($('hazard-icon').dataset.icon!==icon) { $('hazard-icon').innerHTML=icons[icon]||''; $('hazard-icon').dataset.icon=icon; }
+  }
+  function pulseCut(t,boundaries) { return Math.max(0,...boundaries.map(b=>1-Math.abs(t-b)/.16)); }
+  function render(section,seconds) {
+    const t=clamp(seconds,0,durations[section]-.001);
+    const concept=section==='concept';
+    $('concept-label').hidden=!concept; $('captions').hidden=!concept; $('title-layer').hidden=concept;
+    $('card').hidden=!concept; $('turn').hidden=!concept; $('arrival').hidden=!concept;
+    $('gear-status').hidden=!concept || t<50;
+    if(concept && t>=50) setText('gear-status',t<75 ? '기어 P' : '기어 D');
+    setText('arrival-status','목적지까지');
+    $('cut').style.opacity=0;
+    const cue=cues.find(c=>c.section===section && t>=c.start && t<c.end);
+    setText('subtitle',concept && cue ? cue.text : '');
+    $('subtitle').classList.toggle('balanced',concept && t>=50);
+    $('headline').classList.toggle('balanced',section==='intro' && t>=10);
+    const driver=concept && cue?.speaker==='driver'; $('subtitle-speaker').hidden=!driver;
+    if(driver) {
+      $('subtitle-speaker').style.left=`${$('subtitle').offsetLeft-$('subtitle-speaker').offsetWidth-16}px`;
+      $('subtitle-speaker').style.top=`${$('subtitle').offsetTop+($('subtitle').offsetHeight-28)/2}px`;
+    }
+    if(!concept) {
+      const secondHalf=section==='intro' && t>=5;
+      drawMap(section==='intro' && t>=10 ? 'E1' : secondHalf ? 'C' : 'A',section==='intro' && t>=10 ? 0 : secondHalf ? t-5 : t,false);
+      $('headline').hidden=section==='outro' && t>=2;
+      $('app-name').hidden=section!=='outro' || t<2; $('introduction').hidden=$('app-name').hidden;
+      setText('headline',cue?.text || ''); setText('introduction',introLine.replace(', ', ',\n'));
+      $('title-layer').style.opacity=section==='intro' ? Math.min(clamp(t/.3),clamp((15-t)/.3),clamp(Math.abs(t-5)/.25),clamp(Math.abs(t-10)/.25)) : Math.min(clamp(t/.2),clamp(Math.abs(t-2)/.2));
+    } else if(t<25) {
+      drawMap('A',t); setText('turn-distance','150m'); setText('turn-direction','시청 방면 좌회전');
+      $('turn-arrow').setAttribute('d','M48 65V32Q48 20 36 20H12M27 4L11 20L27 36');
+      setText('arrival-time','12분'); setText('arrival-distance','3.2km');
+      const remaining=t<4 ? 45-Math.floor(t) : t<10 ? 32-Math.floor(t-4) : Math.max(0,12-Math.floor(t-10));
+      setCard({title:t>=22 ? '좌회전 신호' : '좌회전 신호까지',seconds:t>=22 ? undefined : remaining,green:t>=22,alpha:Math.min(t/.3,(23.5-t)/.3)});
+      $('cut').style.opacity=pulseCut(t,[4,10]);
+    } else if(t<35) {
+      drawMap('B',t-25,false); $('turn').hidden=true; $('arrival').hidden=true;
+      setCard({title:'앞 신호 빨간불',seconds:118-Math.floor(t-25),prefix:'직진 ·',alpha:(t-25)/.3});
+    } else if(t<50) {
+      const local=t-35; drawMap('C',local);
+      setText('turn-distance','4.8km'); setText('turn-direction','고속도로 직진');
+      $('turn-arrow').setAttribute('d','M32 66V8M12 28L32 8L52 28');
+      setText('arrival-time','28분'); setText('arrival-distance','38km');
+      const state=local<6 ? {title:'3km 앞 안개 구간',detail:'앞이 500m도 안 보여요',hazard:'fog',source:'기상청 도로위험기상정보'} : local<10.5 ? {title:'2.5km 앞 공사 구간',detail:'4차로 차단',hazard:'work',source:'ITS 돌발정보'} : {title:'3km 앞 살얼음 주의 구간',hazard:'ice',source:'기상청 도로위험기상정보'};
+      const since=local<6 ? local : local<10.5 ? local-6 : local-10.5;
+      setCard({...state,alpha:since/.3});
+    } else if(t<59) {
+      drawMap('E1',0,false); $('turn').hidden=true; $('arrival').hidden=true;
+      setCard({type:'question',title:'누구와 함께 가세요?',answer:t>=55.2,answerAlpha:(t-55.2)/.3,alpha:(t-50)/.3});
+    } else if(t<75) {
+      drawMap('E2',t-59); setText('turn-distance','150m'); setText('turn-direction','목적지 방면 좌회전');
+      $('turn-arrow').setAttribute('d','M48 65V32Q48 20 36 20H12M27 4L11 20L27 36');
+      setText('arrival-time','도착 12:24'); setText('arrival-distance','· 3.2km');
+      setCard({type:'travel',title:'',alpha:(t-59)/.3});
+    } else {
+      drawMap('D',t-75); setText('turn-distance','1.0km'); setText('turn-direction','목적지 방면');
+      $('turn-arrow').setAttribute('d','M32 66V8M12 28L32 8L52 28');
+      setText('arrival-time','도착 12:24'); setText('arrival-distance','· 1.0km');
+      setCard({type:'parking',title:'중앙 공영주차장',detail:'목적지에서 180m · 30분에 1,000원',alpha:(t-75)/.3});
+    }
+    $('screen').dataset.section=section; $('screen').dataset.time=t.toFixed(3);
+  }
+  function resize() { $('screen').style.transform=`scale(${Math.min(innerWidth/1920,innerHeight/1080)})`; }
+  addEventListener('resize',resize); resize();
+  let animation=0;
+  function stop() { cancelAnimationFrame(animation); }
+  function play(section) {
+    if(!Object.hasOwn(durations,section)) throw new Error('Unknown section');
+    stop(); const started=performance.now();
+    return new Promise(resolve=>{
+      function frame(now) { const t=(now-started)/1000; render(section,t); if(t<durations[section]) animation=requestAnimationFrame(frame); else resolve(); }
+      animation=requestAnimationFrame(frame);
+    });
+  }
+  window.conceptVideo={cues,durations,scenes,introLine,travelItems,weatherLine,render,play,stop};
+  const query=new URLSearchParams(location.search), section=query.get('section') || 'concept';
+  render(Object.hasOwn(durations,section) ? section : 'concept',0);
+  if(!query.has('paused')) play(Object.hasOwn(durations,section) ? section : 'concept');
+})();
+</script>
+</body>
+</html>

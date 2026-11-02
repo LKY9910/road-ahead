@@ -5,6 +5,7 @@ import com.roadahead.core.model.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.StateFlow
+import java.time.LocalDateTime
 
 sealed interface DataEvent {
     data class Signals(val json: String, val receivedMonoMs: Long) : DataEvent
@@ -12,6 +13,8 @@ sealed interface DataEvent {
     data class Weather(val hazards: List<Hazard>) : DataEvent
     data class Events(val hazards: List<Hazard>) : DataEvent
     data class Disasters(val hazards: List<Hazard>) : DataEvent
+    data class ParkingLots(val destKey: String, val lots: List<ParkingLot>) : DataEvent
+    data class TourData(val destKey: String, val data: com.roadahead.core.model.TourData) : DataEvent
 }
 
 interface Feed {
@@ -24,6 +27,10 @@ interface Feed {
     val naviSpeaking: StateFlow<Boolean>
     val data: SharedFlow<DataEvent>
     val label: StateFlow<String?>
+    val destination: StateFlow<Destination?>
+    val parked: StateFlow<Boolean>
+    fun requestParking(dest: Destination)
+    fun requestTour(dest: Destination, arrival: LocalDateTime, companions: Set<Companion>)
     fun start(scope: CoroutineScope, engine: RoadAheadEngine)
     fun stop()
 }

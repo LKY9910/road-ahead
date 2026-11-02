@@ -1,0 +1,45 @@
+{
+  "requestedAtKst": "2026-10-29T12:33:12.888613+09:00",
+  "url": "https://apis.data.go.kr/B553881/Parking_v1/PrkSttusInfo_v1?pageNo=1&numOfRows=2&format=2&serviceKey=***",
+  "callNumber": 1,
+  "httpStatus": 200,
+  "downloadBytes": 926,
+  "response": {
+    "PrkSttusInfo": [
+      {
+        "prk_manage_agent": "1",
+        "prk_plce_adres_sido": "서울특별시",
+        "prk_manage_agent_nm": "공영",
+        "parkng_chrge_se": "2",
+        "parkng_chrge_se_nm": "유료",
+        "prk_cmprt_co": "71",
+        "prk_center_id": "01016-11191-00001-00-1",
+        "prk_plce_entrc_lo": "127.019186",
+        "prk_plce_entrc_la": "37.635193",
+        "prk_plce_adres_sigungu": "강북구",
+        "prk_plce_nm": "아카데미주차장",
+        "prk_plce_adres": "서울특별시 강북구 4.19로25길"
+      },
+      {
+        "prk_manage_agent": "1",
+        "prk_plce_adres_sido": "서울특별시",
+        "prk_manage_agent_nm": "공영",
+        "parkng_chrge_se": "2",
+        "parkng_chrge_se_nm": "유료",
+        "prk_cmprt_co": "66",
+        "prk_center_id": "01053-11191-00001-00-1",
+        "prk_plce_entrc_lo": "127.025053",
+        "prk_plce_entrc_la": "37.643575",
+        "prk_plce_adres_sigungu": "강북구",
+        "prk_plce_nm": "가오천주차장",
+        "prk_plce_adres": "서울특별시 강북구 한천로150길 46"
+      }
+    ],
+    "pageNo": "1",
+    "resultCode": "0",
+    "totalCount": "1737445",
+    "numOfRows": "2",
+    "resultMsg": "SUCCESS"
+  },
+  "durationMs": 457.94
+}

@@ -1,0 +1,49 @@
+{
+  "requestedAtKst": "2026-10-29T12:37:02.247757+09:00",
+  "url": "https://apis.data.go.kr/B551011/KorService2/detailIntro2?MobileOS=ETC&MobileApp=RoadAheadProbe&_type=json&pageNo=1&numOfRows=1000&contentId=3073454&contentTypeId=15&serviceKey=***",
+  "callNumber": 20,
+  "httpStatus": 200,
+  "downloadBytes": 666,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "contentid": "3073454",
+              "contenttypeid": "15",
+              "sponsor1": "서울특별시",
+              "sponsor1tel": "02-2133-1936",
+              "sponsor2": "",
+              "sponsor2tel": "",
+              "eventenddate": "20260104",
+              "playtime": "일-목 17:30 ~ 21:30 , 금-토 17:30 ~ 22:00",
+              "eventplace": "광화문광장 일대",
+              "eventhomepage": "",
+              "agelimit": "",
+              "bookingplace": "",
+              "placeinfo": "",
+              "subevent": "",
+              "program": "",
+              "eventstartdate": "20251212",
+              "usetimefestival": "무료",
+              "discountinfofestival": "",
+              "spendtimefestival": "",
+              "festivalgrade": "",
+              "progresstype": "선택안함",
+              "festivaltype": "선택안함"
+            }
+          ]
+        },
+        "numOfRows": 1,
+        "pageNo": 1,
+        "totalCount": 1
+      }
+    }
+  },
+  "durationMs": 172.27
+}

@@ -1,0 +1,81 @@
+{
+  "destination": {
+    "name": "서울시청 주변",
+    "latitude": 37.567,
+    "longitude": 126.978
+  },
+  "note": "Three original API rows joined by prk_center_id; timestamp/freshness unavailable. Not a live freshness guarantee.",
+  "sourceSamples": [
+    "seoul-jung-PrkSttusInfo.json",
+    "seoul-jung-PrkOprInfo.json",
+    "seoul-jung-PrkRealtimeInfo.json"
+  ],
+  "candidate": {
+    "distanceMeters": 292.11,
+    "facility": {
+      "prk_manage_agent": "1",
+      "prk_plce_adres_sido": "서울특별시",
+      "prk_manage_agent_nm": "공영",
+      "parkng_chrge_se": "2",
+      "parkng_chrge_se_nm": "유료",
+      "prk_cmprt_co": "13",
+      "prk_center_id": "04540-11291-00001-00-1",
+      "prk_plce_entrc_lo": "126.981303",
+      "prk_plce_entrc_la": "37.5672159",
+      "prk_plce_adres_sigungu": "중구",
+      "prk_plce_nm": "동국제강",
+      "prk_plce_adres": "서울특별시 중구 남대문로10길 13"
+    },
+    "operation": {
+      "basic_info": {
+        "parking_chrge_bs_time": "30",
+        "parking_chrge_bs_chrge": "4200",
+        "parking_chrge_adit_unit_chrge": "0",
+        "parking_chrge_adit_unit_time": "10"
+      },
+      "Monday": {
+        "opertn_start_time": "090000",
+        "opertn_end_time": "190000"
+      },
+      "Thursday": {
+        "opertn_start_time": "090000",
+        "opertn_end_time": "190000"
+      },
+      "opertn_bs_free_time": "0",
+      "Friday": {
+        "opertn_start_time": "090000",
+        "opertn_end_time": "190000"
+      },
+      "Holiday": {
+        "opertn_start_time": "000000",
+        "opertn_end_time": "000000"
+      },
+      "Sunday": {
+        "opertn_start_time": "000000",
+        "opertn_end_time": "000000"
+      },
+      "Wednesday": {
+        "opertn_start_time": "090000",
+        "opertn_end_time": "190000"
+      },
+      "prk_center_id": "04540-11291-00001-00-1",
+      "fxamt_info": {
+        "parking_chrge_mon_unit_chrge": "0",
+        "parking_chrge_one_day_chrge": "0"
+      },
+      "Tuesday": {
+        "opertn_start_time": "090000",
+        "opertn_end_time": "190000"
+      },
+      "Saturday": {
+        "opertn_start_time": "090000",
+        "opertn_end_time": "190000"
+      }
+    },
+    "realtime": {
+      "pkfc_Available_ParkingLots_total": "8",
+      "pkfc_ParkingLots_total": "13",
+      "prk_center_id": "04540-11291-00001-00-1"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+10-29 12:42:30.394   870   870 I T23     : HOST_MARK favorite-select-click
+10-29 12:43:12.733  9674  9674 I T23     : HOST_MARK favorite-start-click
+10-29 12:43:30.937 12383 12528 I T23     : wallMs=1793245410937 monoMs=161993888 ROUTE_STARTED RouteStartInfo(duration=540, distance=2300, tollFare=0, name=경기도판교테크노밸리, remainDestinationChargingValue=77110)
+10-29 12:43:30.938 12383 12528 I T23     : wallMs=1793245410938 monoMs=161993889 NAV_STATUS ROUTE_DRIVE
+10-29 12:43:31.015 12383 12383 I T23     : wallMs=1793245411015 monoMs=161993966 OP query label=favorite-route-snapshot
+10-29 12:43:32.042 12383 12528 I T23     : wallMs=1793245412042 monoMs=161994993 DESTINATION DestinationInfo(latitude=37.40048888, longitude=127.10387777, displayLatitude=null, displayLongitude=null, name=경기도판교테크노밸리, address=분당구 삼평동, remainDistance=2300, remainTime=540, tollFare=0, poiId=36khde54d3sscm5nqhej, poiSubId=null, poiProvider=)
+10-29 12:43:33.025 12383 12383 I T23     : wallMs=1793245413025 monoMs=161995976 OP route label=sdk-route-2
+10-29 12:43:33.026 12383 12383 I T23     : wallMs=1793245413026 monoMs=161995977 REQUEST_ROUTE latitude=37.394776 longitude=127.111149
+10-29 12:43:33.125 12383 12454 I T23     : wallMs=1793245413125 monoMs=161996076 ROUTE_CANCELLED
+10-29 12:43:33.125 12383 12454 I T23     : wallMs=1793245413125 monoMs=161996076 NAV_STATUS FREE_DRIVE
+10-29 12:43:33.133 12383 12451 I T23     : wallMs=1793245413133 monoMs=161996084 DESTINATION DestinationInfo(latitude=0.0, longitude=0.0, displayLatitude=null, displayLongitude=null, name=, address=, remainDistance=0, remainTime=0, tollFare=0, poiId=, poiSubId=null, poiProvider=)
+10-29 12:43:38.873 12383 12451 I T23     : wallMs=1793245418873 monoMs=162001824 ROUTE_STARTED RouteStartInfo(duration=780, distance=3100, tollFare=0, name=판교역, remainDestinationChargingValue=77003)
+10-29 12:43:38.880 12383 12451 I T23     : wallMs=1793245418880 monoMs=162001831 NAV_STATUS ROUTE_DRIVE
+10-29 12:44:40.067 12383 12383 I T23     : wallMs=1793245480067 monoMs=162063018 OP cancel label=cancel-before-favorite2
+10-29 12:44:40.309 12383 12454 I T23     : wallMs=1793245480309 monoMs=162063260 ROUTE_CANCELLED
+10-29 12:44:40.328 12383 12528 I T23     : wallMs=1793245480328 monoMs=162063280 DESTINATION DestinationInfo(latitude=0.0, longitude=0.0, displayLatitude=null, displayLongitude=null, name=, address=, remainDistance=0, remainTime=0, tollFare=0, poiId=, poiSubId=null, poiProvider=)
+10-29 12:44:40.329 12383 12528 I T23     : wallMs=1793245480329 monoMs=162063280 NAV_STATUS FREE_DRIVE
+10-29 12:45:07.092 27595 27595 I T23     : HOST_MARK favorite2-select-click
+10-29 12:45:13.053 12383 12451 I T23     : wallMs=1793245513053 monoMs=162096004 ROUTE_STARTED RouteStartInfo(duration=540, distance=2300, tollFare=0, name=경기도판교테크노밸리, remainDestinationChargingValue=77110)
+10-29 12:45:13.053 12383 12451 I T23     : wallMs=1793245513053 monoMs=162096004 NAV_STATUS ROUTE_DRIVE
+10-29 12:45:23.974 30018 30018 I T23     : HOST_MARK favorite2-start-click
+10-29 12:46:07.538 12383 12383 I T23     : wallMs=1793245567538 monoMs=162150489 OP query label=favorite2-after-passive
+10-29 12:46:08.564 12383 12454 I T23     : wallMs=1793245568564 monoMs=162151515 DESTINATION DestinationInfo(latitude=37.40048888, longitude=127.10387777, displayLatitude=null, displayLongitude=null, name=경기도판교테크노밸리, address=분당구 삼평동, remainDistance=2300, remainTime=540, tollFare=0, poiId=36khde54d3sscm5nqhej, poiSubId=null, poiProvider=)
+10-29 12:47:37.386 12383 12383 I T23     : wallMs=1793245657386 monoMs=162240337 OP query label=poll-1
+10-29 12:47:38.397 12383 12451 I T23     : wallMs=1793245658397 monoMs=162241348 DESTINATION DestinationInfo(latitude=37.40048888, longitude=127.10387777, displayLatitude=null, displayLongitude=null, name=경기도판교테크노밸리, address=분당구 삼평동, remainDistance=2300, remainTime=540, tollFare=0, poiId=36khde54d3sscm5nqhej, poiSubId=null, poiProvider=)
+10-29 12:47:39.735 12383 12383 I T23     : wallMs=1793245659735 monoMs=162242686 OP query label=poll-2
+10-29 12:47:40.745 12383 12528 I T23     : wallMs=1793245660745 monoMs=162243696 DESTINATION DestinationInfo(latitude=37.40048888, longitude=127.10387777, displayLatitude=null, displayLongitude=null, name=경기도판교테크노밸리, address=분당구 삼평동, remainDistance=2300, remainTime=540, tollFare=0, poiId=36khde54d3sscm5nqhej, poiSubId=null, poiProvider=)
+10-29 12:47:41.824 12383 12383 I T23     : wallMs=1793245661824 monoMs=162244775 OP query label=poll-3
+10-29 12:47:42.836 12383 12528 I T23     : wallMs=1793245662836 monoMs=162245787 DESTINATION DestinationInfo(latitude=37.40048888, longitude=127.10387777, displayLatitude=null, displayLongitude=null, name=경기도판교테크노밸리, address=분당구 삼평동, remainDistance=2300, remainTime=540, tollFare=0, poiId=36khde54d3sscm5nqhej, poiSubId=null, poiProvider=)
+10-29 12:48:13.901 12383 12383 I T23     : wallMs=1793245693901 monoMs=162276852 OP cancel label=cancel-favorite2
+10-29 12:48:14.399 12383 12715 I T23     : wallMs=1793245694398 monoMs=162277350 ROUTE_CANCELLED
+10-29 12:48:14.422 12383 12715 I T23     : wallMs=1793245694422 monoMs=162277373 NAV_STATUS FREE_DRIVE
+10-29 12:48:14.490 12383 12528 I T23     : wallMs=1793245694490 monoMs=162277441 DESTINATION DestinationInfo(latitude=0.0, longitude=0.0, displayLatitude=null, displayLongitude=null, name=, address=, remainDistance=0, remainTime=0, tollFare=0, poiId=, poiSubId=null, poiProvider=)
+10-29 12:48:46.774 32490 32490 I T23     : HOST_MARK ui-search2-destination-click
+10-29 12:48:52.753 12383 12454 I T23     : wallMs=1793245732753 monoMs=162315705 ROUTE_STARTED RouteStartInfo(duration=720, distance=3500, tollFare=0, name=RARADEPANGYO, remainDestinationChargingValue=76947)
+10-29 12:48:52.763 12383 12454 I T23     : wallMs=1793245732763 monoMs=162315714 NAV_STATUS ROUTE_DRIVE
+10-29 12:50:14.319 12383 12383 I T23     : wallMs=1793245814319 monoMs=162397270 OP query label=search2-snapshot
+10-29 12:50:15.366 12383 12715 I T23     : wallMs=1793245815366 monoMs=162398317 DESTINATION DestinationInfo(latitude=37.39335, longitude=127.09847222, displayLatitude=null, displayLongitude=null, name=RARADEPANGYO, address=분당구 판교동, remainDistance=3500, remainTime=720, tollFare=0, poiId=36kfmrd68575cm5nqhe3, poiSubId=null, poiProvider=)
+10-29 12:50:16.954 12383 12383 I T23     : wallMs=1793245816954 monoMs=162399905 OP cancel label=final-cancel
+10-29 12:50:17.211 12383 12528 I T23     : wallMs=1793245817211 monoMs=162400162 ROUTE_CANCELLED
+10-29 12:50:17.212 12383 12528 I T23     : wallMs=1793245817212 monoMs=162400163 NAV_STATUS FREE_DRIVE
+10-29 12:50:17.251 12383 12453 I T23     : wallMs=1793245817251 monoMs=162400202 DESTINATION DestinationInfo(latitude=0.0, longitude=0.0, displayLatitude=null, displayLongitude=null, name=, address=, remainDistance=0, remainTime=0, tollFare=0, poiId=, poiSubId=null, poiProvider=)
+10-29 12:50:19.089 12383 12383 I T23     : wallMs=1793245819089 monoMs=162402040 OP query label=final-empty
+10-29 12:50:19.173 12383 12453 I T23     : wallMs=1793245819173 monoMs=162402124 DESTINATION DestinationInfo(latitude=0.0, longitude=0.0, displayLatitude=null, displayLongitude=null, name=, address=, remainDistance=0, remainTime=0, tollFare=0, poiId=, poiSubId=null, poiProvider=)

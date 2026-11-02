@@ -7,15 +7,27 @@ import ai.pleos.playground.navi.helper.listener.NaviHelperEventListener
 import ai.pleos.playground.navi.constants.*
 import ai.pleos.playground.navi.data.*
 import com.roadahead.core.model.*
+import kotlinx.coroutines.*
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import java.util.Locale
+
+internal fun navigationDestination(lat: Double, lon: Double, name: String?, remainM: Double, remainSec: Int): Destination? {
+    if (name.isNullOrBlank() || !lat.isFinite() || !lon.isFinite() || lat == 0.0 || lon == 0.0 ||
+        lat !in -90.0..90.0 || lon !in -180.0..180.0) return null
+    return Destination(String.format(Locale.ROOT, "%.5f,%.5f", lat, lon), name, GeoPoint(lat, lon), remainM, remainSec)
+}
 
 class PleosNavi(context: Context) {
     private val helper = NaviHelper(context)
+    private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
     private val _navMode = MutableStateFlow(NavMode.UNKNOWN)
     private val _turn = MutableStateFlow<Turn?>(null)
+    private val _destination = MutableStateFlow<Destination?>(null)
     val navMode = _navMode.asStateFlow()
     val turn = _turn.asStateFlow()
+    val destination = _destination.asStateFlow()
     private var closed = false
     private val listener = object : NaviHelperEventListener {
         override fun onNavigationStatus(status: NavigationStatus) {
@@ -37,7 +49,13 @@ class PleosNavi(context: Context) {
                 }, it.distance)
             }
         }
-        override fun onRouteCancelled() { _turn.value = null; _navMode.value = NavMode.FREE }
+        override fun onRouteStarted(info: RouteStartInfo) { scope.launch { requestDestination() } }
+        override fun onDestinationInfo(info: DestinationInfo) {
+            _destination.value = navigationDestination(info.latitude, info.longitude, info.name,
+                info.remainDistance.toDouble(), info.remainTime)
+            Log.i("RoadAhead", "destination key=${_destination.value?.key}")
+        }
+        override fun onRouteCancelled() { _turn.value = null; _navMode.value = NavMode.FREE; _destination.value = null }
         override fun onRouteStateInfo(info: RouteStateInfo) {
             _navMode.value = when (info.naviMode) {
                 NaviMode.SAFE_GUIDING -> NavMode.FREE
@@ -46,7 +64,7 @@ class PleosNavi(context: Context) {
             }
         }
         override fun onError(code: NaviErrorCode) {
-            _navMode.value = NavMode.UNKNOWN; _turn.value = null
+            _navMode.value = NavMode.UNKNOWN; _turn.value = null; _destination.value = null
             Log.w("RoadAhead", "navi failed $code")
         }
     }
@@ -54,10 +72,24 @@ class PleosNavi(context: Context) {
     fun start() = helper.initialize(onConnected = {
         if (!closed) {
             helper.addListener(listener)
+            scope.launch {
+                navMode.collectLatest { mode ->
+                    if (mode == NavMode.ROUTE) while (isActive) {
+                        requestDestination()
+                        delay(5_000)
+                    }
+                }
+            }
             helper.getRouteStateInfo()
             helper.getTBTInfo()
         }
     }, onFailed = { Log.w("RoadAhead", "navi initialization failed $it") })
 
-    fun stop() { closed = true; helper.removeListener(listener); helper.release() }
+    private fun requestDestination() {
+        if (closed) return
+        try { helper.getDestinationInfo() }
+        catch (error: Exception) { Log.w("RoadAhead", "destination query failed ${error.javaClass.simpleName}") }
+    }
+
+    fun stop() { closed = true; scope.cancel(); helper.removeListener(listener); helper.release() }
 }

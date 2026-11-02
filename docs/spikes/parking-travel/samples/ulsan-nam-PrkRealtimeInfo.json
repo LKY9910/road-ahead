@@ -1,0 +1,16 @@
+{
+  "requestedAtKst": "2026-10-29T12:34:38.512849+09:00",
+  "url": "https://apis.data.go.kr/B553881/Parking_v1/PrkRealtimeInfo_v1?pageNo=1&numOfRows=10000&format=2&sidoCd=31&sigunguCd=31140&serviceKey=***",
+  "callNumber": 13,
+  "httpStatus": 200,
+  "downloadBytes": 111,
+  "response": {
+    "pageNo": "1",
+    "PrkRealtimeInfo": [],
+    "resultCode": "0",
+    "totalCount": "0",
+    "numOfRows": "10000",
+    "resultMsg": "SUCCESS"
+  },
+  "durationMs": 240.64
+}

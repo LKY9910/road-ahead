@@ -1,0 +1,48 @@
+{
+  "response": {
+    "header": {
+      "resultCode": "0000",
+      "resultMsg": "OK"
+    },
+    "body": {
+      "items": {
+        "item": [
+          {
+            "contentid": "1605981",
+            "parking": "장애인 주차장 있음(덕수궁,서울시청,시립미술관 주차장)_무장애 편의시설",
+            "publictransport": "",
+            "route": "출입구까지 단차가 없어 휠체어 접근 가능함",
+            "ticketoffice": "",
+            "promotion": "",
+            "wheelchair": "대여가능",
+            "exit": "주출입구는 턱이 없어 휠체어 접근 가능함",
+            "elevator": "",
+            "restroom": "장애인 화장실 있음",
+            "auditorium": "",
+            "room": "",
+            "handicapetc": "도우미 벨(장애인 동선 안내)",
+            "braileblock": "",
+            "helpdog": "",
+            "guidehuman": "안내요원 있음",
+            "audioguide": "음성안내기 있음(20대/유료/신분증보관)",
+            "bigprint": "",
+            "brailepromotion": "",
+            "guidesystem": "",
+            "blindhandicapetc": "",
+            "signguide": "",
+            "videoguide": "",
+            "hearingroom": "",
+            "hearinghandicapetc": "",
+            "stroller": "대여가능",
+            "lactationroom": "수유실 있음",
+            "babysparechair": "",
+            "infantsfamilyetc": ""
+          }
+        ]
+      },
+      "numOfRows": 1,
+      "pageNo": 1,
+      "totalCount": 1
+    }
+  }
+}

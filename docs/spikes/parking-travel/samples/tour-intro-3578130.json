@@ -1,0 +1,49 @@
+{
+  "requestedAtKst": "2026-10-29T12:37:02.578788+09:00",
+  "url": "https://apis.data.go.kr/B551011/KorService2/detailIntro2?MobileOS=ETC&MobileApp=RoadAheadProbe&_type=json&pageNo=1&numOfRows=1000&contentId=3578130&contentTypeId=15&serviceKey=***",
+  "callNumber": 22,
+  "httpStatus": 200,
+  "downloadBytes": 659,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "contentid": "3578130",
+              "contenttypeid": "15",
+              "sponsor1": "울산광역시",
+              "sponsor1tel": "052-271-8701",
+              "sponsor2": "울산문화관광재단",
+              "sponsor2tel": "",
+              "eventenddate": "20251227",
+              "playtime": "17:00~21:00",
+              "eventplace": "울산대공원",
+              "eventhomepage": "",
+              "agelimit": "전 연령",
+              "bookingplace": "",
+              "placeinfo": "",
+              "subevent": "",
+              "program": "",
+              "eventstartdate": "20251205",
+              "usetimefestival": "무료",
+              "discountinfofestival": "",
+              "spendtimefestival": "",
+              "festivalgrade": "",
+              "progresstype": "선택안함",
+              "festivaltype": "선택안함"
+            }
+          ]
+        },
+        "numOfRows": 1,
+        "pageNo": 1,
+        "totalCount": 1
+      }
+    }
+  },
+  "durationMs": 148.61
+}

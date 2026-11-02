@@ -1,0 +1,57 @@
+{
+  "sourceCommit": "532e562",
+  "sourceHtmlSha256": "8125c43fc77f28d8943b6ccf6b4f7a103ba3d6eacc4089d0f1f21a7848c0dc0f",
+  "chromium": "149.0.7827.55",
+  "capture": "Installed Node Playwright and full Chromium, matching render.mjs",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "frames": [
+    {
+      "section": "concept",
+      "time": 0.8,
+      "sha256": "57f0f9bafb64104f07b742427e7729c1bdcb94be13b001f4826bbae93eabc2f7"
+    },
+    {
+      "section": "concept",
+      "time": 4.5,
+      "sha256": "b22a17cf27b99c64ee3fb262faf130d8827e7c89c19761e19b86e4ccad535dea"
+    },
+    {
+      "section": "concept",
+      "time": 17.5,
+      "sha256": "21b155d18044029f8e2df933c9de8f7011f472c3290f5b9379a40223ed85b82b"
+    },
+    {
+      "section": "concept",
+      "time": 22.4,
+      "sha256": "41842eaedf8e7388e0cbb48ad0c15c852a21425f6ac93a6abfbafdc8dfefaf5e"
+    },
+    {
+      "section": "concept",
+      "time": 27,
+      "sha256": "9cbfd4753ae3074b37470e23ba65883bd00635178d836d259c4181bc1a010e62"
+    },
+    {
+      "section": "concept",
+      "time": 38,
+      "sha256": "2b27295e45897bb2f3b8a49d4df632e442949c23e8fc419413ed676723bb70af"
+    },
+    {
+      "section": "concept",
+      "time": 43,
+      "sha256": "a16e521732720f32667b480d9af08c7e049d7f4e89a280a69014d41160d807f0"
+    },
+    {
+      "section": "concept",
+      "time": 47,
+      "sha256": "0f38e5fb9254f3dd98100c206bb4f5dd70fe6f2bc6466d504ccd32c91f8315bb"
+    },
+    {
+      "section": "outro",
+      "time": 3,
+      "sha256": "2bbf018dc0c235f2faa4972bd41aeff2587120679f616219ecf3c1006c34eae4"
+    }
+  ]
+}

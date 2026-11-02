@@ -1,0 +1,66 @@
+{
+  "requestedAtKst": "2026-10-29T19:58:05.014323+09:00",
+  "request": {
+    "service": "KorWithService2",
+    "operation": "detailWithTour2",
+    "params": {
+      "MobileOS": "AND",
+      "MobileApp": "RoadAhead",
+      "_type": "json",
+      "pageNo": "1",
+      "contentId": "130352"
+    }
+  },
+  "url": "https://apis.data.go.kr/B551011/KorWithService2/detailWithTour2?MobileOS=AND&MobileApp=RoadAhead&_type=json&pageNo=1&contentId=130352&serviceKey=***",
+  "httpStatus": 200,
+  "downloadBytes": 1085,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "contentid": "130352",
+              "parking": "장애인 전용 별도 주차칸 있음 (2칸)",
+              "publictransport": "",
+              "route": "정문에는 경사로 있음/후문에는 계단만 있음",
+              "ticketoffice": "",
+              "promotion": "",
+              "wheelchair": "휠체어 무료 대여(1대, 안내데스크)",
+              "exit": "주출입구에 휠체어가 통과 가능함(수동문)",
+              "elevator": "엘리베이터 있음 (장애인용, 휠체어 1대 크기)",
+              "restroom": "장애인용 화장실 있음(1층, 남녀혼용)",
+              "auditorium": "",
+              "room": "",
+              "handicapetc": "",
+              "braileblock": "점자블록 있음(정문, 계단 앞)",
+              "helpdog": "보조견 동반 가능",
+              "guidehuman": "안내데스크 있음(1층 로비)",
+              "audioguide": "",
+              "bigprint": "",
+              "brailepromotion": "촉지안내도 있음(주출입구), 점자도서 있음",
+              "guidesystem": "",
+              "blindhandicapetc": "",
+              "signguide": "",
+              "videoguide": "",
+              "hearingroom": "",
+              "hearinghandicapetc": "",
+              "stroller": "",
+              "lactationroom": "",
+              "babysparechair": "",
+              "infantsfamilyetc": ""
+            }
+          ]
+        },
+        "numOfRows": 1,
+        "pageNo": 1,
+        "totalCount": 1
+      }
+    }
+  },
+  "durationMs": 141.0
+}

@@ -1,0 +1,81 @@
+{
+  "requestedAtKst": "2026-10-29T12:35:19.977758+09:00",
+  "url": "https://apis.data.go.kr/B551011/KorService2/locationBasedList2?MobileOS=ETC&MobileApp=RoadAheadProbe&_type=json&pageNo=1&numOfRows=1000&mapX=126.978&mapY=37.567&radius=3000&arrange=E&contentTypeId=28&serviceKey=***",
+  "callNumber": 10,
+  "httpStatus": 200,
+  "downloadBytes": 1529,
+  "response": {
+    "response": {
+      "header": {
+        "resultCode": "0000",
+        "resultMsg": "OK"
+      },
+      "body": {
+        "items": {
+          "item": [
+            {
+              "addr1": "서울특별시 성북구 성북동",
+              "addr2": "",
+              "zipcode": "02834",
+              "areacode": "1",
+              "cat1": "A03",
+              "cat2": "A0302",
+              "cat3": "A03022700",
+              "contentid": "1037031",
+              "contenttypeid": "28",
+              "createdtime": "20100603235219",
+              "dist": "2575.001618385717",
+              "firstimage": "http://tong.visitkorea.or.kr/cms/resource/09/1568109_image2_1.jpg",
+              "firstimage2": "http://tong.visitkorea.or.kr/cms/resource/09/1568109_image3_1.jpg",
+              "cpyrhtDivCd": "Type3",
+              "mapx": "127.0068155826",
+              "mapy": "37.5693544270",
+              "mlevel": "6",
+              "modifiedtime": "20250403153705",
+              "sigungucode": "17",
+              "tel": "",
+              "title": "[북악하늘길 스카이웨이] 하늘한마당~하늘마루",
+              "lDongRegnCd": "11",
+              "lDongSignguCd": "290",
+              "lclsSystm1": "LS",
+              "lclsSystm2": "LS01",
+              "lclsSystm3": "LS011900"
+            },
+            {
+              "addr1": "서울특별시 중구 동호로 241",
+              "addr2": "",
+              "zipcode": "04605",
+              "areacode": "1",
+              "cat1": "A03",
+              "cat2": "A0302",
+              "cat3": "A03020300",
+              "contentid": "990140",
+              "contenttypeid": "28",
+              "createdtime": "20100331234809",
+              "dist": "2739.1799975537574",
+              "firstimage": "http://tong.visitkorea.or.kr/cms/resource/06/3083906_image2_1.JPG",
+              "firstimage2": "http://tong.visitkorea.or.kr/cms/resource/06/3083906_image3_1.JPG",
+              "cpyrhtDivCd": "Type3",
+              "mapx": "127.0068047884",
+              "mapy": "37.5582390522",
+              "mlevel": "6",
+              "modifiedtime": "20251114144107",
+              "sigungucode": "24",
+              "tel": "",
+              "title": "장충체육관",
+              "lDongRegnCd": "11",
+              "lDongSignguCd": "140",
+              "lclsSystm1": "VE",
+              "lclsSystm2": "VE10",
+              "lclsSystm3": "VE100100"
+            }
+          ]
+        },
+        "numOfRows": 2,
+        "pageNo": 1,
+        "totalCount": 2
+      }
+    }
+  },
+  "durationMs": 197.96
+}

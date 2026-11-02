@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <application android:label="T-21 오버레이 시험" android:allowBackup="false"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar" android:resizeableActivity="true">
+        <activity android:name=".MainActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DoActivity" android:exported="true" android:launchMode="singleTop">
+            <!-- Experimental comparison only; no claim of driving UI approval. -->
+            <meta-data android:name="distractionOptimized" android:value="true" />
+        </activity>
+        <service android:name=".OverlayService" android:exported="false" android:foregroundServiceType="specialUse">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="User-started overlay visibility experiment over navigation" />
+        </service>
+    </application>
+</manifest>

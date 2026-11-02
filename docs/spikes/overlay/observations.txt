@@ -1,0 +1,32 @@
+﻿I/OverlaySpike(25321): activity=MainActivity op=show canDraw=true
+I/OverlaySpike(25321): activity=MainActivity op=show canDraw=true
+I/OverlaySpike(25321): activity=DoActivity op=show canDraw=true
+I/OverlaySpike(25321): destroyed=DoActivity finishing=true
+I/OverlaySpike(25321): destroyed=MainActivity finishing=true
+I/OverlaySpike(25321): foreground service started
+I/OverlaySpike(25321): destroyed=DoActivity finishing=true
+I/OverlaySpike( 8276): activity=MainActivity op=show canDraw=true
+I/OverlaySpike( 8276): activity=MainActivity op=status canDraw=true
+I/OverlaySpike( 8276): activity=MainActivity op=status canDraw=false
+I/OverlaySpike( 8276): activity=MainActivity op=show canDraw=true
+I/OverlaySpike( 8276): activity=MainActivity op=show canDraw=true
+D/CarPackageManagerService( 1098): Updating allowlist and denylist mapping for package: com.roadahead.spike.overlay for UserId: 10
+W/CarPackageManagerService( 1098): com.roadahead.spike.overlay not installed from permitted sources NULL
+D/CarPackageManagerService( 1098): Updating allowlist and denylist mapping for package: com.roadahead.spike.overlay for UserId: 0
+W/CarPackageManagerService( 1098): com.roadahead.spike.overlay not installed! User Id: 0
+D/CarPackageManagerService( 1098): Updating allowlist and denylist mapping for package: com.roadahead.spike.overlay for UserId: 10
+W/CarPackageManagerService( 1098): com.roadahead.spike.overlay not installed from permitted sources NULL
+D/CarPackageManagerService( 1098): Updating allowlist and denylist mapping for package: com.roadahead.spike.overlay for UserId: 0
+W/CarPackageManagerService( 1098): com.roadahead.spike.overlay not installed! User Id: 0
+D/CarPackageManagerService( 1098): Updating allowlist and denylist mapping for package: com.roadahead.spike.overlay for UserId: 10
+W/CarPackageManagerService( 1098): com.roadahead.spike.overlay not installed from permitted sources NULL
+D/CarPackageManagerService( 1098): Updating allowlist and denylist mapping for package: com.roadahead.spike.overlay for UserId: 0
+W/CarPackageManagerService( 1098): com.roadahead.spike.overlay not installed! User Id: 0
+D/CarPackageManagerService( 1098): Updating allowlist and denylist mapping for package: com.roadahead.spike.overlay for UserId: 10
+W/CarPackageManagerService( 1098): com.roadahead.spike.overlay not installed from permitted sources NULL
+D/CarPackageManagerService( 1098): Updating allowlist and denylist mapping for package: com.roadahead.spike.overlay for UserId: 0
+W/CarPackageManagerService( 1098): com.roadahead.spike.overlay not installed! User Id: 0
+SYSTEM_ALERT_WINDOW: default; time=+1m36s482ms ago; rejectTime=+1m43s572ms ago (running)
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.SYSTEM_ALERT_WINDOW: granted=false
+      android.permission.SYSTEM_ALERT_WINDOW: granted=true, userId=10
