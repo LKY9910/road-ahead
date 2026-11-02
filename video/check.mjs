@@ -14,6 +14,10 @@ export async function verifyPage(browser,capture,{here,frames,url}) {
   try {
     await page.goto(url('concept'));
     await page.evaluate(()=>document.fonts.ready);
+    assert.equal(await page.title(),'내비서 · 콘셉트 영상');
+    assert.equal(await page.locator('#screen').getAttribute('aria-label'),'내비서 콘셉트 애니메이션');
+    assert.equal(await page.locator('#card').getAttribute('aria-label'),'내비서 카드');
+    assert.equal(await page.locator('#app-name').textContent(),'내비서');
     const script=await readFile(resolve(here,'../docs/VIDEO.md'),'utf8');
     const cuesDoc=await readFile(join(here,'CUES.md'),'utf8');
     const api=await page.evaluate(()=>({cues:conceptVideo.cues,durations:conceptVideo.durations,
@@ -51,7 +55,7 @@ export async function verifyPage(browser,capture,{here,frames,url}) {
         const $=id=>document.getElementById(id);
         const box=e=>{const r=e.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height,bottom:r.bottom,right:r.right};};
         const visible=e=>!e.hidden && e.getClientRects().length>0 && Number(getComputedStyle(e).opacity)>0;
-        const tracked=[...['card-title','card-detail','countdown','parking-spaces','travel-weather','companion-answer','subtitle','headline','introduction'].map($),
+        const tracked=[...['card-label','card-title','card-detail','countdown','parking-spaces','travel-weather','companion-answer','subtitle','headline','app-name','introduction'].map($),
           ...document.querySelectorAll('.travel-name,.travel-detail,.travel-reason')];
         const style=e=>getComputedStyle(e);
         return {
@@ -84,16 +88,16 @@ export async function verifyPage(browser,capture,{here,frames,url}) {
       });
     }
     for(const [time,count] of [[.8,45],[1.8,44],[4.5,32],[5.5,31],[17.5,5],[18.5,4],[21.5,1]]) {
-      const s=await at('concept',time);assert.equal(Number(s.count),count);assert.equal(s.color,'#E5484D');
+      const s=await at('concept',time);assert.equal(Number(s.count),count);assert.equal(s.color,'#E5484D');assert.equal(s.kind,'내비서 · 신호');
     }
     const green=await at('concept',22.4);assert.equal(green.color,'#30A46C');assert(!green.seconds);
     assert(!(await at('concept',24)).card);
     const b=await at('concept',25.5);assert.equal(b.count,'118');assert(!b.turn && !b.arrival);assert.equal(b.prefix,'직진 ·');
     for(const [time,title,source] of [[38,'3km 앞 안개 구간','기상청 도로위험기상정보'],[43,'2.5km 앞 공사 구간','ITS 돌발정보'],[47,'3km 앞 살얼음 주의 구간','기상청 도로위험기상정보']]) {
-      const s=await at('concept',time);assert.equal(s.title,title);assert.equal(s.source,source);assert.equal(s.color,'#F5A524');
+      const s=await at('concept',time);assert.equal(s.title,title);assert.equal(s.source,source);assert.equal(s.color,'#F5A524');assert.equal(s.kind,'내비서 · 도로 위험');
     }
     const question=await at('concept',52);
-    assert.equal(question.title,appQuestion);assert.equal(question.kind,'앞길 안내 · 여행');
+    assert.equal(question.title,appQuestion);assert.equal(question.kind,'내비서 · 여행');
     assert(!question.turn && !question.arrival && !question.signal && !question.travel && !question.dot);
     assert.equal(question.gear,'기어 P');assert(question.gearVisible);assert.equal(question.map.routed,'false');
     assert.equal(question.answer,'');assert(!question.speakerVisible);assert.equal(question.cardVisibleIcons,0);
@@ -107,14 +111,14 @@ export async function verifyPage(browser,capture,{here,frames,url}) {
     assert.deepEqual(answer.cardRect,question.cardRect,'답변 때문에 카드 위치·크기가 뛰면 안 됩니다.');
     assert(answer.titleRect.bottom<answer.answerRect.y);
     const e=await at('concept',70);
-    assert.equal(e.kind,'앞길 안내 · 여행');assert(e.travel && !e.signal && !e.dot && !e.speakerVisible);
+    assert.equal(e.kind,'내비서 · 여행');assert(e.travel && !e.signal && !e.dot && !e.speakerVisible);
     assert.equal(e.travelCount,3);assert.equal(e.weatherText,api.weatherLine);assert(e.weather);
     assert.equal(e.weatherColor,'rgb(201, 209, 217)');
     assert.deepEqual(e.reasons.map(r=>r.text),api.travelItems.filter(i=>i.reasons.length).map(i=>i.reasons.join(' · ')));
     for(const reason of e.reasons){assert.equal(reason.color,'rgb(184, 212, 255)');near(reason.font,20*450/560);}
     assert.equal(e.gear,'기어 P');assert.equal(e.arrivalText,'도착 12:24 · 3.2km');
     const d=await at('concept',79);
-    assert.equal(d.title,'중앙 공영주차장');assert.equal(d.kind,'앞길 안내 · 주차');assert(d.dot && !d.signal && !d.travel);
+    assert.equal(d.title,'중앙 공영주차장');assert.equal(d.kind,'내비서 · 주차');assert(d.dot && !d.signal && !d.travel);
     assert.equal(d.spaces,'빈자리23면');assert.equal(d.parkingNumber,'23');
     near(d.dotRect.width,16*450/560);near(d.parkingFont,96*450/560);near(d.parkingLabelFont,32*450/560);near(d.parkingUnitFont,d.parkingLabelFont);
     assert(d.parkingFont>d.parkingLabelFont*2);
@@ -159,8 +163,12 @@ export async function verifyPage(browser,capture,{here,frames,url}) {
       if(capture){const bytes=await page.screenshot({path:join(frames,file)});if(file==='02-scene-e2.png')await writeFile(join(frames,'02-scene-e.png'),bytes);}
     }
     const intro=await page.locator('#introduction').textContent();
-    assert.equal(intro.replace(/\s+/g,' '),api.introLine);assert(intro.includes(',\n'));
+    assert.equal(intro,api.introLine);
     assert(await page.locator('#introduction').evaluate(e=>e.getBoundingClientRect().height<=2*parseFloat(getComputedStyle(e).lineHeight)+1));
+    assert(await page.locator('#introduction').evaluate(e=>{
+      const intro=e.getBoundingClientRect(),name=document.getElementById('app-name').getBoundingClientRect();
+      return name.y>=0 && name.bottom<intro.y && intro.bottom<=1080 && intro.x>=0 && intro.right<=1920;
+    }),'마무리 이름·소개가 화면 안에 겹침 없이 들어가야 합니다.');
     assert.equal(await page.locator('audio,video,iframe').count(),0);
     assert.deepEqual(errors,[]);assert.equal(external.length,0,'외부 네트워크 요청이 있었습니다.');
     console.log(`검증 통과: 자막 원문·CUES 시각, E1 운전자 구별·정차, E2 3항목·이유·날씨·경로, D 숫자 강조, 겹침/넘침 0, A/B/C·마무리 ${ref.frames.length}프레임 동일, 외부 요청 0건.`);

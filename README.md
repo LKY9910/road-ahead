@@ -1,8 +1,8 @@
-# 앞길 안내
+# 내비서
 
-Pleos 내비 화면 위 카드 한 장과 음성 한 번으로, 앞길의 신호·도로 위험부터 목적지 주차와 여행 정보까지 묻기 전에 알려 주는 차량용 안내 앱입니다.
+Pleos 내비 속 비서처럼, 앞길의 신호·도로 위험부터 목적지 주차와 동행에 맞춘 여행 정보까지 묻기 전에 카드 한 장과 음성 한 번으로 알려 주는 차량용 안내 앱입니다.
 
-현대자동차그룹 차량용 앱 개발 공모전 개인 참가 출품작입니다. 앱 이름은 가칭입니다. Pleos 내비에 들어갈 기능을 제안하고, 그 모습을 내비 위에 뜨는 안내 카드로 구현한 시제품입니다.
+현대자동차그룹 차량용 앱 개발 공모전 개인 참가 출품작입니다. Pleos 내비에 들어갈 기능을 제안하고, 그 모습을 내비 위에 뜨는 안내 카드로 구현한 시제품입니다.
 
 ## 무엇을 알려 주나
 
@@ -18,12 +18,12 @@ Pleos 내비 화면 위 카드 한 장과 음성 한 번으로, 앞길의 신호
 
 ## APK와 실행 방법
 
-제출용 release APK: [apk/SUDL_앞길안내_release.apk](apk/SUDL_앞길안내_release.apk)
+제출용 release APK: [apk/SUDL_내비서_release.apk](apk/SUDL_내비서_release.apk)
 
 Pleos Connect 에뮬레이터를 실행하고 저장소 루트의 PowerShell에서 설치합니다. 아래 명령은 검증한 기기 `emulator-5556`, 운전자 사용자 `10`을 기준으로 합니다. 다른 환경에서는 `adb devices`와 `adb shell am get-current-user`로 확인한 값으로 바꿉니다.
 
 ```powershell
-adb -s emulator-5556 install -r --user 10 ".\apk\SUDL_앞길안내_release.apk"
+adb -s emulator-5556 install -r --user 10 ".\apk\SUDL_내비서_release.apk"
 adb -s emulator-5556 shell am start --user 10 -n com.roadahead/.MainActivity
 ```
 
@@ -32,9 +32,9 @@ adb -s emulator-5556 shell am start --user 10 -n com.roadahead/.MainActivity
 ### 처음 실행할 때
 
 1. 위치 권한 창에서 **앱 사용 중에만 허용**을 선택하고 정확한 위치를 허용합니다. 앱은 차량 속도 읽기 권한도 쓰며, 검증 환경에서는 차량 속도 권한 창이 따로 뜨지 않았습니다.
-2. **다른 앱 위에 표시**를 켭니다. Pleos 설정 → 앱 → 앱 목록 → **앞길 안내** → **다른 앱 위에 표시**. 앱 화면의 **앱 정보 열기** 버튼으로도 열 수 있지만, 설정 앱이 이미 열려 있으면 이전 화면만 나올 수 있어 목록으로 들어가는 쪽이 확실합니다. Pleos에는 Android 표준 권한 화면(`ACTION_MANAGE_OVERLAY_PERMISSION`)이 없습니다.
+2. **다른 앱 위에 표시**를 켭니다. Pleos 설정 → 앱 → 앱 목록 → **내비서** → **다른 앱 위에 표시**. 앱 화면의 **앱 정보 열기** 버튼으로도 열 수 있지만, 설정 앱이 이미 열려 있으면 이전 화면만 나올 수 있어 목록으로 들어가는 쪽이 확실합니다. Pleos에는 Android 표준 권한 화면(`ACTION_MANAGE_OVERLAY_PERMISSION`)이 없습니다.
 3. 앱으로 돌아오면 기어 **P**에서 공공 데이터는 참고용이며 실제 신호와 도로 상황을 먼저 확인해야 한다는 안내가 뜹니다. 읽고 **확인**을 누릅니다.
-4. 안내가 시작되고 알림에 "앞길 안내가 켜져 있어요"가 표시됩니다. 이제 내비로 이동하면 카드가 내비 위에 뜹니다. 안내를 끄려면 알림의 **끄기**를 누릅니다.
+4. 안내가 시작되고 알림에 "내비서가 켜져 있어요"가 표시됩니다. 이제 내비로 이동하면 카드가 내비 위에 뜹니다. 안내를 끄려면 알림의 **끄기**를 누릅니다.
 
 기본 모드는 **실시간**, 방향 해석은 **진입 방향**, 여행 모드는 **꺼짐**입니다. 설정은 P에서만 열리며 주행 중에는 설정 버튼이 숨겨집니다.
 
@@ -137,7 +137,7 @@ keyPassword=
 .\gradlew.bat :app:assembleRelease :app:testDebugUnitTest :core:test
 ```
 
-`keystore.properties`가 있으면 `app/build/outputs/apk/release/app-release.apk`에 서명된 APK가 생성됩니다. 이 파일이 없으면 빌드는 성공하지만 결과는 설치할 수 없는 `app-release-unsigned.apk`입니다. 제출용 파일은 서명된 결과를 `apk/SUDL_앞길안내_release.apk`로 복사한 것입니다. release에서는 코드 축소를 사용하지 않습니다. 서명 설정과 검증 방법은 [Android 앱 서명 문서](https://developer.android.com/studio/publish/app-signing)와 [apksigner 문서](https://developer.android.com/tools/apksigner)를 참고합니다.
+`keystore.properties`가 있으면 `app/build/outputs/apk/release/app-release.apk`에 서명된 APK가 생성됩니다. 이 파일이 없으면 빌드는 성공하지만 결과는 설치할 수 없는 `app-release-unsigned.apk`입니다. 제출용 파일은 서명된 결과를 `apk/SUDL_내비서_release.apk`로 복사한 것입니다. release에서는 코드 축소를 사용하지 않습니다. 서명 설정과 검증 방법은 [Android 앱 서명 문서](https://developer.android.com/studio/publish/app-signing)와 [apksigner 문서](https://developer.android.com/tools/apksigner)를 참고합니다.
 
 ## 화면
 

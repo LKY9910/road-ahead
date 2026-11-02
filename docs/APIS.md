@@ -1,4 +1,4 @@
-# 앞길 안내 API 실측 명세 — T-14·T-23
+# 내비서 API 실측 명세 — T-14·T-23
 
 2026-10-28 · Codex. 공식 명세와 실제 응답을 구분한다. 아래 URL의 키 표시는 `***`이며, 실행 도구는 저장소 루트의 gitignore 대상 `api` 또는 `ROAD_AHEAD_SIGNAL_KEY`, `ROAD_AHEAD_DISASTER_KEY`, `ROAD_AHEAD_WEATHER_KEY` 환경 변수만 읽는다. 원본 키·인증 URL을 터미널에 출력하지 않는다. [실측 보고](spikes/road-ahead.md), [응답 표본](spikes/road-ahead/samples/).
 

@@ -16,6 +16,7 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.LinearLayout
 import android.widget.TextView
+import com.roadahead.R
 import com.roadahead.core.model.Card
 import com.roadahead.core.model.LightColor
 import com.roadahead.core.model.TourKind
@@ -96,7 +97,7 @@ class OverlayCard(context: Context) {
             is Card.Parking -> "주차"
             is Card.Travel -> "여행"
         }
-        root.addView(text("앞길 안내 · $kind", 24f, "#A7B0BA"),
+        root.addView(text("${context.getString(R.string.app_name)} · $kind", 24f, "#A7B0BA"),
             LinearLayout.LayoutParams(-1, -2).apply { bottomMargin = dp(20) })
         val (color, description) = when (card) {
             is Card.Signal -> when (card.signal.color) {
@@ -143,7 +144,7 @@ class OverlayCard(context: Context) {
         do {
             root.removeAllViews()
             val weather = card.weatherNote?.takeIf { lines.any { it.kind == TourKind.CULTURE } }
-            root.addView(flowText("앞길 안내 · 여행", 24f, 34, "#A7B0BA"), margins(bottom = if (weather == null) 20 else 4))
+            root.addView(flowText("${context.getString(R.string.app_name)} · 여행", 24f, 34, "#A7B0BA"), margins(bottom = if (weather == null) 20 else 4))
             if (weather != null) root.addView(flowText(weather, 20f, 29, "#C9D1D9"), margins(bottom = 20))
             lines.forEachIndexed { index, line ->
                 root.addView(flowText(line.title, 26f, 38), margins(top = if (index == 0) 0 else 12))
@@ -175,7 +176,7 @@ class OverlayCard(context: Context) {
         header.addView(View(context).apply {
             background = GradientDrawable().apply { shape = GradientDrawable.OVAL; setColor(Color.parseColor("#3E7BFA")) }
         }, LinearLayout.LayoutParams(dp(16), dp(16)).apply { marginEnd = dp(12) })
-        header.addView(flowText("앞길 안내 · 주차", 24f, 34, "#A7B0BA"))
+        header.addView(flowText("${context.getString(R.string.app_name)} · 주차", 24f, 34, "#A7B0BA"))
         root.addView(header, margins(bottom = 20))
         val parking = card.parking
         root.addView(flowText(parking.name, 34f, 48, medium = true), margins(bottom = if (parking.available == null) 20 else 16))

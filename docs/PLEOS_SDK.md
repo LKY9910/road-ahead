@@ -496,7 +496,7 @@ adb -s emulator-5556 logcat -s T05
 
 **Claude 요청:** 정차를 주차 브레이크에 의존하던 DESIGN을 기어 P/Ux 기반으로 검토하고, 트립 시간·실제 충전 상태·Android TTS·AVD 내비 좌표·우회 ETA의 제한을 app 계획에 반영한다. 마이크 연결 후 STT/Gleo 활성 대화와 내비 GPS 경로 재생은 추가 실측 대상으로 남긴다.
 
-## 12. T-14 앞길 안내 전제 실측
+## 12. T-14 내비서(당시 가칭 앞길 안내) 전제 실측
 
 측정: **2026-10-28, Codex**, 기존 `emulator-5556` / Pleos Connect API 34 / user 10. 시험 코드는 `spikes/road-ahead/`, 전체 9개 항목·시연 후보·검증 명령은 [실측 보고](spikes/road-ahead.md), 외부 API 명세는 [APIS.md](APIS.md)에 있다. 기존 T-05/T-13 결과를 덮어쓰지 않고 추가 측정했다.
 

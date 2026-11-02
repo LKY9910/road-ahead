@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">앞길 안내</string>
-    <string name="guidance_running">앞길 안내가 켜져 있어요</string>
+    <string name="app_name">내비서</string>
+    <string name="guidance_running">%1$s가 켜져 있어요</string>
     <string name="stop_guidance">끄기</string>
-    <string name="overlay_permission">내비 위에 안내 카드를 띄우려면 Pleos 설정 → 앱 → 앱 목록 → 앞길 안내 → 다른 앱 위에 표시를 켜 주세요.</string>
+    <string name="overlay_permission">내비 위에 안내 카드를 띄우려면 Pleos 설정 → 앱 → 앱 목록 → %1$s → 다른 앱 위에 표시를 켜 주세요.</string>
     <string name="open_app_info">앱 정보 열기</string>
     <string name="disclaimer">신호와 도로 위험 정보는 공공 데이터를 바탕으로 한 참고용 정보예요. 실제 신호와 도로 상황을 먼저 확인하세요.</string>
 </resources>

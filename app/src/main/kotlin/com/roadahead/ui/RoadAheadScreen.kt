@@ -19,10 +19,10 @@ data class AppStatus(val modeLabel: String?, val speechAvailable: Boolean, val n
 fun RoadAheadScreen(screen: Screen, status: AppStatus, parked: Boolean, onOpenSettings: () -> Unit,
     overlayAllowed: Boolean, onOpenAppInfo: () -> Unit) {
     Column(Modifier.fillMaxSize().padding(24.dp), verticalArrangement = Arrangement.SpaceBetween) {
-        Text("앞길 안내", fontSize = 32.sp)
+        Text(stringResource(R.string.app_name), fontSize = 32.sp)
         Column(Modifier.fillMaxWidth().weight(1f), verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally) {
-            Text(if (overlayAllowed) "내비 화면 위에 안내 카드를 보여 드려요" else stringResource(R.string.overlay_permission),
+            Text(if (overlayAllowed) "내비 화면 위에 안내 카드를 보여 드려요" else stringResource(R.string.overlay_permission, stringResource(R.string.app_name)),
                 fontSize = 24.sp, color = MaterialTheme.colorScheme.onSurfaceVariant, textAlign = TextAlign.Center)
             if (!overlayAllowed) {
                 Spacer(Modifier.height(24.dp))

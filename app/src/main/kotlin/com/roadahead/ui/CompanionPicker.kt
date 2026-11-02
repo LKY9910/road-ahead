@@ -14,10 +14,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.roadahead.R
 import com.roadahead.core.model.Companion
 
 enum class CompanionChoice { CHILD, ELDER, PET, NONE }
@@ -50,7 +52,7 @@ fun CompanionPicker(previous: Set<Companion>?, enabling: Boolean,
     var draft by rememberSaveable { mutableStateOf(previous.toChoices().map { it.name }) }
     val selected = draft.map { CompanionChoice.valueOf(it) }.toSet()
     Column(Modifier.fillMaxSize().background(Color(0xFF111418)).padding(horizontal = 64.dp, vertical = 48.dp)) {
-        Text("앞길 안내", fontSize = 32.sp, lineHeight = 48.sp, fontWeight = FontWeight.Medium, color = Color.White)
+        Text(stringResource(R.string.app_name), fontSize = 32.sp, lineHeight = 48.sp, fontWeight = FontWeight.Medium, color = Color.White)
         Column(Modifier.padding(top = 102.dp).width(1080.dp).align(Alignment.CenterHorizontally)) {
             Text("누구와 함께 가세요?", fontSize = 36.sp, lineHeight = 52.sp,
                 fontWeight = FontWeight.SemiBold, color = Color.White)

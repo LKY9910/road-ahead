@@ -14,6 +14,68 @@
 
 ---
 
+## 2026-11-02 18:30 · Claude · T-46 이름 변경 마무리(release·기획서)
+
+- release: `:app:assembleRelease`로 다시 만들어 `apk/SUDL_내비서_release.apk`(41,981,790 bytes)로 두고 옛 `apk/SUDL_앞길안내_release.apk`는 지웠다(`0bb7196`, README 이름 변경과 함께). `DEBUG=false`, 키 4개 비어 있지 않음, 서명 CN=SUDL·인증서 SHA-256 `2d24f48b…`(전과 같음), APK 안 키스토어 비밀번호 0건, `aapt` 앱 이름 **내비서**를 값 출력 없이 확인했다.
+- 에뮬레이터: T-44의 debug를 지우고 release를 user 10에 설치했다. 첫 실행 순서(위치 권한 "앱 사용 중에만 허용" → 다른 앱 위에 표시 허용 → 고지 확인)를 거쳐 위치 권한 창·첫 화면 제목·고지가 모두 "내비서"로 뜨는 것을 봤다. 실시간 모드에서 소리가 나지 않게 앱은 강제 종료해 두었다(권한·고지 확인은 남음).
+- 기획서: `tools/make_proposal.py`로 `docs/forms/내비서_기획서.docx`(335,671 bytes)를 다시 만들었다. self-test·양식 검증 통과, LibreOffice 18쪽, 본문 "앞길 안내" 0건·"내비서" 4건, 그림 8장 모두 새 이름. 옛 `앞길안내_기획서.docx`는 지웠다(`docs/forms/`는 gitignore).
+- 남은 일(사용자): 01·04 개인정보와 서명, 7번 칸의 영상 링크(노란 표시), Word에서 쪽 나눔 확인. 제출 저장소 push는 사용자에게 다시 묻는다.
+
+## 2026-11-02 18:25 · Claude · T-44 리뷰 완료
+
+- 코드: `48c2e61`의 이름 참조를 읽었다. 이름 원문은 `R.string.app_name` 한 곳이고, 카드 머리줄 3곳·첫 화면·동행 화면·알림(`%1$s가 켜져 있어요`)·권한 안내 경로가 이 값을 쓴다. `app/src/main`에서 assets 제외 "앞길" 0건.
+- 다시 돌린 검증: `:app:assembleDebug :app:testDebugUnitTest :core:test --rerun-tasks` 성공, 테스트 196개(실패·skip 0).
+- 캡처: `overlay-a-d30.png`(내비서 · 신호), `overlay-e-child-pet-p.png`(내비서 · 여행), `t36-companion-first.png`(제목 내비서), `proposal/prototype-parking.png`(내비서 · 주차)를 직접 봤다. 배치·크기는 전과 같다. `t36-companion-first.png`의 아래 카드는 전에도 있던 도로 위험 카드이며 내용만 공사→살얼음으로 바뀌었다.
+- 작업 중 06:45에 Codex가 "Selected model is at capacity"로 멈춰 1시간 넘게 진행이 없었다. Claude가 터미널로 이어서 하라고 보내 재개했다.
+- 결과: T-44 `완료`. release 재설치·기획서 DOCX는 T-46에서 한다.
+
+## 2026-11-02 18:10 · Codex · T-44 앱 이름을 내비서로
+
+- 한 일: 앱 표시 이름을 **내비서**로 바꿨다. 이름의 유일한 원문은 `R.string.app_name`이고, 알림 본문·오버레이 권한 안내는 `%1$s`에 이 값을 넣는다. `OverlayCard`의 신호/도로 위험·여행·주차 머리줄과 Compose 첫 화면·동행 선택 화면도 같은 리소스를 읽는다. 패키지·클래스 이름과 글자 크기·색·간격·배치는 그대로다.
+- 이름 검색: `app/src/main`의 **assets 제외 `앞길` 0건**, **`내비서` 원문 1건**(`strings.xml`의 `app_name`)이다. 공공 원자료 `assets/parking/lots.tsv`의 실제 주차장 이름 두 건은 Orca ask 답변에 따라 보존했다. `aapt dump badging`에서도 패키지 `com.roadahead`, 앱 표시 이름 **내비서**를 확인했다.
+- 빌드·테스트: `.\gradlew.bat :app:assembleDebug :app:testDebugUnitTest :core:test --console=plain` **BUILD SUCCESSFUL**. 앱 **29개**·core **167개**, 합계 **196개**이며 실패·오류·skip **0개**다(`.gradle/t44-build.log`). 이름 참조 변경만 있어 새 단위 테스트는 추가하지 않았다.
+- 카드 캡처: 아래 **10장**을 같은 파일명으로 갱신했다. 모두 **2560×1440**, 내비 화면 위, 지정된 P/0 또는 D/30 상태다. T-41의 표시값(신호 30/35초, 안개 거리, 공사·살얼음, 추천 목록, 빈자리 849면)을 맞췄다. **10장 모두 창의 x/y/너비/높이가 전과 같고**, 머리줄 아래 본문 영역(카드 상단 70px 제외)은 이전 PNG와 **픽셀 단위 동일**하다. 크기·줄바꿈·본문 표시값이 바뀌지 않았음을 함께 확인했다.
+
+| 캡처(`docs/demo/`) | 시연 시작 뒤 실제 캡처(초) | 카드 높이 전→후(px) |
+|---|---:|---:|
+| `overlay-a-d30.png` | 42.48 | 273→273 |
+| `overlay-a-p0.png` | 38.31 | 273→273 |
+| `overlay-c-fog-d30.png` | 19.91 | 219→219 |
+| `overlay-c-fog-p0.png` | 12.00 | 219→219 |
+| `overlay-c-ice-d30.png` | 48.42 | 228→228 |
+| `overlay-c-construction-d30.png` | 24.44 | 202→202 |
+| `overlay-e-none-p.png` | 8.44 | 534→534 |
+| `overlay-e-none-d.png` | 52.45 | 390→390 |
+| `overlay-e-child-pet-p.png` | 8.47 | 600→600 |
+| `overlay-e-child-pet-d.png` | 52.45 | 390→390 |
+
+- 동행·설정 캡처: 이름이 보이는 화면/카드가 있어 **6장 모두** 갱신했다. `t36-companion-first.png`, `t36-companion-preselected.png`, `t36-companion-none.png`, `t36-companion-drive-cancel.png`, `t36-settings-travel-on.png`, `t36-settings-travel-off.png`. 첫 선택의 미선택·동행 없음 단독 선택·지난 아이+반려동물 미리 선택, 여행 모드 켜짐/꺼짐, D 전환 시 선택 화면 취소를 UI XML과 눈으로 확인했다.
+- 기획서 그림: `docs/demo/proposal/prototype-{signal,fog,companions,pet,weather,parking,ice-synthetic}.png` **7장을 모두 다시 잘랐다**. T-43 표와 같은 원본·좌표이며 원본 영역과 픽셀 동일함을 검사했다. `prototype-companions.png`는 이름이 없는 선택 영역이라 재생성 결과가 이전 파일과 같고, 나머지 6장은 새 이름을 반영했다. T-45의 `concept-navigation.png`와 다른 옛 기록 캡처는 건드리지 않았다. 모아보기는 `.gradle/t44-final-sheet.png`, 창·본문 동일성 근거는 `.gradle/t44-frames.json`·`t44-body-equality.json`이다.
+- 안전 확인: 모든 앱 실행은 **debug / `logOnlySpeech=true`**였다. 시험 앱 프로세스 **11개**의 로그에서 **TTS onStart 0건**, **FATAL EXCEPTION 0건**, 전체 로그에서 실제 키·인코딩 변형 **0개**를 값 출력 없이 검사했다(`.gradle/t44-log-counts.json`). 실제 TTS·release 빌드·push는 실행하지 않았다.
+- 기기 사용·정리: 사용자 허락을 받은 Orca ask 뒤 release를 제거하고 debug를 user 10에 설치했다. 허락대로 release의 앱 설정은 보존하지 않았다. 기어·속도·앱 조작은 각각 별도 명령으로 순서대로 실행했고 에뮬레이터를 재시작하지 않았다. 기존 내비를 HOME→내비 아이콘으로 띄웠으며 GPS·내비 경로·오디오는 바꾸지 않았다.
+- **에뮬레이터 반납 완료:** HANDOFF·커밋 전에 status `msg_0767ca5acc8d`를 보냈다. debug 설치 유지, 앱 프로세스·서비스·카드 창 없음, overlay appops **default**, **P/0·페달/조향 0·콘솔 비활성**을 확인했다. debug 설정은 **LIVE·APPROACH·고지 확인·여행 모드 꺼짐·동행 키 없음**이며 시험용 위치·차량 속도 런타임 권한은 부여된 상태다. 오디오 음량·음소거 관련 **108개 값 전후 동일**을 확인했다(`.gradle/t44-restored.json`). 반납 뒤 adb·가상 콘솔은 사용하지 않는다.
+- 남은 확인·요청: Claude가 이름 참조와 캡처를 리뷰한 뒤 T-46에서 release APK 재생성·설치와 기획서 DOCX 재생성을 진행해 달라. API 34 에뮬레이터에서 확인했으며 다른 기기·글자 배율은 시험하지 않았다. 커밋 메시지는 `[T-44] 앱 이름을 내비서로`다.
+
+
+## 2026-11-02 17:05 · Claude · T-45 리뷰 완료
+
+- 확인한 것: `13f2693`의 `video/concept.html`·`check.mjs`·`CUES.md`와 프레임 `video/frames/04-outro.png`(이름 "내비서", 새 한 줄 소개가 두 줄로 고르게 나뉨), `02-scene-e1-question.png`(카드 머리줄 "내비서 · 여행")를 직접 봤다.
+- 다시 돌린 검증: `node video/render.mjs --check` 통과(rc 0, "겹침/넘침 0, 외부 요청 0건"). `video/concept.html`·`check.mjs`·`CUES.md`에서 "앞길 안내" 0건.
+- 결과: T-45 `완료`. 기획서 DOCX 재생성은 T-44의 시제품 그림이 끝난 뒤 T-46에서 한다.
+
+## 2026-11-02 15:57 · Codex · T-45 콘셉트 영상 이름·소개 변경
+
+- 한 일: `video/concept.html`의 문서 제목·aria-label·신호/도로 위험/여행/주차 카드 머리줄·마무리 이름·자막을 **내비서**로 바꿨다. `introLine`은 전달받은 문장을 한 글자도 바꾸지 않고 썼다. `check.mjs`·`CUES.md`와 기준 해시 `abc-reference.json`을 갱신하고 프레임 11장(기존 도입 2장은 픽셀 동일)을 다시 생성했다.
+- GPT 디자인 판단: 이름이 짧아져도 카드 머리줄의 왼쪽 정렬·크기·색과 카드 치수는 유지하는 편이 읽기 좋다. 마무리 앱 이름도 **104px**, 소개도 **28px/행간 1.7**을 유지했다. 첫 쉼표 뒤 강제 개행은 새 소개를 **3줄**로 만들므로 없애고 `text-wrap: balance`를 적용했다. 실제 경계는 **“여행 정보까지 / 묻기 전에…”**, 두 줄 폭은 **1177.125 / 1171.625px**이며 의미와 길이가 함께 맞는다. 이름과 소개 사이 28px, 전체 묶음의 중앙 정렬도 유지했다.
+- 검증: `node video/render.mjs --check` **성공**. 자막 원문·시각 **18개**, 배치 표본 **32개**, 새 기준 **9프레임** 일치, 넘침·겹침·페이지 오류·외부 HTTP(S) 요청 **0건**이다. 문서 제목·접근성 이름·카드 종류별 머리줄·마무리 화면 안 배치 검사도 보강했다. 이름 변경 전 기대값 검사는 실제로 실패한 뒤 구현 후 통과했다. `video/`의 이전 앱 이름 검색 **0건**(지난 보고서·T-38 기록 제외).
+- 기준 갱신 근거: 이전 기준(532e562) 9프레임을 먼저 재현했다. A·B·C **8장 모두 새 화면의 머리줄 이름만 이전 값으로 되돌렸을 때 이전 SHA-256과 완전히 같음**을 assert했다. 따라서 이름 영역 밖 픽셀·카드 크기·색·위치는 같다. 감사값은 `.gradle/t45/audit.json`이다.
+- 세 영상 재렌더: `video/out/01-intro.webm` **15.00초 / 6,661,080 bytes**, `02-concept.webm` **85.00초 / 32,960,169 bytes**, `04-outro.webm` **5.00초 / 3,004,455 bytes**. 모두 **1920×1080·30fps·무음**이며 합계 105초다. `out/metadata.json`·`out/validation.json`을 갱신했다. 영상·검사 JSON은 기존 규칙대로 git 밖에 둔다.
+- 렌더 환경: npm 캐시의 Playwright 1.65는 설치되지 않은 FFmpeg 1013과 VP9 옵션을 요구해 실패했다. 새 설치·다운로드 없이, 이미 설치된 Python Playwright의 Node 모듈 **1.61.1-beta-1782139630000**과 Chromium **149.0.7827.55**·FFmpeg **1011**을 사용했다. `.gradle/t45/modules/playwright-core`는 `C:/Users/user/AppData/Local/Programs/Python/Python312/Lib/site-packages/playwright/driver/package`를 가리키는 링크다. 다시 녹화할 때 `$env:NODE_PATH='C:\dev\hmg-app\.gradle\t45\modules'; node video/render.mjs`로 선택한다. `--check`는 환경 지정 없이도 통과한다. 렌더러 소스와 설치된 패키지는 수정하지 않았다.
+- 눈으로 확인한 프레임: `video/frames/02-scene-a.png`, `02-scene-c.png`, `02-scene-e1-question.png`, `02-scene-e1-answer.png`, `02-scene-e2.png`, `02-scene-d.png`, `04-outro.png`. 전체 카드 모아보기는 `.gradle/t45/cards.png`다. 최종 WebM의 본편 70초·마무리 3초도 다시 추출해 `.gradle/t45/encoded-concept.png`·`encoded-outro.png`에서 새 이름·소개·줄바꿈을 확인했다.
+- 기획서 목업: 새 `video/frames/02-scene-a.png`의 **(0,0)→(1920,950)**을 `docs/demo/proposal/concept-navigation.png`로 잘랐다. **1920×950 / 72,627 bytes**, 원본 영역과 픽셀 동일, 메타데이터 없음 검사 통과.
+- 남은 확인·요청: Claude가 마무리 두 줄과 갱신 목업을 리뷰한 뒤 기획서 DOCX를 다시 만들면 된다. 에뮬레이터·APK·앱 코드·다른 캡처·문서와 push는 사용하지 않았다. 영상의 실제 음성·실동작 합성 편집은 기존대로 사용자 몫이다. 커밋 메시지는 `[T-45] 콘셉트 영상 이름을 내비서로`다.
+
+
 ## 2026-11-02 16:05 · Claude · T-42 기획서 작성, T-43 리뷰 완료
 
 - T-42 기획서(접수양식 DOCX)

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>앞길 안내 · 콘셉트 영상</title>
+<title>내비서 · 콘셉트 영상</title>
 <style>
   * { box-sizing: border-box; }
   html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #141b22; }
@@ -44,7 +44,7 @@
   #title-layer { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; padding: 0 170px; background: linear-gradient(90deg,#101820ed 0%,#101820b8 57%,#10182030 100%); }
   #headline { font-size: 60px; font-weight: 700; line-height: 1.5; letter-spacing: -2px; max-width: 1450px; word-break: keep-all; }
   #app-name { font-size: 104px; font-weight: 800; letter-spacing: -4px; margin: 0 0 28px; }
-  #introduction { color: #d4dce5; font-size: 28px; line-height: 1.7; max-width: 1580px; word-break: keep-all; white-space: pre-line; }
+  #introduction { color: #d4dce5; font-size: 28px; line-height: 1.7; max-width: 1580px; word-break: keep-all; text-wrap: balance; }
   #cut { position: absolute; inset: 0; background: #151d25; pointer-events: none; opacity: 0; }
   #gear-status { position:absolute; right:30px; top:30px; font-size:20px; color:#bdc8d2; }
   #subtitle-speaker { position:absolute; font-size:18px; line-height:28px; font-weight:700; color:#b8d4ff; }
@@ -71,7 +71,7 @@
 </style>
 </head>
 <body>
-<main id="screen" aria-label="앞길 안내 콘셉트 애니메이션">
+<main id="screen" aria-label="내비서 콘셉트 애니메이션">
   <section id="navigation" aria-label="직접 그린 가상의 내비게이션">
     <canvas id="map" width="1920" height="950" aria-label="일반적인 도로 지도와 움직이는 차량"></canvas>
     <div id="concept-label">콘셉트 영상</div>
@@ -81,8 +81,8 @@
       <div><div id="turn-distance">150m</div><div id="turn-direction">시청 방면 좌회전</div></div>
     </div>
     <div id="arrival"><strong id="arrival-time">12분</strong><span id="arrival-distance">3.2km</span><div id="arrival-status">목적지까지</div></div>
-    <aside id="card" aria-label="앞길 안내 카드">
-      <div id="card-label"><span id="parking-dot" hidden></span><span id="card-kind">앞길 안내 · 신호</span></div>
+    <aside id="card" aria-label="내비서 카드">
+      <div id="card-label"><span id="parking-dot" hidden></span><span id="card-kind">내비서 · 신호</span></div>
       <div id="travel-weather" hidden>도착 때 비 예보 · 실내 명소 우선</div>
       <div id="card-content">
         <div id="signal"><svg id="hazard-icon" viewBox="0 0 40 40" aria-hidden="true"></svg><span id="parking-icon" class="parking" hidden>P</span></div>
@@ -93,7 +93,7 @@
     <div id="cut"></div>
   </section>
   <div id="captions"><span id="subtitle-speaker" hidden>운전자</span><div id="subtitle" aria-live="off"></div></div>
-  <div id="title-layer"><div id="headline"></div><div id="app-name">앞길 안내</div><div id="introduction"></div></div>
+  <div id="title-layer"><div id="headline"></div><div id="app-name">내비서</div><div id="introduction"></div></div>
 </main>
 <script>
 (() => {
@@ -103,7 +103,7 @@
   const clamp = (value, low = 0, high = 1) => Math.min(high, Math.max(low, value));
   const smooth = value => { const p = clamp(value); return p * p * (3 - 2 * p); };
   const mix = (a, b, t) => a + (b - a) * t;
-  const introLine = 'Pleos 내비 위 카드 한 장과 음성 한 번으로, 앞길의 신호·도로 위험부터 목적지 주차와 여행 정보까지 묻기 전에 알려 주는 내비 기능 개선 제안과 그 시제품 앱입니다.';
+  const introLine = 'Pleos 내비 속 비서처럼, 앞길의 신호·도로 위험부터 목적지 주차와 동행에 맞춘 여행 정보까지 묻기 전에 카드 한 장과 음성 한 번으로 알려 주는 내비 기능 개선 제안과 그 시제품 앱입니다.';
   const cues = [
     { section: 'intro', start: 0, end: 5, text: '교차로 앞, 신호가 언제 바뀔지 모른 채 다가갑니다' },
     { section: 'intro', start: 5, end: 10, text: '안개 낀 고속도로, 앞에 무엇이 있는지 모릅니다' },
@@ -121,8 +121,8 @@
     { section: 'concept', start: 64.6, end: 68.5, text: '도착할 때쯤 비 예보가 있어 실내 명소를 먼저 골랐어요.' },
     { section: 'concept', start: 68.7, end: 74.9, text: '반려동물과 갈 수 있는 가까운 명소는 시립 어린이 미술관, 전망대 공원이에요. 시립 어린이 미술관은 유모차를 빌릴 수 있어요.' },
     { section: 'concept', start: 75.4, end: 84.6, text: '목적지 근처 중앙 공영주차장에 빈자리 23면이 있어요. 30분에 1,000원이에요.' },
-    { section: 'outro', start: 0, end: 2, text: "Pleos 내비에 '앞길 안내'가 더해지면" },
-    { section: 'outro', start: 2, end: 5, text: '앞길 안내' },
+    { section: 'outro', start: 0, end: 2, text: "Pleos 내비에 '내비서'가 더해지면" },
+    { section: 'outro', start: 2, end: 5, text: '내비서' },
   ];
   const durations = { intro: 15, concept: 85, outro: 5 };
   const scenes = { E1:[50,59], E2:[59,75], D:[75,85] };
@@ -235,7 +235,7 @@
     $('card').style.transform=`translateY(${(1-clamp(alpha))*14}px)`;
     $('card').style.setProperty('--signal', parking ? '#3E7BFA' : travel || green ? '#30A46C' : hazard ? '#F5A524' : '#E5484D');
     $('card').style.setProperty('--ring', parking ? 'rgba(62,123,250,.22)' : travel || green ? 'rgba(48,164,108,.22)' : hazard ? 'rgba(245,165,36,.22)' : 'rgba(229,72,77,.22)');
-    setText('card-kind',parking ? '앞길 안내 · 주차' : travel || question ? '앞길 안내 · 여행' : hazard ? '앞길 안내 · 도로 위험' : '앞길 안내 · 신호');
+    setText('card-kind',parking ? '내비서 · 주차' : travel || question ? '내비서 · 여행' : hazard ? '내비서 · 도로 위험' : '내비서 · 신호');
     $('signal').hidden=parking || travel || question; $('parking-dot').hidden=!parking;
     $('travel-weather').hidden=!travel; $('companion-answer').hidden=!question;
     setText('companion-answer',answer ? '아이 · 반려동물' : ''); $('companion-answer').style.opacity=clamp(answerAlpha);
@@ -273,7 +273,7 @@
       drawMap(section==='intro' && t>=10 ? 'E1' : secondHalf ? 'C' : 'A',section==='intro' && t>=10 ? 0 : secondHalf ? t-5 : t,false);
       $('headline').hidden=section==='outro' && t>=2;
       $('app-name').hidden=section!=='outro' || t<2; $('introduction').hidden=$('app-name').hidden;
-      setText('headline',cue?.text || ''); setText('introduction',introLine.replace(', ', ',\n'));
+      setText('headline',cue?.text || ''); setText('introduction',introLine);
       $('title-layer').style.opacity=section==='intro' ? Math.min(clamp(t/.3),clamp((15-t)/.3),clamp(Math.abs(t-5)/.25),clamp(Math.abs(t-10)/.25)) : Math.min(clamp(t/.2),clamp(Math.abs(t-2)/.2));
     } else if(t<25) {
       drawMap('A',t); setText('turn-distance','150m'); setText('turn-direction','시청 방면 좌회전');

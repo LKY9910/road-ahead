@@ -105,7 +105,7 @@ class RoadAheadService : Service() {
         val notification = Notification.Builder(this, "road_ahead")
             .setSmallIcon(android.R.drawable.ic_dialog_info)
             .setContentTitle(getString(R.string.app_name))
-            .setContentText(getString(R.string.guidance_running))
+            .setContentText(getString(R.string.guidance_running, getString(R.string.app_name)))
             .setContentIntent(open)
             .addAction(Notification.Action.Builder(null, getString(R.string.stop_guidance), stop).build())
             .setOngoing(true).build()

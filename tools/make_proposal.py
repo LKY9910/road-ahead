@@ -275,7 +275,7 @@ def build(form, out_path, md):
         doc = fill_box(doc, tag, blocks_xml(items, media, counter))
     doc = set_paragraph_text(doc, '참가 단위:', '참가 단위: ■ 개인           □ 팀', 1)
     doc = set_paragraph_text(doc, '참가 부문:', '참가 부문: ■ 대학(원)생    □ 일반(스타트업 포함)', 1)
-    doc = set_paragraph_text(doc, '앱명 / 프로젝트명:', '앱명 / 프로젝트명: 앞길 안내', 3)
+    doc = set_paragraph_text(doc, '앱명 / 프로젝트명:', '앱명 / 프로젝트명: 내비서', 3)
     doc = set_paragraph_text(doc, '참가 인원:', '참가 인원: 1명', 1)
 
     numbering = zin.read('word/numbering.xml').decode('utf-8')

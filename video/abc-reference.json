@@ -1,8 +1,8 @@
 {
-  "sourceCommit": "532e562",
-  "sourceHtmlSha256": "8125c43fc77f28d8943b6ccf6b4f7a103ba3d6eacc4089d0f1f21a7848c0dc0f",
+  "sourceCommit": "238e5a7",
+  "sourceHtmlSha256": "c505165afa45cd890f2892cf59fc8d61688bbed5ce2f139f2579f1aa232602ed",
   "chromium": "149.0.7827.55",
-  "capture": "Installed Node Playwright and full Chromium, matching render.mjs",
+  "capture": "T-45 name and introduction update; A/B/C pixels match 532e562 when restoring the old label; installed Chromium and Malgun Gothic",
   "viewport": {
     "width": 1920,
     "height": 1080
@@ -11,47 +11,48 @@
     {
       "section": "concept",
       "time": 0.8,
-      "sha256": "57f0f9bafb64104f07b742427e7729c1bdcb94be13b001f4826bbae93eabc2f7"
+      "sha256": "ba5b90c825917b99ff56e9578289fd6010e5214ec839957ce7c2b58ae3bd5fdf"
     },
     {
       "section": "concept",
       "time": 4.5,
-      "sha256": "b22a17cf27b99c64ee3fb262faf130d8827e7c89c19761e19b86e4ccad535dea"
+      "sha256": "ebc0d4e930f3cab65893d0fa1eea0249701be346562dd41101788cfa48d49d89"
     },
     {
       "section": "concept",
       "time": 17.5,
-      "sha256": "21b155d18044029f8e2df933c9de8f7011f472c3290f5b9379a40223ed85b82b"
+      "sha256": "7f7df42efa41979740ddd033e406da2ba3386646586831b03c168d8356a659ee"
     },
     {
       "section": "concept",
       "time": 22.4,
-      "sha256": "41842eaedf8e7388e0cbb48ad0c15c852a21425f6ac93a6abfbafdc8dfefaf5e"
+      "sha256": "fec192690b6185d8be07ebdc859e46ee925cde9ace51f6436040cd8adea7a701"
     },
     {
       "section": "concept",
       "time": 27,
-      "sha256": "9cbfd4753ae3074b37470e23ba65883bd00635178d836d259c4181bc1a010e62"
+      "sha256": "79cd66d271bc8a436b250d10960bd205befa95ef5924316e811b84f1e5e08160"
     },
     {
       "section": "concept",
       "time": 38,
-      "sha256": "2b27295e45897bb2f3b8a49d4df632e442949c23e8fc419413ed676723bb70af"
+      "sha256": "819c1025bf38f2e5da82d62f279e48b1f747b75b02c4d7612124d5ada0adba4e"
     },
     {
       "section": "concept",
       "time": 43,
-      "sha256": "a16e521732720f32667b480d9af08c7e049d7f4e89a280a69014d41160d807f0"
+      "sha256": "2b9221fb378b0245477d1563239962ba17c5dd10b1412601bbf02fcbc03293d3"
     },
     {
       "section": "concept",
       "time": 47,
-      "sha256": "0f38e5fb9254f3dd98100c206bb4f5dd70fe6f2bc6466d504ccd32c91f8315bb"
+      "sha256": "860070c5968b317c851e4f28f23d226ff7a22a1f6349a0d8a2a31f8d22433abb"
     },
     {
       "section": "outro",
       "time": 3,
-      "sha256": "2bbf018dc0c235f2faa4972bd41aeff2587120679f616219ecf3c1006c34eae4"
+      "sha256": "00121dec02e5b260402d4c7d1ccc3adcacd78451f18a21a4596c031eadb48498"
     }
-  ]
+  ],
+  "sourceTask": "T-45"
 }
