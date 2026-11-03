@@ -14,6 +14,12 @@
 
 ---
 
+## 2026-11-03 · Claude · T-46 제출 저장소 이름 정리(사용자 요청)
+
+- 사용자가 제출 저장소에 옛 이름이 보인다고 해서 확인했다. README·앱·APK·영상·기획서는 이미 "내비서"였고, GitHub 저장소 About 설명이 "앞길 안내: …"로 남아 있어 `gh repo edit`로 새 한 줄 소개로 바꿨다(다시 읽어 확인).
+- `docs/design/travel-mode-ui.html`(T-32 목업)의 제목·상단 이름·카드 머리줄 4곳을 "내비서"로 바꿨다. 글자만 바꿨고 디자인은 그대로다.
+- 그대로 둔 것: 저장소 이름 `road-ahead`(기획서에 주소가 들어감), 예전 커밋 메시지, HANDOFF·TASKS·`docs/plans/`·`docs/spikes/`의 지난 기록.
+
 ## 2026-11-02 18:30 · Claude · T-46 이름 변경 마무리(release·기획서)
 
 - release: `:app:assembleRelease`로 다시 만들어 `apk/SUDL_내비서_release.apk`(41,981,790 bytes)로 두고 옛 `apk/SUDL_앞길안내_release.apk`는 지웠다(`0bb7196`, README 이름 변경과 함께). `DEBUG=false`, 키 4개 비어 있지 않음, 서명 CN=SUDL·인증서 SHA-256 `2d24f48b…`(전과 같음), APK 안 키스토어 비밀번호 0건, `aapt` 앱 이름 **내비서**를 값 출력 없이 확인했다.

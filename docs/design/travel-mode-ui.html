@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 <meta charset="utf-8">
-<title>앞길 안내 · T-32 디자인 목업</title>
+<title>내비서 · T-32 디자인 목업</title>
 <style>
 @font-face{font-family:RoadNoto;src:url('file:///C:/Windows/Fonts/NotoSansKR-VF.ttf');font-weight:100 900}
 *{box-sizing:border-box}html,body{margin:0;width:2560px;height:1440px;overflow:hidden;background:#F5F7FA;font-family:RoadNoto,'Noto Sans KR',sans-serif;color:#FFF}
@@ -57,7 +57,7 @@ const root=document.querySelector('#content');
 const state={saved:['child','pet'],draft:[],travel:false,intent:'enable',parked:true};
 const labels={child:'아이',elder:'어르신',pet:'반려동물',none:'동행 없음'};
 const check='<span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>';
-const app=inner=>`<section class="app"><p class="brand">앞길 안내</p>${inner}</section>`;
+const app=inner=>`<section class="app"><p class="brand">내비서</p>${inner}</section>`;
 const checked=id=>state.draft.includes(id);
 function openPicker(intent='enable'){
  if(!state.parked)return;
@@ -92,8 +92,8 @@ const childRows=[...festivalRows,{title:'덕수궁 대한문',meta:'관광지 ·
 const petRows=[...festivalRows,{title:'인사동',meta:'관광지 · 700m',reasons:['일부 구역 동반']},
  {title:'명동',meta:'관광지 · 1.4km',reasons:['일부 구역 동반','목줄 착용']}];
 const weatherRows=[...festivalRows,...indoorRows,{title:'경성 부민관 폭탄 의거지',meta:'관광지 · 600m'}];
-function travel(rows,weather=false){root.dataset.state='travel';root.innerHTML=`<div class="old-card-mask"></div><section class="overlay-card travel-card" aria-label="여행 목록"><p class="card-header ${weather?'has-weather':''}">앞길 안내 · 여행</p>${weather?'<p class="weather-context">도착 때 비 예보 · 실내 명소 우선</p>':''}${rows.map(r=>`<article class="travel-item"><p class="travel-title">${r.title}</p><p class="travel-meta">${r.meta}</p>${r.reasons?`<p class="reason">${r.reasons.join(' · ')}</p>`:''}</article>`).join('')}</section>`;}
-function parking(known){root.dataset.state='parking';root.innerHTML=`<div class="old-card-mask"></div><section class="overlay-card parking-card" aria-label="주차 안내"><p class="card-header"><span class="parking-dot"></span>앞길 안내 · 주차</p><h1 class="parking-title">세종로 주차장</h1>${known?'<p class="availability"><span class="availability-label">빈자리</span><span class="availability-number">781</span><span class="availability-unit">면</span></p>':''}<p class="parking-meta"><span>목적지에서 200m · 5분에 430원</span></p></section>`;}
+function travel(rows,weather=false){root.dataset.state='travel';root.innerHTML=`<div class="old-card-mask"></div><section class="overlay-card travel-card" aria-label="여행 목록"><p class="card-header ${weather?'has-weather':''}">내비서 · 여행</p>${weather?'<p class="weather-context">도착 때 비 예보 · 실내 명소 우선</p>':''}${rows.map(r=>`<article class="travel-item"><p class="travel-title">${r.title}</p><p class="travel-meta">${r.meta}</p>${r.reasons?`<p class="reason">${r.reasons.join(' · ')}</p>`:''}</article>`).join('')}</section>`;}
+function parking(known){root.dataset.state='parking';root.innerHTML=`<div class="old-card-mask"></div><section class="overlay-card parking-card" aria-label="주차 안내"><p class="card-header"><span class="parking-dot"></span>내비서 · 주차</p><h1 class="parking-title">세종로 주차장</h1>${known?'<p class="availability"><span class="availability-label">빈자리</span><span class="availability-number">781</span><span class="availability-unit">면</span></p>':''}<p class="parking-meta"><span>목적지에서 200m · 5분에 430원</span></p></section>`;}
 window.design={state,setParked(value){state.parked=value;if(!value){state.draft=[];renderMain();}},openPicker,travel,parking};
 if(screen==='settings'){state.travel=true;renderSettings();}
 else if(screen==='first'){state.saved=[];openPicker();}
