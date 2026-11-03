@@ -1,0 +1,41 @@
+[
+  {
+    "scene": "a",
+    "in": 20.733333333333334,
+    "duration": 9,
+    "speechIndex": 0,
+    "caption": {
+      "text": "앞 신호 빨간불이에요. 속도를 줄이세요.",
+      "from": 0.9,
+      "until": 9
+    },
+    "sourceSpeechDeviceMonotonic": 86945.087,
+    "cardOnsetRawSeconds": 21.633333333333333
+  },
+  {
+    "scene": "c",
+    "in": 18.9,
+    "duration": 8,
+    "speechIndex": 0,
+    "caption": {
+      "text": "3km 앞 안개 구간이에요. 앞이 500m도 안 보여요. 속도를 줄이세요.",
+      "from": 0,
+      "until": 8
+    },
+    "sourceSpeechDeviceMonotonic": 87029.142,
+    "cardOnsetRawSeconds": 18.7
+  },
+  {
+    "scene": "e",
+    "in": 61.86666666666667,
+    "duration": 10,
+    "speechIndex": 1,
+    "caption": {
+      "text": "목적지 근처 세종로 주차장에 빈자리 849면이 있어요. 5분에 430원이에요.",
+      "from": 0.5,
+      "until": 10
+    },
+    "sourceSpeechDeviceMonotonic": 87194.522,
+    "cardOnsetRawSeconds": 62.36666666666667
+  }
+]
