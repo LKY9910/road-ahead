@@ -20,6 +20,8 @@ Pleos 내비 속 비서처럼, 앞길의 신호·도로 위험부터 목적지 �
 
 제출용 release APK: [apk/SUDL_내비서_release.apk](apk/SUDL_내비서_release.apk)
 
+시연 영상: [video/SUDL_내비서_시연.mp4](video/SUDL_내비서_시연.mp4) (2분 12초, 소리 없음, 앱 음성은 자막). 콘셉트 애니메이션 뒤에 에뮬레이터에서 실제 앱을 기록 재생한 화면이 이어집니다.
+
 Pleos Connect 에뮬레이터를 실행하고 저장소 루트의 PowerShell에서 설치합니다. 아래 명령은 검증한 기기 `emulator-5556`, 운전자 사용자 `10`을 기준으로 합니다. 다른 환경에서는 `adb devices`와 `adb shell am get-current-user`로 확인한 값으로 바꿉니다.
 
 ```powershell
